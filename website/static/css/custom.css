@@ -1,0 +1,47 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/* your custom css */
+
+body {
+  color: #4e4e4e;
+}
+
+.navGroupCategoryTitle {
+  font-weight: 500;
+}
+
+.nav-footer .fbOpenSource {
+  width: initial;
+  text-align: center;
+}
+
+.headerTitleWithLogo {
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #24292e;
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1500px) {
+}
