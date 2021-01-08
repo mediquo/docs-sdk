@@ -6,13 +6,34 @@
  */
 
 /* your custom css */
-
-body {
-  color: #4e4e4e;
+@font-face {
+  font-family: Gotham;
+  font-weight: normal;
+  src: url("../fonts/gothamrnd-book.otf") format("opentype");
 }
 
+@font-face {
+  font-family: Gotham;
+  font-weight: 500;
+  src: url("../fonts/gothamrnd-medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Gotham;
+  font-weight: bold;
+  src: url("../fonts/gothamrnd-bold.otf") format("opentype");
+}
+
+body {
+  font-family: Gotham;
+  color: #201552;
+}
+
+.onPageNav .toc-headings > li > a.active,
+.onPageNav .toc-headings > li > a.hover,
 .navGroupCategoryTitle {
   font-weight: 500;
+  color: #4a1ea7 !important;
 }
 
 .nav-footer .fbOpenSource {
@@ -24,11 +45,16 @@ body {
   color: #fff;
 }
 
+.docs-prevnext {
+  display: none;
+}
+
 h1,
 h2,
 h3,
 h4 {
-  color: #24292e;
+  font-weight: 500;
+  color: #4a1ea7;
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
