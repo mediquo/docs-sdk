@@ -8,7 +8,7 @@ This describes the resources that make up the official mediQuo API. If you have 
 
 ## Using the mediQuo API
 
-mediQuo API can be used to manage your patients in our platform and allow them to access your professionals in your SDK integration.
+MediQuo API can be used to manage your patients in our platform and allow them to access your professionals in your SDK integration.
 
 ## How to get access to the mediQuo API
 
