@@ -19,14 +19,14 @@ class Footer extends React.Component {
     return (
       <footer className="nav-footer" id="footer">
         <a
-          href="https://mediQuo.com/"
+          href="https://mediquo.com/"
           target="_blank"
           rel="noreferrer noopener"
           className="fbOpenSource"
         >
           <img
-            src={`${this.props.config.baseUrl}img/mediQuo_logo.png`}
-            alt="mediQuo PRO Logo"
+            src={`${this.props.config.baseUrl}img/mediquo_logo.png`}
+            alt="MediQuo PRO Logo"
           />
         </a>
         <section className="copyright">{this.props.config.copyright}</section>
