@@ -9,7 +9,7 @@
 // site configuration options.
 
 const siteConfig = {
-  title: "MediQuo", // Title for your website.
+  title: "mediQuo", // Title for your website.
   tagline: "MediQuo API Documentation",
   url: "https://sdk.mediquo.com", // Your website URL
   baseUrl: "/", // Base URL for your project */
