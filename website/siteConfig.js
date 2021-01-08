@@ -9,14 +9,14 @@
 // site configuration options.
 
 const siteConfig = {
-  title: "mediQuo", // Title for your website.
-  tagline: "mediQuo API Documentation",
-  url: "https://sdk.mediQuo.com", // Your website URL
+  title: "MediQuo", // Title for your website.
+  tagline: "MediQuo API Documentation",
+  url: "https://sdk.mediquo.com", // Your website URL
   baseUrl: "/", // Base URL for your project */
 
   // Used for publishing and more
-  projectName: "mediQuo-docs",
-  organizationName: "mediQuo",
+  projectName: "mediquo-docs",
+  organizationName: "mediquo",
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [{ doc: "introduction", label: "Docs" }],
