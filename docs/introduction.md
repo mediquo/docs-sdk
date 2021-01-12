@@ -22,7 +22,7 @@ You will be provided with a set of credentials, an API key and a secret key. Tho
 
 ### Step 3: Set up your access
 
-The majority of our endpoints require authentication with your organization credentials. Make sure to add the corresponding headers when making requests to our end. You can read more about [authentication](/docs/authentication).
+The majority of our endpoints require authentication with your organization credentials. Make sure to add the corresponding headers when making requests to our end. You can read more about [authentication](/docs/overview#authentication).
 
 ### Step 4: Ready to go
 

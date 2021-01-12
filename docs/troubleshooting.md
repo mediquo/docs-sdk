@@ -9,4 +9,4 @@ If you're encountering some oddities in the API, here's a list of resolutions to
 
 ## Basic authentication errors
 
-If you are experimenting problems with authentication such as HTTP response codes 401 or 403, make sure that the authorization headers are set with your credentials. You can read more about [authentication](/docs/authentication).
+If you are experimenting problems with authentication such as HTTP response codes 401 or 403, make sure that the authorization headers are set with your credentials. You can read more about [authentication](/docs/overview#authentication).

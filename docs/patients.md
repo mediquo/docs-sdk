@@ -38,9 +38,9 @@ Since the endpoint handles the data asyncronally, it is possible that there is a
 
 ### Authentication and rate limits
 
-| Authentication                       | Rate limits             |
-| ------------------------------------ | ----------------------- |
-| [HTTP Headers](/docs/authentication) | 600 requests per minute |
+| Authentication                                | Rate limits             |
+| --------------------------------------------- | ----------------------- |
+| [HTTP Headers](/docs/overview#authentication) | 600 requests per minute |
 
 Learn more about [rate limits](/docs/overview#rate-limiting).
 
