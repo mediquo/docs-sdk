@@ -34,16 +34,6 @@ curl https://sdk.mediquo.com/v1/patients \
   -H "X-Secret-Key: <Your Secret Key>"
 ```
 
-## Pagination
-
-Pagination is a feature in mediquo API endpoints that return more results than can be returned in a single response. When that happens, the data is returned in a series of 'pages'. Pagination refers to methods for programatically requesting all of the pages, in order to retrieve the entire result data set. Not all API endpoints support or require pagination, but it is often used when result sets are large.
-
-To iterate between the result pages simply add on your query params the page you need.
-
-```
-curl https://sdk.mediquo.com/v1/patients?page=<Page Number>
-```
-
 ## Rate limiting
 
 To help manage the sheer volume of these requests, limits are placed on the number of requests that can be made. These limits help us provide the reliable and scalable API.
