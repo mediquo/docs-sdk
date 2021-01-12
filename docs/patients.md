@@ -15,7 +15,7 @@ Contains the information about a Patient in the mediQuo ecosystem.
 | first_name | string                | Patient first name or full name                       |
 | last_name  | string **(optional)** | Patient last name                                     |
 | gender     | string                | Patient gender (`male` or `female`)                   |
-| birthdate  | string                | Patient birthdate (`Y-m-d`)                           |
+| birth_date | string                | Patient birth date (`Y-m-d`)                          |
 | email      | string **(optional)** | Patient email                                         |
 
 ## Create or update Patients
@@ -60,14 +60,14 @@ Learn more about [rate limits](/docs/overview#rate-limiting).
       "first_name": "John",
       "last_name": "Doe",
       "gender": "male",
-      "birthdate": "1980-01-01",
+      "birth_date": "1980-01-01",
       "email": "john@doe.com"
     },
     {
       "code": "jane-unique-id",
       "first_name": "Jane",
       "gender": "female",
-      "birthdate": "1980-01-01"
+      "birth_date": "1980-01-01"
     }
   ]
 }
