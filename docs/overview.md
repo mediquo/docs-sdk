@@ -26,6 +26,7 @@ Authentication to the API is performed via HTTP headers and the following header
 | X-API-Key    | The provided API Key    |
 | X-Secret-Key | The provided Secret Key |
 
+
 All API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will also fail.
 
 ```
@@ -40,7 +41,7 @@ To help manage the sheer volume of these requests, limits are placed on the numb
 
 The maximum number of requests that are allowed is based on a time interval and ip. Use the HTTP response headers in order to understand where the application is at for a given rate limit, on the method that was just utilized.
 
-- `x-ratelimit-limit`: the rate limit ceiling for that given endpoint
+- `x-ratelimit-limit`: the rate limit ceiling for that given endpoint (600 requests per minute)
 - `x-ratelimit-remaining`: the number of requests left for time scope window
 
 ## Client errors
