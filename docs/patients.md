@@ -87,12 +87,62 @@ Status: 200 OK
 
 ```json
 {
-  "data": [
-    {
-      "message": "Success"
-    }
-  ]
+  "message": "Success"
 }
 ```
 
-You can read more about [client errors](/docs/overview#client-errors) for more information about other responses.
+## Get Patient
+
+```
+GET /v1/patients/{code}
+```
+
+Use this endpoint to retrieve the patient information by its code.
+
+### Endpoint URL
+
+`https://sdk.mediquo.com/v1/patients/{code}`
+
+### Authentication and rate limits
+
+| Authentication                                | Rate limits             |
+| --------------------------------------------- | ----------------------- |
+| [HTTP Headers](/docs/overview#authentication) | 600 requests per minute |
+
+Learn more about [rate limits](/docs/overview#rate-limiting).
+
+### Request parameters
+
+No parameters
+
+### Response fields
+
+| Name       | Type   | Description                                           |
+| ---------- | ------ | ----------------------------------------------------- |
+| code       | string | The value that identifies your patient in your system |
+| first_name | string | Patient first name or full name                       |
+| last_name  | string | Patient last name                                     |
+| gender     | string | Patient gender (`male` or `female`)                   |
+| birth_date | string | Patient birth date (`Y-m-d`)                          |
+| email      | string | Patient email                                         |
+| created_at | string | Patient created at date                               |
+| updated_at | string | Last updated date                                     |
+
+### Default response
+
+```json
+Status: 200 OK
+```
+
+```json
+{
+  "code": "biOo3TPo",
+  "first_name": "Jane",
+  "last_name": "Doe",
+  "gender": "female",
+  "birth_date": "2000-01-01",
+  "email": null,
+  "created_at": "2000-01-01 10:00:00+200",
+  "updated_at": "2000-01-01 10:00:00+200"
+}
+```

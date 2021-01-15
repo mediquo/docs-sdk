@@ -57,3 +57,15 @@ Some 4xx errors that could be handled programmatically (e.g., a parameter is req
 - **422 - Unprocessable Entity** Usually validation errors.
 - **429 - Too Many Requests** Too many requests hit the API too quickly.
 - **500, 502, 503, 504 - Server Errors** Something went wrong on mediQuo's end.
+
+### Example error response
+
+```json
+Status: 404
+```
+
+```json
+{
+  "message": "Not found"
+}
+```
