@@ -17,7 +17,7 @@ Contains the information about a Patient in the mediQuo ecosystem.
 | gender     | string                | Patient gender (`male` or `female`)                   |
 | birth_date | string                | Patient birth date (`Y-m-d`)                          |
 | email      | string **(optional)** | Patient email                                         |
-| plan       | string **(optional)** | Patient plan                                          |
+| plan       | string **(optional)** | Patient plan name                                     |
 
 ## Create or update Patients
 
@@ -30,6 +30,8 @@ Use this endpoint to integrate your patients into our platform. You can bulk man
 **You must provide a unique code for each patient** that we will use to identify you patients. This way if you want to update the information of a given user, you simply request it again with it's code and the new data. The operation will either create or update a patient by the code you provide us.
 
 In case many patients are provided, **the operation will either success or fail as a whole**, meaning that in case of an error, no patients will be created or updated.
+
+If a `plan` is provided, the patient will have fully access to mediQuo and it will be treated as a patient fully capable to use all of mediQuo features. In case no plan is provided the patient will be treated as an unsubscribed and won't be able to use any paid feature. If you want to unsubscribe a patient from mediQuo, simply omit the `plan` parameter.
 
 Since the endpoint handles the data asyncronally, it is possible that there is a **small delay between the request and the data being available**.
 
