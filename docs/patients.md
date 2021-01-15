@@ -31,7 +31,7 @@ Use this endpoint to integrate your patients into our platform. You can bulk man
 
 In case many patients are provided, **the operation will either success or fail as a whole**, meaning that in case of an error, no patients will be created or updated.
 
-If a `plan` is provided, the patient will have fully access to mediQuo and it will be treated as a patient fully capable to use all of mediQuo features. In case no `plan` is provided the patient will be treated as an unsubscribed and won't be able to use any paid feature. If you want to unsubscribe a patient from mediQuo, simply omit the `plan` parameter.
+If attribute `plan` is provided, the patient will be treated as a subscribed user fully capable to access all features. In case no plan is provided, the patient will be treated as an unsubscribed user and won't be able to use any paid feature. Omit attribute `plan` in order to unsubscribe a patient.
 
 Since the endpoint handles the data asyncronally, it is possible that there is a **small delay between the request and the data being available**.
 
