@@ -26,7 +26,6 @@ Authentication to the API is performed via HTTP headers and the following header
 | X-API-Key    | The provided API Key    |
 | X-Secret-Key | The provided Secret Key |
 
-
 All API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will also fail.
 
 ```
@@ -62,7 +61,7 @@ Some 4xx errors that could be handled programmatically (e.g., a parameter is req
 ### Example error response
 
 ```json
-Status: 404
+Status: 404 Not found
 ```
 
 ```json
