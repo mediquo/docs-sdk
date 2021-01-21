@@ -8,5 +8,16 @@
       "overview",
     	"patients"
     ]
+  },
+  "sdk": {
+    "Documentation": [
+    	"sdk/introduction"
+    ],
+    "Android": [
+      "sdk/android/introduction"
+    ],
+    "iOs": [
+      "sdk/ios/introduction"
+    ]
   }
 }

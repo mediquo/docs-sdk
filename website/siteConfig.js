@@ -19,7 +19,10 @@ const siteConfig = {
   organizationName: "mediquo",
 
   // For no header links in the top nav bar -> headerLinks: [],
-  headerLinks: [{ doc: "introduction", label: "Docs" }],
+  headerLinks: [
+    { doc: "introduction", label: "API" },
+    // { doc: "sdk/introduction", label: "SDK" },
+  ],
 
   /* path to images for header/footer */
   headerIcon: "img/logo.svg",
