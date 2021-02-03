@@ -8,7 +8,8 @@ This describes how to use **Medical history** module on your Android app.
 
 ## Introduction
 
-If you are going to use this module, be sure to specify the Images and Downloads directories:
+If you are going to use this module, be sure to specify the Images and Downloads directories, required to download reports and prescriptions.
+
 [Android documentation](https://developer.android.com/training/secure-file-sharing/setup-sharing?hl=es&authuser=1)
 
 ```xml
@@ -20,7 +21,7 @@ If you are going to use this module, be sure to specify the Images and Downloads
 ```
 
 ## Open Medical history with all sections
-You need to provide a valid context to openMedicalHistory method
+You need to provide a valid context to openMedicalHistory method.
 
 ```kotlin
 ...
@@ -31,7 +32,7 @@ MediquoSDK.getInstance()?.openMedicalHistory(this)
  ```
 
  ## Open a specific section
-You need to provide a valid context to each method
+You need to provide a valid context to each method.
 
 ```kotlin
 ...

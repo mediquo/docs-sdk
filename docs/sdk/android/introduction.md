@@ -23,7 +23,7 @@ allprojects {
         google()
         jcenter()
         maven { url "https://mediquo.bintray.com/mediquo-lib"}
-        maven { url 'https://tokbox.bintray.com/maven' }
+        maven { url "https://tokbox.bintray.com/maven" }
     }
 }
 ```

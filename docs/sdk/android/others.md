@@ -29,7 +29,7 @@ private fun fetchUnreadMessages() {
 
 ## Return intent
 
-You can provide a return intent to redirect your app if you init a ChatActivity from a push or a deeplink.
+You can provide a return intent to redirect your app if you init a mediQuo SDK activity from a push or a deeplink.
 
 ```kotlin
 MediquoSDK.getInstance()?.returnIntent = yourIntent
