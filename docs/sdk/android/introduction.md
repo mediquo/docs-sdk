@@ -79,8 +79,6 @@ You must provide to your clients a valid authentication code and then call the a
 
 
 ```kotlin
-...
-
 private val mediQuoAuthenticateListener = object : MediquoAuthenticateListener {
     override fun onFailure(message: String?) {
         /* Your authentication has failed */
@@ -92,25 +90,25 @@ private val mediQuoAuthenticateListener = object : MediquoAuthenticateListener {
 
 }
 
-    
 private fun authenticateMediQuoSDK() {
     MediquoSDK.authenticate(CLIENT_CODE, mediQuoAuthenticateListener)
 }
-...
-
  ```
 
 ### Push notifications
 
-You must register your notification token in the sdk.
-When you receive a remoteMessage, delegate to mediQuoSDK and then you can process the remoteMessage if not a mediQuoSDK message.
+You must register your push notifications token in the sdk.
+The SDK will only process its own messages so you can send it all incomming pushes.  
 
 ```kotlin
 class MediQuoSDKExampleMessagingService : FirebaseMessagingService() {
 
    override fun onMessageReceived(remoteMessage: RemoteMessage) {
        super.onMessageReceived(remoteMessage)
-       /* Delegate remoteMessage to mediQuo SDK */
+        
+       /* Your code to process remoteMessage */
+       
+       /* Send remoteMessage to mediQuo SDK */
        MediquoSDK.getInstance()?.onFirebaseMessageReceived(remoteMessage)
    }
 
