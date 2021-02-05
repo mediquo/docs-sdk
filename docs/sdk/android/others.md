@@ -38,22 +38,22 @@ MediquoSDK.getInstance()?.returnIntent = yourIntent
 ## Tracking
 If you would track SDK local events, implements a BroadcastReceiver with IntentFilter action to match: **com.mediquo.sdk.event**
 
-| **Event name**            | **Params**                                      | **Type**                    | **Description** |
-| --------------------------| ----------------------------------------------- | --------------------------- | --------------- |
-| chat_view                 | professionalHash <br> specialityId              | String <br> int             ||
-| chat_message_received     | professionalHash <br> specialityId <br> message | String <br> int <br> String ||
-| chat_message_sent         | professionalHash <br> specialityId <br> message | String <br> int <br> String ||
-| professional_profile_view | professionalHash                                | String                      ||
-| medical_history_view      ||||
-| allergies_view            ||||
-| illnesses_view            ||||
-| medications_view          ||||
-| reports_view              ||||
-| recipes_view              ||||
-| call_started              ||||
-| call_ended                ||||
-| videocall_started         ||||
-| videocall_ended           ||||
+| **Event name**            | **Params**                                      | **Type**                    | **Description**                                   |
+| --------------------------| ----------------------------------------------- | --------------------------- | ------------------------------------------------- |
+| chat_view                 | professionalHash <br> specialityId              | String <br> int             | User enter in a chat activity 				    |
+| chat_message_received     | professionalHash <br> specialityId <br> message | String <br> int <br> String | The user received a text message 				    |
+| chat_message_sent         | professionalHash <br> specialityId <br> message | String <br> int <br> String | The sent received a text message 					|
+| professional_profile_view | professionalHash                                | String                      | The user enter in a professional profile activity |
+| medical_history_view      |                                                 |                             | The user enter in the medical history activity    |
+| allergies_view            |    											  | 							| The user enter in the allergies list activity     |
+| illnesses_view            |												  |    							| The user enter in the illnesses list activity     |
+| medications_view          |												  | 						    | The user enter in the medications list activity   |
+| reports_view              |												  |								| The user enter in the reports list activity       |
+| recipes_view              |												  |       					    | The user enter in the recipes list activity       |
+| call_started              |												  |             		        | The user start a call 					        |
+| call_ended                |												  |      					    | The user end a call  								|
+| videocall_started         |												  |      					    | The user start a videocall  						|
+| videocall_ended           |                                                 |                             | The user end a videocall 						    |
 
 Example
 ```kotin
