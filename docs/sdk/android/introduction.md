@@ -1,21 +1,21 @@
 ---
 id: introduction
 title: mediQuo SDK Android
-sidebar_label: Getting started
+sidebar_label: Installation
 ---
 
-This describes the resources that make up the official mediQuo SDK for Android.
+## Prerequisites
 
-## Introduction
+- A _minSdkVersion_ of 23 (Android 6.0) or higher.
+- _compileOptions_ set to Java 8.
+- The AndroidX versions of the Jetpack support libraries.
+- Firebase Cloud Messaging added in the project ([Firebase Cloud Messaging documentation](https://firebase.google.com/docs/cloud-messaging/android/client)).
 
-This guide assumes that you have already prepared your Android app to receive Firebase Notifications push, if you are not already, you can see the documentation in the following link:
-[Firebase Cloud Messaging documentation](https://firebase.google.com/docs/cloud-messaging)
-
-### Installation
+## Configuration
 
 **Edit your build.gradle project level:**
 
-Add mediQuo SDK and Tokbox maven repositories
+Add mediQuo and Tokbox maven repositories:
 
 ```json
 allprojects {
@@ -95,10 +95,10 @@ private fun authenticateMediQuoSDK() {
 }
  ```
 
-### Push notifications
+### Push notifications handling
 
-You must register your push notifications token in the sdk.
-The SDK will only process its own messages so you can send it all incomming pushes.  
+In order to enable You must register your push notifications token in the sdk.
+The SDK will only process its own messages so you can send it all incomming pushes.
 
 ```kotlin
 class MediQuoSDKExampleMessagingService : FirebaseMessagingService() {
