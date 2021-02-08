@@ -49,8 +49,8 @@ compileOptions {
 
 **Edit or add an application class:**
 
-Call to initialization method, you need to provide a valid context and your api key.
-You can initialize it with or without initialization callback.
+The library must be initialized inside Application.onCreate() using your _API_KEY_ provided by mediQuo.
+Make sure not to use any other library method before you receive a successful response in the listener. 
 
 ```kotlin
 class App : Application() {
@@ -67,7 +67,7 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        MediquoSDK.initialize(this, YOUR_KEY, mediQuoInitListener)
+        MediquoSDK.initialize(this, API_KEY, mediQuoInitListener)
     }
 
  }
@@ -75,7 +75,8 @@ class App : Application() {
 
 ### Authentication
 
-You must provide to your clients a valid authentication code and then call the authentication method of the sdk. You can authenticate it with or without authentication callback.
+To authenticate a patient, provide a valid _CLIENT_CODE_ previously created with [Patients API](http://developer.mediquo.com/docs/introduction/). 
+Make sure not to use any other library method before you receive a successful response in the listener.
 
 
 ```kotlin
