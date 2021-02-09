@@ -6,7 +6,7 @@ sidebar_label: Customization
 
 The following colors can be customized (overwritten) to fit your app.
 
-### General
+## Main colors
 
 | **Value**                 | **Uses**                                        |
 | --------------------- | --------------------------------------------------- |
@@ -16,7 +16,7 @@ The following colors can be customized (overwritten) to fit your app.
 | mediquo_accent_color | Unread messages badge <br> Lock icon on Professional list |
 | mediquo_notification_color| Accent color to use on push notifications |
 
-### Chat
+## Chat
 
 | **Value**                 | **Uses**                                        |
 | --------------------- | --------------------------------------------------- |
@@ -29,7 +29,7 @@ The following colors can be customized (overwritten) to fit your app.
 | mediquo_message_text_color_alert | Text color of a alert message|
 | mediquo_message_background_color_alert | Background color of a alert message |
 
-### Example
+## Example
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
