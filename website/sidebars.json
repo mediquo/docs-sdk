@@ -19,7 +19,7 @@
       "sdk/android/medicalhistory",
       "sdk/android/customization",
       "sdk/android/others",
-      { href: 'https://bitbucket.org/dllort-medipremium/mediquo-sdk-example/src/master/', label: 'Example project' }
+      { "href": "https://bitbucket.org/dllort-medipremium/mediquo-sdk-example/src/master/", "label": "Example project" }
     ],
     "iOs": [
       "sdk/ios/introduction"
