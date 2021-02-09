@@ -4,9 +4,12 @@ title: Professional List
 sidebar_label: Professional List
 ---
 
-This describes how to add the **ProfessionalListFragment** to your Android app.
+The only view you must integrate inside you app is the professional list.
+Consists on a _fragment_ that shows a list of all professionals visible for the current authenticated user.  
 
-## Create ProfessionalListFragment
+![Professional List](http://developer.mediquo.com/docs/sdk/android/professionalList/professional_list.jpg "Professional List")
+
+Create ProfessionalListFragment:
 
 ```kotlin
 ...
@@ -14,9 +17,9 @@ This describes how to add the **ProfessionalListFragment** to your Android app.
 private val professionalList: ProfessionalListFragment by lazy { ProfessionalListFragment() }
 
 ...
- ```
+```
 
-## Add ProfessionalListFragment to your fragment content
+Add _ProfessionalListFragment_ to your fragment content:
 
 ```kotlin
 ...
@@ -39,7 +42,7 @@ private fun setFragment(fragment: Fragment) {
 ...
 ```
 
-## You can add a Listener to ProfessionalListFragment
+You can add a listener to _ProfessionalListFragment_:
 
 ```kotlin
 ...
