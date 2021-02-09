@@ -5,7 +5,7 @@ sidebar_label: Professional List
 ---
 
 The only view you must integrate inside you app is the professional list.
-Consists in a _fragment_ that shows a list of all professionals visible for the current authenticated user and allows access to chats and professional profiles.  
+Consists in a _Fragment_ that shows a list of all professionals available for the current authenticated user and allows access to chats and professional profiles.  
 
 <kbd>
 ![Professional List](http://developer.mediquo.com/img/professional_list.jpg "Professional List")
@@ -34,9 +34,9 @@ override fun onCreate(savedInstanceState: Bundle?) {
 ```
 
 <br/>
-We strongly recommend adding a _ProfessionalListListener_ and use its callbacks for a better integration in your app.
-<br/>Note: In _onProfessionalClick()_ you can cancel the chat opening to fit your business needs like promote conversions.
-_hasAccess_ will be true for patients with _plan_ different than _null_ set via the [Patients API](http://developer.mediquo.com/docs/introduction/).
+We strongly recommend adding a _ProfessionalListListener_ for a better integration in your app.
+<br/>Note: _onProfessionalClick()_ allows you to control chat openings to suit your business logic.
+_hasAccess_ indicates that the authenticated patient has access to the chats (has a _plan_ set via the [Patients API](http://developer.mediquo.com/docs/introduction/)).
 
 ```kotlin
 private val listListener = object : ProfessionalListListener {
