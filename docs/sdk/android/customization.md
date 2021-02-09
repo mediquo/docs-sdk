@@ -4,9 +4,32 @@ title: Customization
 sidebar_label: Customization
 ---
 
-This describes the possibilities of customization.
+The following colors can be customized (overwritten) to fit your app.
 
-## Example of customization
+### General
+
+| **Value**                 | **Uses**                                        |
+| --------------------- | --------------------------------------------------- |
+| mediquo_primary_color | Toolbars background <br> Medical history icons color |
+| mediquo_primary_contrast_color | Toolbars text and back icon |
+| mediquo_secondary_color | Speciality label on ProfessionalListFragment <br> Background professional description on Professional profile |
+| mediquo_accent_color | Unread messages badge <br> Lock icon on Professional list |
+| mediquo_notification_color| Accent color to use on push notifications |
+
+### Chat
+
+| **Value**                 | **Uses**                                        |
+| --------------------- | --------------------------------------------------- |
+| mediquo_message_text_color_date | Text color of message of type date |
+| mediquo_message_background_color_date | Background color of message of type date |
+| mediquo_message_text_color_mine | Text color of your own message|
+| mediquo_message_background_color_mine | Background color of your own message |
+| mediquo_message_text_color_their | Text color of a foreign message|
+| mediquo_message_background_color_their | Background color of a foreign message |
+| mediquo_message_text_color_alert | Text color of a alert message|
+| mediquo_message_background_color_alert | Background color of a alert message |
+
+### Example
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
@@ -41,31 +64,6 @@ This describes the possibilities of customization.
 
 </resources>
 ```
-
-### General
-
-| **Value**                 | **Uses**                                        |
-| --------------------- | --------------------------------------------------- |
-| mediquo_primary_color | Toolbars background <br> Medical history icons color |
-| mediquo_primary_contrast_color | Toolbars text and back icon |
-| mediquo_secondary_color | Speciality label on ProfessionalListFragment <br> Background professional description on Professional profile |
-| mediquo_accent_color | Unread messages bubble <br> Lock on Professional list |
-| mediquo_notification_color| Accent color to use on push notifications |
-
-### Chat
-
-| **Value**                 | **Uses**                                        |
-| --------------------- | --------------------------------------------------- |
-| mediquo_message_text_color_date | Text color of message of type date |
-| mediquo_message_background_color_date | Background color of message of type date |
-| mediquo_message_text_color_mine | Text color of your own message|
-| mediquo_message_background_color_mine | Background color of your own message |
-| mediquo_message_text_color_their | Text color of a foreign message|
-| mediquo_message_background_color_their | Background color of a foreign message |
-| mediquo_message_text_color_alert | Text color of a alert message|
-| mediquo_message_background_color_alert | Background color of a alert message |
-
-
 
 
 
