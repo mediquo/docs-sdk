@@ -17,7 +17,7 @@ Create ProfessionalListFragment:
 private val professionalList: ProfessionalListFragment by lazy { ProfessionalListFragment() }
 ```
 
-Add _ProfessionalListFragment_ to your fragment content:
+Add it to your view:
 
 ```kotlin
 override fun onCreate(savedInstanceState: Bundle?) {        
@@ -31,8 +31,8 @@ override fun onCreate(savedInstanceState: Bundle?) {
 }
 ```
 
-Add a _ProfessionalListListener_ to better integrate the list in your app.
-In _onProfessionalClick()_ even _hasAccess_ is _true_, you can cancel the chat opening to fit your needs like promote conversion.
+We strongly recommend adding a _ProfessionalListListener_ and use its callbacks for a better integration in your app.
+<br/>Note: In _onProfessionalClick()_ even _hasAccess_ is _true_, you can cancel the chat opening to fit your needs like promote conversion.
 _hasAccess_ will be true for patient has a _plan_ set via the [Patients API](http://developer.mediquo.com/docs/introduction/).
 
 ```kotlin
