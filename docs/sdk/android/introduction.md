@@ -54,7 +54,6 @@ Make sure not to use any other library method before you receive a successful re
 
 ```kotlin
 class App : Application() {
-
     private val mediQuoInitListener = object : MediquoInitListener {
         override fun onFailure(message: String?) {
             /* Your initialization has failed */
@@ -69,7 +68,6 @@ class App : Application() {
         super.onCreate()
         MediquoSDK.initialize(this, API_KEY, mediQuoInitListener)
     }
-
  }
  ```
 
@@ -88,7 +86,6 @@ private val mediQuoAuthenticateListener = object : MediquoAuthenticateListener {
     override fun onSuccess() {
         /* Your authentication has been successful */
     }
-
 }
 
 private fun authenticateMediQuoSDK() {
@@ -103,7 +100,6 @@ The SDK will only process its own messages so you can send it all incoming pushe
 
 ```kotlin
 class MediQuoSDKExampleMessagingService : FirebaseMessagingService() {
-
    override fun onMessageReceived(remoteMessage: RemoteMessage) {
        super.onMessageReceived(remoteMessage)
         
