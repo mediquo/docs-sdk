@@ -7,7 +7,7 @@ sidebar_label: Professional List
 The only view you must integrate inside you app is the professional list.
 Consists on a _fragment_ that shows a list of all professionals visible for the current authenticated user and allows access to chats and professional profiles.  
 
-![Professional List](professional_list.jpg "Professional List")
+![Professional List](http://developer.mediquo.com/img/professional_list.jpg "Professional List")
 
 ##### Create ProfessionalListFragment:
 
