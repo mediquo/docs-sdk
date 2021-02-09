@@ -33,7 +33,7 @@ override fun onCreate(savedInstanceState: Bundle?) {
 
 We strongly recommend adding a _ProfessionalListListener_ and use its callbacks for a better integration in your app.
 <br/>Note: In _onProfessionalClick()_ you can cancel the chat opening to fit your business needs like promote conversions.
-_hasAccess_ will be true for patient has a _plan_ set via the [Patients API](http://developer.mediquo.com/docs/introduction/).
+_hasAccess_ will be true for patients with _plan_ different than _null_ set via the [Patients API](http://developer.mediquo.com/docs/introduction/).
 
 ```kotlin
 private val listListener = object : ProfessionalListListener {
