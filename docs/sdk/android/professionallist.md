@@ -11,13 +11,13 @@ Consists on a _fragment_ that shows a list of all professionals visible for the 
 ![Professional List](http://developer.mediquo.com/img/professional_list.jpg "Professional List")
 </kbd>
 
-##### Create ProfessionalListFragment:
+Create ProfessionalListFragment:
 
 ```kotlin
 private val professionalList: ProfessionalListFragment by lazy { ProfessionalListFragment() }
 ```
 
-##### Add _ProfessionalListFragment_ to your fragment content:
+Add _ProfessionalListFragment_ to your fragment content:
 
 ```kotlin
 override fun onCreate(savedInstanceState: Bundle?) {        
@@ -30,8 +30,6 @@ override fun onCreate(savedInstanceState: Bundle?) {
         .commitAllowingStateLoss()
 }
 ```
-
-##### Add a _ProfessionalListListener_:
 
 Add a _ProfessionalListListener_ to better integrate the list in your app.
 In _onProfessionalClick()_ even _hasAccess_ is _true_, you can cancel the chat opening to fit your needs like promote conversion.
