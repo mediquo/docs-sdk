@@ -18,6 +18,7 @@
       "sdk/android/professionalList",
       "sdk/android/medicalhistory",
       "sdk/android/customization",
+      "sdk/android/others",
       "sdk/android/others"
     ],
     "iOs": [
