@@ -4,11 +4,10 @@ title: Medical history
 sidebar_label: Medical history
 ---
 
-This describes how to use **Medical history** module on your Android app.
+Medical history includes all information shared between professionals and patients: Allergies, Illnesses, Medications, Reports, and Prescriptions.
 
-## Introduction
+## Prerequisites
 
-If you are going to use this module, be sure to specify the Images and Downloads directories, required to download reports and prescriptions.
 In order to use Reports and Prescriptions you must declare _Images_ and _Downloads_ directories in _res/xml/filepaths.xml_
 
 ```xml
@@ -22,7 +21,7 @@ In order to use Reports and Prescriptions you must declare _Images_ and _Downloa
 [More information](https://developer.android.com/training/secure-file-sharing/setup-sharing?hl=es&authuser=1)
 
 ## Open specific sections
-The Medical History module has 5 different sections that you can open separately: Allergies, Illnesses, Medications, Reports, and Prescriptions.  
+Every section can be opened separately.  
 
 ```kotlin
 // Allergies
@@ -42,10 +41,10 @@ MediquoSDK.getInstance()?.openPrescriptionsActivity(this)
  ```
 
 ## Open Medical history with all sections
-If you prefer, the SDK also includes a window with all the sections
-
-<kbd>![Professional List](http://developer.mediquo.com/img/medical_history.jpg "Professional List")</kbd>
+The SDK also includes a window with all the sections.
 
 ```kotlin
 MediquoSDK.getInstance()?.openMedicalHistory(this)
  ```
+
+<kbd>![Professional List](http://developer.mediquo.com/img/medical_history.jpg "Professional List")</kbd>
