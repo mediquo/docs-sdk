@@ -8,7 +8,7 @@ Medical history includes all information shared between professionals and patien
 
 ## Prerequisites
 
-In order to use Reports and Prescriptions you must declare _Images_ and _Downloads_ directories in _res/xml/filepaths.xml_
+In order to use Reports and Prescriptions you must declare _Images_ and _Downloads_ directories in _res/xml/filepaths.xml_. See [the official Google documentation](https://developer.android.com/training/secure-file-sharing/setup-sharing?hl=es&authuser=1) for more information.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -17,8 +17,6 @@ In order to use Reports and Prescriptions you must declare _Images_ and _Downloa
     <external-path name="downloads" path="Android/data/YOUR_PACKAGE/files/Download" />
 </paths>
 ```
-
-[More information](https://developer.android.com/training/secure-file-sharing/setup-sharing?hl=es&authuser=1)
 
 ## Open specific sections
 Every section can be opened separately.  
