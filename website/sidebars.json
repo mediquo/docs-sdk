@@ -17,7 +17,8 @@
       "sdk/android/introduction",
       "sdk/android/professionalList",
       "sdk/android/medicalhistory",
-      "sdk/android/customization"
+      "sdk/android/customization",
+      "sdk/android/others"
     ],
     "iOs": [
       "sdk/ios/introduction"

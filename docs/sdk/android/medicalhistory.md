@@ -20,17 +20,8 @@ If you are going to use this module, be sure to specify the Images and Downloads
 </paths>
 ```
 
-## Open Medical history with all sections
-The SDK provides you a 
-
-<kbd>![Professional List](http://developer.mediquo.com/img/medical_history.jpg "Professional List")</kbd>
-
-```kotlin
-MediquoSDK.getInstance()?.openMedicalHistory(this)
- ```
-
- ## Open a specific section
-You need to provide a valid context to each method.
+## Open a specific section
+The Medical History module has 5 different sections that you can open separately: Allergies, Illnesses, Medications, Reports, and Prescriptions.  
 
 ```kotlin
 // Allergies
@@ -47,4 +38,13 @@ MediquoSDK.getInstance()?.openReportsActivity(this)
 
 // Prescriptions
 MediquoSDK.getInstance()?.openPrescriptionsActivity(this)
+ ```
+
+## Open Medical history with all sections
+If you prefer, the SDK also includes a window with all the sections
+
+<kbd>![Professional List](http://developer.mediquo.com/img/medical_history.jpg "Professional List")</kbd>
+
+```kotlin
+MediquoSDK.getInstance()?.openMedicalHistory(this)
  ```
