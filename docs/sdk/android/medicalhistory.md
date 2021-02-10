@@ -9,8 +9,7 @@ This describes how to use **Medical history** module on your Android app.
 ## Introduction
 
 If you are going to use this module, be sure to specify the Images and Downloads directories, required to download reports and prescriptions.
-
-[Android documentation](https://developer.android.com/training/secure-file-sharing/setup-sharing?hl=es&authuser=1)
+In order to use Reports and Prescriptions you must declare _Images_ and _Downloads_ directories in _res/xml/filepaths.xml_
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -20,7 +19,9 @@ If you are going to use this module, be sure to specify the Images and Downloads
 </paths>
 ```
 
-## Open a specific section
+[More information](https://developer.android.com/training/secure-file-sharing/setup-sharing?hl=es&authuser=1)
+
+## Open specific sections
 The Medical History module has 5 different sections that you can open separately: Allergies, Illnesses, Medications, Reports, and Prescriptions.  
 
 ```kotlin
