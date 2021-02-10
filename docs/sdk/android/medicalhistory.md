@@ -21,22 +21,18 @@ If you are going to use this module, be sure to specify the Images and Downloads
 ```
 
 ## Open Medical history with all sections
-You need to provide a valid context to openMedicalHistory method.
+The SDK provides you a 
+
+<kbd>![Professional List](http://developer.mediquo.com/img/medical_history.jpg "Professional List")</kbd>
 
 ```kotlin
-...
-
 MediquoSDK.getInstance()?.openMedicalHistory(this)
-
-...
  ```
 
  ## Open a specific section
 You need to provide a valid context to each method.
 
 ```kotlin
-...
-
 // Allergies
 MediquoSDK.getInstance()?.openAllergiesActivity(this)
 
@@ -51,6 +47,4 @@ MediquoSDK.getInstance()?.openReportsActivity(this)
 
 // Prescriptions
 MediquoSDK.getInstance()?.openPrescriptionsActivity(this)
-
-...
  ```
