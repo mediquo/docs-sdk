@@ -38,7 +38,7 @@ MediquoSDK.getInstance()?.openReportsActivity(this)
 MediquoSDK.getInstance()?.openPrescriptionsActivity(this)
  ```
 
-## Open Medical history with all sections
+## Open all sections launcher
 The SDK also includes a window with all the sections.
 
 ```kotlin
