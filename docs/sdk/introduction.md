@@ -9,11 +9,13 @@ sidebar_label: Getting started
 This SDK offers the possibility of including the main functionalities of the mediQuo platform within your own application (professional list, chat, call, video call, medical history, reports and recipes).
 This documentation describes the steps to integrate this functionalities into a native Android or iOS application.
 
-<kbd><img src="http://developer.mediquo.com/img/professional_list.jpg" alt="Professional list" height="200"/></kbd>
+<kbd><img src="http://developer.mediquo.com/img/professional_list.jpg" alt="Professional list" height="190"/></kbd>
 &nbsp;
-<kbd><img src="http://developer.mediquo.com/img/chat.jpg" alt="Chat" height="200"/></kbd>
+<kbd><img src="http://developer.mediquo.com/img/chat.jpg" alt="Chat" height="190"/></kbd>
 &nbsp;
-<kbd><img src="http://developer.mediquo.com/img/videocall.jpg" alt="Call & Videcall" height="200"/></kbd>
+<kbd><img src="http://developer.mediquo.com/img/videocall.jpg" alt="Call & Videcall" height="190"/></kbd>
+&nbsp;
+<kbd><img src="http://developer.mediquo.com/img/medical_history.jpg" alt="Medical History, Reports and Recipes" height="190"/></kbd>
 
 ## How to get access to the mediQuo SDK
 
@@ -23,7 +25,7 @@ Before integrate the SDK, you must first [apply for an organization account](htt
 
 ### Step 2: Synchronize your patients using the mediQuo API
 
-In order to authenticate you users in the SDK you must first send us your users basic data using the [mediQuo API](http://developer.mediquo.com/docs/introduction/) 
+To authenticate your users to the SDK, you must first send us the basic data (the minimum necessary for proper medical assistance) of your users using the [mediQuo API](http://developer.mediquo.com/docs/introduction/) 
 
 ### Step 3: Integrate your SDK within you app
 
