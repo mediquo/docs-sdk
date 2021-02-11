@@ -4,13 +4,30 @@ title: Getting started
 sidebar_label: Getting started
 ---
 
-This SDK offers the possibility of including the main functionalities of the mediQuo platform within your own application.
+## What is mediQuo SDK
+
+This SDK offers the possibility of including the main functionalities of the mediQuo platform within your own application (professional list, chat, call, video call, medical history, reports and recipes).
 This documentation describes the steps to integrate this functionalities into a native Android or iOS application.
 
-<kbd><img src="http://developer.mediquo.com/img/professional_list.jpg" alt="Professional list" width="350"/></kbd>
+<kbd><img src="http://developer.mediquo.com/img/professional_list.jpg" alt="Professional list" height="300"/></kbd>
 &nbsp;
-<kbd><img src="http://developer.mediquo.com/img/chat.jpg" alt="Chat" width="350"/></kbd>
-<br/><br/>
-<kbd><img src="http://developer.mediquo.com/img/videocall.jpg" alt="Call & Videcall" width="350"/></kbd>
+<kbd><img src="http://developer.mediquo.com/img/chat.jpg" alt="Chat" height="300"/></kbd>
 &nbsp;
-<kbd><img src="http://developer.mediquo.com/img/medical_history.jpg" alt="Medical History" width="350"/></kbd>
+<kbd><img src="http://developer.mediquo.com/img/videocall.jpg" alt="Call & Videcall" height="300"/></kbd>
+
+## How to get access to the mediQuo SDK
+
+### Step 1: Apply and receive approval for your organization
+
+To make any request to the mediQuo API, you must first [apply for an organization account](https://www.mediquo.com/en/companies/) and have your use case validated. Once validated, you will be provided with a set of credentials that will allow you to initialize the SDK.
+
+### Step 2: Synchronize your patients using the mediQuo API
+
+Before integrate the SDK you must send mediQuo your users basic data in order to be able to authenticate the SDK.
+
+### Step 3: Integrate your SDK within you app
+
+Follow the steps defined in [Android SDK documentation](http://developer.mediquo.com/docs/sdk/android/introduction/) 
+and [iOS SDK documentation](http://developer.mediquo.com/docs/sdk/ios/introduction/)
+
+

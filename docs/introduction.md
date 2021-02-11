@@ -14,7 +14,7 @@ MediQuo API can be used to manage your patients in our platform and allow them t
 
 ### Step 1: Apply and receive approval for your organization
 
-To make any request to the mediQuo API, you must first apply for an organization account and have your use case validated. Once validated, you will be provided with a set of credentials that you will use to authenticate all requests to the API.
+To make any request to the mediQuo API, you must first [apply for an organization account](https://www.mediquo.com/en/companies/) and have your use case validated. Once validated, you will be provided with a set of credentials that you will use to authenticate all requests to the API.
 
 ### Step 2: Save your organization credentials and keep them secure
 
