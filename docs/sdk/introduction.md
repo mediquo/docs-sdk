@@ -9,11 +9,11 @@ sidebar_label: Getting started
 This SDK offers the possibility of including the main functionalities of the mediQuo platform within your own application (professional list, chat, call, video call, medical history, reports and recipes).
 This documentation describes the steps to integrate this functionalities into a native Android or iOS application.
 
-<kbd><img src="http://developer.mediquo.com/img/professional_list.jpg" alt="Professional list" height="300"/></kbd>
+<kbd><img src="http://developer.mediquo.com/img/professional_list.jpg" alt="Professional list" height="200"/></kbd>
 &nbsp;
-<kbd><img src="http://developer.mediquo.com/img/chat.jpg" alt="Chat" height="300"/></kbd>
+<kbd><img src="http://developer.mediquo.com/img/chat.jpg" alt="Chat" height="200"/></kbd>
 &nbsp;
-<kbd><img src="http://developer.mediquo.com/img/videocall.jpg" alt="Call & Videcall" height="300"/></kbd>
+<kbd><img src="http://developer.mediquo.com/img/videocall.jpg" alt="Call & Videcall" height="200"/></kbd>
 
 ## How to get access to the mediQuo SDK
 
