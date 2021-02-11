@@ -19,11 +19,11 @@ This documentation describes the steps to integrate this functionalities into a 
 
 ### Step 1: Apply and receive approval for your organization
 
-To make any request to the mediQuo API, you must first [apply for an organization account](https://www.mediquo.com/en/companies/) and have your use case validated. Once validated, you will be provided with a set of credentials that will allow you to initialize the SDK.
+Before integrate the SDK, you must first [apply for an organization account](https://www.mediquo.com/en/companies/) and have your use case validated. Once validated, you will be provided with a set of credentials that will allow you to initialize the SDK.
 
 ### Step 2: Synchronize your patients using the mediQuo API
 
-Before integrate the SDK you must send mediQuo your users basic data in order to be able to authenticate the SDK.
+In order to authenticate you users in the SDK you must first send us your users basic data using the [mediQuo API](http://developer.mediquo.com/docs/introduction/) 
 
 ### Step 3: Integrate your SDK within you app
 
