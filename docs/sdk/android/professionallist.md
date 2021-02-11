@@ -54,7 +54,7 @@ private val listListener = object : ProfessionalListListener {
     }
 
     override fun onUnreadMessageCountChange(unreadMessageCount: Int?) {
-        /* Called when unread message count chenges */           
+        /* Called when unread message count changes */           
     }
 }
 
