@@ -4,6 +4,12 @@ title: mediQuo SDK Android
 sidebar_label: Installation
 ---
 
+## Integration Example
+
+You have a repository available on Bitbucket with a
+[sample project](https://bitbucket.org/dllort-medipremium/mediquo-sdk-example/src/master/)
+which contains an example of how to integrate our SDK.
+
 ## Prerequisites
 
 - A _minSdkVersion_ of 23 (Android 6.0) or higher.
@@ -116,13 +122,6 @@ class MediQuoSDKExampleMessagingService : FirebaseMessagingService() {
        MediquoSDK.getInstance()?.registerPushToken(newToken)
    }
 }
-```
-
-### Integration Example
-
-You have a repository available on Bitbucket with a
-[sample project](https://bitbucket.org/dllort-medipremium/mediquo-sdk-example/src/master/)
-which contains an example of how to integrate our SDK.
- 
+``` 
 
 
