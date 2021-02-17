@@ -11,7 +11,7 @@
 const siteConfig = {
   title: "mediQuo", // Title for your website.
   tagline: "MediQuo API Documentation",
-  url: "https://sdk.mediquo.com", // Your website URL
+  url: "https://developer.mediquo.com", // Your website URL
   baseUrl: "/", // Base URL for your project */
 
   // Used for publishing and more
@@ -52,18 +52,18 @@ const siteConfig = {
   cleanUrl: true,
 
   // Open Graph and Twitter card images.
-  ogImage: "img/undraw_online.svg",
-  twitterImage: "img/undraw_tweetstorm.svg",
+  ogImage: "img/MediQuo-PRO.png",
+  twitterImage: "img/MediQuo-PRO.png",
 
   // For sites with a sizable amount of content, set collapsible to true.
   // Expand/collapse the links and subcategories under categories.
-  // docsSideNavCollapsible: true,
+  docsSideNavCollapsible: false,
 
   // Show documentation's last contributor's name.
-  // enableUpdateBy: true,
+  enableUpdateBy: false,
 
   // Show documentation's last update time.
-  // enableUpdateTime: true,
+  enableUpdateTime: true,
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
