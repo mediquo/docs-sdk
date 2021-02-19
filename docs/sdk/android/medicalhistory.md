@@ -19,7 +19,7 @@ In order to use Reports and Prescriptions you must declare _Images_ and _Downloa
 ```
 
 ## Open specific sections
-Every section can be opened separately.  
+Every section can be opened separately, call each method with a valid context parameter.  
 
 ```kotlin
 // Allergies
@@ -39,7 +39,7 @@ MediquoSDK.getInstance()?.openPrescriptionsActivity(this)
  ```
 
 ## Open all sections launcher
-The SDK also includes a window with all the sections.
+The SDK also includes a window with all the sections, call this method with a valid context parameter.
 
 ```kotlin
 MediquoSDK.getInstance()?.openMedicalHistory(this)
