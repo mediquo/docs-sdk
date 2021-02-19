@@ -21,7 +21,11 @@
       "sdk/android/others"
     ],
     "iOs": [
-      "sdk/ios/introduction"
+      "sdk/ios/introduction",
+      "sdk/ios/professionalList",
+      "sdk/ios/medicalhistory",
+      "sdk/ios/customization",
+      "sdk/ios/others"
     ]
   }
 }
