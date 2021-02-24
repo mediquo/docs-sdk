@@ -20,10 +20,9 @@
       "sdk/android/customization",
       "sdk/android/others"
     ],
-    "iOs": [
+    "iOS": [
       "sdk/ios/introduction",
       "sdk/ios/professionalList",
-      "sdk/ios/medicalhistory",
       "sdk/ios/customization",
       "sdk/ios/others"
     ]
