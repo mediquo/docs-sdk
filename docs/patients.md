@@ -18,6 +18,7 @@ Contains the information about a Patient in the mediQuo ecosystem.
 | birth_date | string                | Patient birth date (`Y-m-d`)                          |
 | email      | string **(optional)** | Patient email                                         |
 | plan       | string **(optional)** | Patient plan name                                     |
+| phone      | string **(optional)** | Patient phone number with prefix code                 |
 
 ## Create or update Patients
 
@@ -65,7 +66,8 @@ Learn more about [rate limits](/docs/overview#rate-limiting).
       "gender": "male",
       "plan": "premium",
       "birth_date": "1980-01-01",
-      "email": "john@doe.com"
+      "email": "john@doe.com",
+      "phone": "+1 123345678"
     },
     {
       "code": "jane-unique-id",
@@ -130,6 +132,7 @@ No parameters
 | birth_date      | string | Patient birth date (`Y-m-d`)                          |
 | email           | string | Patient email                                         |
 | plan            | string | Patient plan                                          |
+| phone           | string | Patient phone number                                  |
 | created_at      | string | Patient created at date                               |
 | updated_at      | string | Last updated date                                     |
 | unsubscribed_at | string | Date when the patient was unsubscribed                |
@@ -149,6 +152,7 @@ Status: 200 OK
   "birth_date": "2000-01-01",
   "email": null,
   "plan": null,
+  "phone": null,
   "created_at": "2000-01-01 10:00:00+2000",
   "updated_at": "2000-01-01 10:00:00+2000",
   "unsubscribed_at": "2000-01-01 10:00:00+2000"
