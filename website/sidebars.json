@@ -1,13 +1,15 @@
 {
   "docs": {
-    "API Reference": [
+    "Overview": [
       "introduction",
-    	"troubleshooting",
+    	"sdk/introduction"
+    ],
+    "API Reference": [
       "overview",
-      "patients"    
+      "patients",
+    	"troubleshooting"
     ],
     "SDK Android": [
-      "sdk/introduction",
       "sdk/android/introduction",
       "sdk/android/professionalList",
       "sdk/android/medicalhistory",
@@ -15,7 +17,6 @@
       "sdk/android/others"
     ],
     "SDK iOS": [
-      "sdk/introduction",
       "sdk/ios/introduction"
     ]
   }
