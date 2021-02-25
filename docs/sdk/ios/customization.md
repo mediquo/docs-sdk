@@ -19,7 +19,7 @@ NOTE: If you don't setup this, will be establish a default customization.
 | secondaryColor | Speciality label on ProfessionalListFragment <br> Background professional description on Professional profile |
 | accentColor | Unread messages badge <br> Lock icon on Professional list |
 
-## Chat **TODO** change param names and his uses
+## Chat
 
 | **Value**                 | **Uses**                                        |
 | --------------------- | --------------------------------------------------- |
