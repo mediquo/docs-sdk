@@ -1,7 +1,7 @@
 ---
 id: introduction
-title: Getting started
-sidebar_label: Getting started
+title: API Integration
+sidebar_label: API Integration
 ---
 
 This describes the resources that make up the official mediQuo API. If you have any problems or requests, please contact mediQuo Support.
