@@ -104,7 +104,7 @@ private fun authenticateMediQuoSDK() {
 
 In order to enable push notifications for chat and video call you must provide mediQuo a valid [Firebase Private Key](https://firebase.google.com/docs/cloud-messaging/auth-server#provide-credentials-manually)
 and register your push tokens in the SDK.
-The SDK will only process its own messages so you can send it all incoming pushes if you can't filter it properly. 
+The SDK will only process its own messages so you can send it all incoming pushes if you can't filter them properly. 
 
 ```kotlin
 class MediQuoSDKExampleMessagingService : FirebaseMessagingService() {

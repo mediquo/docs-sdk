@@ -61,7 +61,6 @@ The following colors can be customized (overwritten) to fit your app.
 
     <!-- Push notification: The accent color to use -->
     <color name="mediquo_notification_color">@color/colorPrimary</color>
-
 </resources>
 ```
 
