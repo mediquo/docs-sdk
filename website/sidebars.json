@@ -17,7 +17,10 @@
       "sdk/android/others"
     ],
     "SDK iOS": [
-      "sdk/ios/introduction"
+      "sdk/ios/introduction",
+      "sdk/ios/professionalList",
+      "sdk/ios/customization",
+      "sdk/ios/others"
     ]
   }
 }
