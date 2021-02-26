@@ -1,22 +1,21 @@
 {
   "docs": {
     "Overview": [
-      "introduction",
-    	"sdk/introduction"
+      "introduction"
     ],
     "API Reference": [
       "overview",
       "patients",
-    	"troubleshooting"
+      "troubleshooting"
     ],
-    "SDK Android": [
+    "Android SDK": [
       "sdk/android/introduction",
       "sdk/android/professionalList",
       "sdk/android/medicalhistory",
       "sdk/android/customization",
       "sdk/android/others"
     ],
-    "SDK iOS": [
+    "iOS SDK": [
       "sdk/ios/introduction",
       "sdk/ios/professionalList",
       "sdk/ios/customization",
