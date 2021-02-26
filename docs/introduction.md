@@ -1,7 +1,7 @@
 ---
 id: introduction
 title: Getting Started
-sidebar_label: API Integration
+sidebar_label: Getting Started
 ---
 
 This SDK offers the possibility of including the main functionalities of the mediQuo platform within your own application (professional list, chat, call, video call, medical history, reports and recipes).
