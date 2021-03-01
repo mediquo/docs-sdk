@@ -158,3 +158,47 @@ Status: 200 OK
   "unsubscribed_at": "2000-01-01 10:00:00+2000"
 }
 ```
+
+## Authenticate
+
+```
+GET /v1/patients/authenticate
+```
+
+Use this endpoint to authenticate your patients.
+
+### Endpoint URL
+
+`https://sdk.mediquo.com/v1/patients/authenticate`
+
+### Authentication and rate limits
+
+| Authentication                                | Rate limits             |
+| --------------------------------------------- | ----------------------- |
+| [HTTP Headers](/docs/overview#authentication) | 600 requests per minute |
+
+Learn more about [rate limits](/docs/overview#rate-limiting).
+
+### Request parameters
+
+No parameters
+
+### Response fields
+
+| Name            | Type   | Description                                           |
+| --------------- | ------ | ----------------------------------------------------- |
+| access_token             | string | The user authentication token |
+| token_type      | string | Authentication scheme that involves the access_token                       |
+
+### Default response
+
+```json
+Status: 200 OK
+```
+
+```json
+{
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+  "token_type": "Bearer"
+}
+```
