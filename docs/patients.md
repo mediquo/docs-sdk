@@ -181,7 +181,9 @@ Learn more about [rate limits](/docs/overview#rate-limiting).
 
 ### Request parameters
 
-No parameters
+| Name     | Type                          | Description      |
+| -------- | ----------------------------- | ---------------- |
+| code | string | The code of patient |
 
 ### Response fields
 
