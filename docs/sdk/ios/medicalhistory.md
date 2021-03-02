@@ -33,4 +33,4 @@ The SDK also includes a window with all the sections.
 let viewController = MediQuo.getMedicalHistory()
  ```
  
-<kbd>![Professional List](http://developer.mediquo.com/img/medical_history_ios.jpg "Professional List")</kbd>
+<kbd>![Professional List](http://developer.mediquo.com/img/medical_history_ios.png "Professional List")</kbd>
