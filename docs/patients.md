@@ -165,7 +165,7 @@ Status: 200 OK
 GET /v1/patients/authenticate
 ```
 
-Use this endpoint to authenticate your patients (only applies to mediQuo Widget).
+Use this endpoint to authenticate your patients **(only applies to mediQuo Widget)**.
 
 ### Endpoint URL
 
