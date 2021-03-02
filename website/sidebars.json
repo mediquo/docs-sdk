@@ -19,6 +19,7 @@
     "iOS SDK": [
       "sdk/ios/introduction",
       "sdk/ios/professionalList",
+      "sdk/ios/medicalhistory",
       "sdk/ios/customization",
       "sdk/ios/others"
     ]

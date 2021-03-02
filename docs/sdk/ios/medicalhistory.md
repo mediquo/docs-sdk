@@ -6,40 +6,31 @@ sidebar_label: Medical history
 
 Medical history includes all information shared between professionals and patients: Allergies, Illnesses, Medications, Reports, and Prescriptions.
 
-## Prerequisites
-
-**TODO** if has any prerequisite to download files or whatever other shit.
-
-```swift
-🤙
-```
-
 ## Open specific sections
 Every section can be opened separately.  
 
 ```swift
 // Allergies
-🤙
+let viewController = MediQuo.getAllergies()
 
 // Diseases
-🤙
+let viewController = MediQuo.getDiseases()
 
 // Medications
-🤙
+let viewController = MediQuo.getMedications()
 
 // Reports
-🤙
+let viewController = MediQuo.getReports()
 
 // Prescriptions
-🤙
+let viewController = MediQuo.getRecipes()
  ```
 
 ## Open all sections launcher
 The SDK also includes a window with all the sections.
 
 ```swift
-🤙
+let viewController = MediQuo.getMedicalHistory()
  ```
-
-**TODO** Change this espectacular image to an iOs correct image
-<kbd>![Professional List](http://developer.mediquo.com/img/medical_history.jpg "Professional List")</kbd>
+ 
+<kbd>![Professional List](http://developer.mediquo.com/img/medical_history_ios.jpg "Professional List")</kbd>
