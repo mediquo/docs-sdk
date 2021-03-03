@@ -29,6 +29,7 @@ NOTE: If you don't setup this, will be establish a default customization.
 | bubbleBackgroundOutgoingColor | Background color of your own message |
 | messageTextIncomingColor | Text color of a foreign message|
 | bubbleBackgroundIncomingColor | Background color of a foreign message |
+| professionalsListDelegate | Delegate implementation for provide additional functionalities to [Professional List](https://developer.mediquo.com/docs/sdk/ios/professionallist/#delegate) |
 
 ## Example
 ```swift
@@ -45,6 +46,7 @@ static var style: MediQuoStyleType {
     style.bubbleBackgroundOutgoingColor = .gray
     style.messageTextIncomingColor = UIColor(hex: "#4D4E52FF") 
     style.bubbleBackgroundIncomingColor = .lightGray
+    style.professionalsListDelegate = ListDelegate()
     return style
 }
 ```

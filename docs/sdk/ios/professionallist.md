@@ -14,31 +14,51 @@ The only view you must integrate inside you app is the professional list. Consis
 Obtain a ProfessionalsList throught:
 
 ```swift
-let viewController = MediQuo.getProfessionalsList(delegate: self)
+let viewController = MediQuo.getProfessionalsList()
 ```
 
-Add it to your view:
+Add it to your view, inside an _UINavigationController_:
 
 ```swift
 let navigationController = UINavigationController(rootViewController: viewController)
-self.addChild(navigationController)
-self.view.addSubview(navigationController.view)
-navigationController.view.frame = self.view.bounds
-navigationController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-navigationController.didMove(toParent: self)
+navigationController.modalPresentationStyle = .overFullScreen
+self.present(navigationController, animated: false)
 ```
 
+### Delegate
+
+We strongly recommend create a class, that implements _ProfessionalsListDelegate_ for a better integration in your app, and set it throught setup styling.
 <br/>
-We strongly recommend adding a _ProfessionalList Protocol_ for a better integration in your app.
+- **viewController:** Self instance of view controller that contains a professionals list
 <br/>
-Note: _onNotAvailable_ allows you to control chat openings to suit your business logic.
+- **getRightBarButton:** Implementation of right bar button in the professionals list view
 <br/>
-_hasAccess_ indicates that the authenticated patient has access to the chats (has a _plan_ set via the [Patients API](http://developer.mediquo.com/docs/introduction/)).
+- **onListLoaded:** This callback is fired when the professionals list is loaded
+<br/>
+- **onProfessionalClick:** This callback is fired when press in any professional, for navigate to room
+<br/>
+> NOTE: _hasAccess_ indicates that the authenticated patient has access to the chats (has a _plan_ set via the [Patients API](http://developer.mediquo.com/docs/introduction/)).
+<br/>
+- **onUnreadMessage:** This callback is fired when the number of unread messages has changed
 
 ```swift
-extension ViewController: ProfessionalsListProtocol {
-    func onNotAvailable(isAvailable: Bool, professionalId: Int, specialityId: Int) {
-    	// Here your callback execution code
+class ListDelegate: ProfessionalsListDelegate {
+    var viewController: BaseViewController?
+
+    func getRightBarButton() -> UIBarButtonItem {
+        // Here your UIBarButtonItem implementation
+    }
+
+    func onListLoaded() {
+        // Here your callback execution code
+    }
+
+    func onProfessionalClick(professionalId: Int, specialityId: Int, hasAccess: Bool) -> Bool {
+        // Here your callback execution code
+    }
+
+    func onUnreadMessage(countChange: Int) {
+        // Here your callback execution code
     }
 }
 ```
