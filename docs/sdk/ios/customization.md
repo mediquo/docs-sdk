@@ -29,7 +29,7 @@ NOTE: If you don't setup this, will be establish a default customization.
 | bubbleBackgroundOutgoingColor | Background color of your own message |
 | messageTextIncomingColor | Text color of a foreign message|
 | bubbleBackgroundIncomingColor | Background color of a foreign message |
-| professionalsListDelegate | Delegate implementation for provide additional functionalities to [Professional List](https://developer.mediquo.com/docs/sdk/ios/professionallist/#delegate) |
+| professionalsListDelegate | Delegate implementation for provide additional functionalities to [Professional List](https://developer.mediquo.com/docs/sdk/ios/professionalList/#delegate) |
 
 ## Example
 ```swift
