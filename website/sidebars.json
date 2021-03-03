@@ -1,8 +1,7 @@
 {
   "docs": {
     "Overview": [
-      "introduction",
-    	"sdk/introduction"
+      "introduction"
     ],
     "API Reference": [
       "overview",

@@ -1,30 +1,38 @@
 ---
 id: introduction
-title: API Integration
-sidebar_label: API Integration
+title: Getting Started
+sidebar_label: Getting Started
 ---
 
-This describes the resources that make up the official mediQuo API. If you have any problems or requests, please contact mediQuo Support.
+This SDK offers the possibility of including the main functionalities of the mediQuo platform within your own application (professional list, chat, call, video call, medical history, reports and recipes).
+This documentation describes the steps to integrate this functionalities into a native Android or iOS application.
 
-## Using the mediQuo API
+<kbd><img src="http://developer.mediquo.com/img/professional_list.jpg" alt="Professional list" height="190"/></kbd>
+&nbsp;
+<kbd><img src="http://developer.mediquo.com/img/chat.jpg" alt="Chat" height="190"/></kbd>
+&nbsp;
+<kbd><img src="http://developer.mediquo.com/img/videocall.jpg" alt="Call & Videcall" height="190"/></kbd>
+&nbsp;
+<kbd><img src="http://developer.mediquo.com/img/medical_history.jpg" alt="Medical History, Reports and Recipes" height="190"/></kbd>
 
-MediQuo API can be used to manage your patients in our platform and allow them to access your professionals in your SDK integration.
-
-## How to get access to the mediQuo API
+## How to get access to the mediQuo SDK
 
 ### Step 1: Apply and receive approval for your organization
 
-To make any request to the mediQuo API, you must first [apply for an organization account](https://www.mediquo.com/en/companies/) and have your use case validated. Once validated, you will be provided with a set of credentials that you will use to authenticate all requests to the API.
+Before integrate the SDK, you must first [apply for an organization account](https://www.mediquo.com/en/companies/) and have your use case validated. Once validated, you will be provided with a set of credentials that will allow you to initialize the SDK.
 
 ### Step 2: Save your organization credentials and keep them secure
 
-You will be provided with a set of credentials, an API key and a secret key. Those will be used to make requests in behalf of your organization. As these keys and tokens do not expire unless regenerated, we suggest creating environment variables, or using a secure password manager to store them safely.
+You will be provided with a set of credentials, an API key and a secret key.
+Those will be used to make requests in behalf of your organization.
 As these keys and tokens do not expire unless regenerated, we suggest creating environment variables, or using a secure password manager to store them safely.
 
-### Step 3: Set up your access
+### Step 3: Synchronize your patients using the mediQuo API
 
-The majority of our endpoints require authentication with your organization credentials. Make sure to add the corresponding headers when making requests to our end. You can read more about [authentication](/docs/overview#authentication).
+To authenticate your users in the SDK, you must first register them on our platform and send us their basic data (the minimum necessary for proper medical assistance) using the [mediQuo API](http://developer.mediquo.com/docs/introduction/).
 
-### Step 4: Ready to go
+### Step 4: Integrate your SDK within you app
 
-At this point you can start making requests to our end using the mediQuo API. You can check the [API Reference](/docs/overview)
+At this point you will be able to integrate properly the SDK within your apps following the steps described in the
+[Android SDK documentation](http://developer.mediquo.com/docs/sdk/android/introduction/)
+and the [iOS SDK documentation](http://developer.mediquo.com/docs/sdk/ios/introduction/).
