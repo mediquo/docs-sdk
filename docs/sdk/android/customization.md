@@ -45,9 +45,6 @@ The following colors can be customized (overwritten) to fit your app.
     <color name="mediquo_primary_contrast_color">@android:color/white</color>
     <color name="mediquo_notification_color">@color/colorPrimary</color>
 
-    <!-- Chat: Date message -->
-    <color name="mediquo_message_text_color_date">#9e9e9e</color>
-    <color name="mediquo_message_background_color_date">@null</color>
     <!-- Chat: My text message -->
     <color name="mediquo_message_text_color_mine">#4d4e52</color>
     <color name="mediquo_message_background_color_mine">@null</color>
