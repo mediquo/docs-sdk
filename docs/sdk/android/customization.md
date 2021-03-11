@@ -45,13 +45,13 @@ The following colors can be customized (overwritten) to fit your app.
     <color name="mediquo_primary_contrast_color">@android:color/white</color>
     <color name="mediquo_notification_color">@color/colorPrimary</color>
 
-    <!-- Chat: My text message -->
+    <!-- Chat: My messages -->
     <color name="mediquo_message_text_color_mine">#4d4e52</color>
     <color name="mediquo_message_background_color_mine">@null</color>
-    <!-- Chat: Others text message -->
+    <!-- Chat: Others messages -->
     <color name="mediquo_message_text_color_their">#ffffff</color>
     <color name="mediquo_message_background_color_their">@null</color>
-    <!-- Chat: Others alert message -->
+    <!-- Chat: Alert messages -->
     <color name="mediquo_message_text_color_alert">#4d4e52</color>
     <color name="mediquo_message_background_color_alert">@null</color>    
 </resources>
