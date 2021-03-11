@@ -20,8 +20,6 @@ The following colors can be customized (overwritten) to fit your app.
 
 | **Value**                 | **Uses**                                        |
 | --------------------- | --------------------------------------------------- |
-| mediquo_message_text_color_date | Text color of message of type date |
-| mediquo_message_background_color_date | Background color of message of type date |
 | mediquo_message_text_color_mine | Text color of your own message|
 | mediquo_message_background_color_mine | Background color of your own message |
 | mediquo_message_text_color_their | Text color of a foreign message|
