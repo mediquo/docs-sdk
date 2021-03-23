@@ -162,7 +162,7 @@ Status: 200 OK
 ## Authenticate
 
 ```
-GET /v1/patients/authenticate
+POST /v1/patients/authenticate
 ```
 
 Use this endpoint to authenticate your patients **(only applies to mediQuo Widget)**.
