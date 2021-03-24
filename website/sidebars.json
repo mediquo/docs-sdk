@@ -21,6 +21,11 @@
       "sdk/ios/medicalhistory",
       "sdk/ios/customization",
       "sdk/ios/others"
+    ],
+    "Widget": [
+      "sdk/widget/introduction",
+      "sdk/widget/colors",
+      "sdk/widget/events"
     ]
   }
 }
