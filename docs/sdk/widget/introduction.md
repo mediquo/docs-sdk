@@ -3,7 +3,7 @@ id: introduction
 title: Introduction
 ---
 
-In this page you will find how to integrate our widget to your website quickly and easily. It requires the registration of your patients beforehand so that they can start using the widget.
+In this page you will find how to integrate our widget to your website quickly and easily. **It requires the registration of your patients beforehand** so that they can start using the widget.
 
 You can check our [API Reference](/docs/patients) for more details on how to register your patients.
 
@@ -31,17 +31,17 @@ You will also have to initialize our widget with your Api Key and the access tok
 
 ## Options
 
-### ApiKey
+### `apiKey`
 
 Required.
 The API Key of your organization. [How to get an API Key](/docs/introduction#step-1-apply-and-receive-approval-for-your-organization)
 
-### AccessToken
+### `accessToken`
 
 Required.
 Access Token issue by mediQuo server to authenticate your patient.
 
-### Theme
+### `theme`
 
 Optional. Default: {}
 Use this option to customize the widget to match your organization colors. You can find more about widget [customization](/docs/sdk/widget/colors).
