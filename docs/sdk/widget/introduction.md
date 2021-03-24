@@ -18,7 +18,7 @@ In order to integrate the widget you will have to add the following scripts to y
 ></script>
 ```
 
-You will also have to initialize our widget with your Api Key and the access token of your patient.
+You will also have to initialize our widget with your Api Key and the access token of your patient. [Authorizing patients](/docs/sdk/widget/authentication)
 
 ```html
 <script>
@@ -40,6 +40,7 @@ The API Key of your organization. [How to get an API Key](/docs/introduction#ste
 
 Required.
 Access Token issue by mediQuo server to authenticate your patient.
+[Authorizing patients](/docs/sdk/widget/authentication)
 
 ### `theme`
 

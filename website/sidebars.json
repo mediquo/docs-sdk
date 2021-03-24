@@ -24,6 +24,7 @@
     ],
     "Widget": [
       "sdk/widget/introduction",
+      "sdk/widget/authentication",
       "sdk/widget/colors",
       "sdk/widget/events"
     ]
