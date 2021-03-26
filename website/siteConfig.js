@@ -19,7 +19,7 @@ const siteConfig = {
   organizationName: "mediquo",
 
   // For no header links in the top nav bar -> headerLinks: [],
-  headerLinks: [],
+  headerLinks: [{ search: true }],
 
   /* path to images for header/footer */
   headerIcon: "img/logo.svg",
@@ -61,6 +61,12 @@ const siteConfig = {
 
   // Show documentation's last update time.
   enableUpdateTime: true,
+
+  algolia: {
+    apiKey: "efa3e01b1c9b590d6075aa008862b726",
+    indexName: "mediquo",
+    algoliaOptions: { facetFilters: ["type:$TYPE", "language:$LANGUAGE"] },
+  },
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
