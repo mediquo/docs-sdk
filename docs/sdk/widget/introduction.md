@@ -29,23 +29,54 @@ You will also have to initialize our widget with your Api Key and the access tok
 </script>
 ```
 
-## Options
+## MediquoWidget
 
-### `apiKey`
+API Reference for the MediquoWidget library.
 
-Required.
-The API Key of your organization. [How to get an API Key](/docs/introduction#step-1-apply-and-receive-approval-for-your-organization)
+### Method `init(config)`
 
-### `accessToken`
+Initialize the MediquoWidget with your configuration.
 
-Required.
-Access Token issue by mediQuo server to authenticate your patient.
-[Authorizing patients](/docs/sdk/widget/authentication)
+```js
+MediquoWidget.init({
+  apiKey: "<YOUR-API-KEY>",
+  accessToken: "<USER-ACCESS-TOKEN>",
+  theme: {
+    text: {
+      title: "My Title"
+    },
+    colors: {
+      primary: "#4A1EA7
+    }
+  }
+});
+```
 
-### `theme`
+#### Config
 
-Optional. Default: {}
-Use this option to customize the widget to match your organization colors. You can find more about widget [customization](/docs/sdk/widget/colors).
+- `apiKey`: Required. The API Key of your organization. [How to get an API Key](/docs/introduction#step-1-apply-and-receive-approval-for-your-organization)
+
+- `accessToken`: Required. Access Token issue by mediQuo server to authenticate your patient.
+  [Authorizing patients](/docs/sdk/widget/authentication)
+
+- `theme` Optional. Default: {}
+  Use this option to customize the widget to match your organization colors. You can find more about widget [customization](/docs/sdk/widget/colors).
+
+### Method `open()`
+
+Open the MediquoWidget programatically from anywhere.
+
+```js
+MediquoWidget.open();
+```
+
+### Method `close()`
+
+Close the MediquoWidget programatically from anywhere.
+
+```js
+MediquoWidget.close();
+```
 
 ## Example
 
