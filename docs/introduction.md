@@ -4,7 +4,7 @@ title: Getting Started
 sidebar_label: Getting Started
 ---
 
-This SDK offers the possibility of including the main functionalities of the mediQuo platform within your own apps (professional list, chat, call, video call, medical history, reports and recipes) or websites.
+This SDK offers the possibility of including the main functionalities of the mediQuo platform (professional list, chat, call, video call, medical history, reports and recipes) within your own apps or websites.
 This documentation describes the steps to integrate this functionalities into a native Android or iOS application.
 
 <kbd><img src="http://developer.mediquo.com/img/professional_list.jpg" alt="Professional list" height="190"/></kbd>
