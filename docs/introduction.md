@@ -4,7 +4,7 @@ title: Getting Started
 sidebar_label: Getting Started
 ---
 
-This SDK offers the possibility of including the main functionalities of the mediQuo platform within your own application (professional list, chat, call, video call, medical history, reports and recipes).
+This SDK offers the possibility of including the main functionalities of the mediQuo platform within your own apps (professional list, chat, call, video call, medical history, reports and recipes) or websites.
 This documentation describes the steps to integrate this functionalities into a native Android or iOS application.
 
 <kbd><img src="http://developer.mediquo.com/img/professional_list.jpg" alt="Professional list" height="190"/></kbd>
@@ -31,8 +31,9 @@ As these keys and tokens do not expire unless regenerated, we suggest creating e
 
 To authenticate your users in the SDK, you must first register them on our platform and send us their basic data (the minimum necessary for proper medical assistance) using the [mediQuo API](https://developer.mediquo.com/docs/overview/).
 
-### Step 4: Integrate your SDK within you app
+### Step 4: Integrate your SDK within you app or web
 
 At this point you will be able to integrate properly the SDK within your apps following the steps described in the
 [Android SDK documentation](http://developer.mediquo.com/docs/sdk/android/introduction/)
-and the [iOS SDK documentation](http://developer.mediquo.com/docs/sdk/ios/introduction/).
+, [iOS SDK documentation](http://developer.mediquo.com/docs/sdk/ios/introduction/)
+or [Web SDK documentation](https://developer.mediquo.com/docs/sdk/widget/introduction/).
