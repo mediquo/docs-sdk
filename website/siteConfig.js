@@ -65,7 +65,6 @@ const siteConfig = {
   algolia: {
     apiKey: "efa3e01b1c9b590d6075aa008862b726",
     indexName: "mediquo",
-    algoliaOptions: { facetFilters: ["type:$TYPE", "language:$LANGUAGE"] },
   },
 
   // You may provide arbitrary config keys to be used as needed by your
