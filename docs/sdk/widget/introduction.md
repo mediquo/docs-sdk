@@ -60,7 +60,7 @@ MediquoWidget.init({
   [Authorizing patients](/docs/sdk/widget/authentication)
 
 - `theme` Optional. Default: {}
-  Use this option to customize the widget to match your organization colors. You can find more about widget [customization](/docs/sdk/widget/colors).
+  Use this option to customize the widget to match your organization colors. You can find more about widget [customization](/docs/sdk/widget/customization).
 
 ### Method `open()`
 
