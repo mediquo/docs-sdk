@@ -20,11 +20,27 @@ In order to integrate the widget you will have to add the following scripts to y
 
 You will also have to initialize our widget with your Api Key. If you want to initialize it with the session of a patient you will have to provide its [access token](/docs/sdk/widget/authentication). If the access token is not provided, the widget will display a form to create temporary user and the session will expire on the following initialization.
 
+### Example: Widget with patient session
+
+This example below will initialize the widget with your patient user.
+
 ```html
 <script>
   window.onload = () => MediquoWidget.init({
     apiKey: <YOUR-API-KEY>,
     accessToken: <USER-ACCESS-TOKEN>,
+  });
+</script>
+```
+
+### Example: Widget without session
+
+This example below will initialize the widget without any session and will display a form to the end user to register a temporal access to chat with the professionals.
+
+```html
+<script>
+  window.onload = () => MediquoWidget.init({
+    apiKey: <YOUR-API-KEY>,
   });
 </script>
 ```
