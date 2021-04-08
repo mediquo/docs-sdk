@@ -18,7 +18,7 @@ In order to integrate the widget you will have to add the following scripts to y
 ></script>
 ```
 
-You will also have to initialize our widget with your Api Key and the access token of your patient. [Authorizing patients](/docs/sdk/widget/authentication)
+You will also have to initialize our widget with your Api Key. If you want to initialize it with the session of a patient you will have to provide its [access token](/docs/sdk/widget/authentication). If the access token is not provided, the widget will display a form to create temporary user and the session will expire on the following initialization.
 
 ```html
 <script>
@@ -56,8 +56,8 @@ MediquoWidget.init({
 
 - `apiKey`: Required. The API Key of your organization. [How to get an API Key](/docs/introduction#step-1-apply-and-receive-approval-for-your-organization)
 
-- `accessToken`: Required. Access Token issue by mediQuo server to authenticate your patient.
-  [Authorizing patients](/docs/sdk/widget/authentication)
+- `accessToken`: Access Token issued by mediQuo server to authenticate your patient. Check more on how to
+  [authorize patients](/docs/sdk/widget/authentication). If you want to skip this option completely, you can omit this value and a registration form will be displayed in order to create a temporal user.
 
 - `theme` Optional. Default: {}
   Use this option to customize the widget to match your organization colors. You can find more about widget [customization](/docs/sdk/widget/customization).
