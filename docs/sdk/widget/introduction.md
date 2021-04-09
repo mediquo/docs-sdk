@@ -45,6 +45,20 @@ This example below will initialize the widget without any session and will displ
 </script>
 ```
 
+## Localization
+
+Currently supported languages are `es`, `en` and `pt`. By default it will be set to `en`. You can define the locale during initialization.
+
+```js
+MediquoWidget.init({
+  apiKey: "<YOUR-API-KEY>",
+  accessToken: "<USER-ACCESS-TOKEN>",
+  theme: {
+    locale: "es",
+  },
+});
+```
+
 ## MediquoWidget
 
 API Reference for the MediquoWidget library.

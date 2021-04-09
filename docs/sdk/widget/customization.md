@@ -10,6 +10,7 @@ You can customize the look an feel of your widget integration through the `theme
 type Theme = {
   position?: "left" | "right";
   launcher?: "base" | "extended";
+  locale?: "es" | "en" | "pt";
   text?: { title: string; launcher: string };
   colors?: {
     primary: string;
