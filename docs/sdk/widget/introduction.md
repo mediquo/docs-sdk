@@ -3,9 +3,7 @@ id: introduction
 title: Introduction
 ---
 
-In this page you will find how to integrate our widget to your website quickly and easily. **It requires the registration of your patients beforehand** so that they can start using the widget.
-
-You can check our [API Reference](/docs/patients) for more details on how to register your patients.
+In this page you will find how to integrate our widget to your website quickly and easily.
 
 ## Integration
 
