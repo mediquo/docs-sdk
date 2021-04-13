@@ -40,8 +40,8 @@ Example:
 
 ```js
 MediquoWidget.init({
-  apiKey: <YOUR-API-KEY>,
-  accessToken: <USER-ACCESS-TOKEN>,
+  apiKey: "<YOUR-API-KEY>",
+  accessToken: "<USER-ACCESS-TOKEN>",
   theme: {
     position: "left"
   },
@@ -60,8 +60,8 @@ Example:
 
 ```js
 MediquoWidget.init({
-  apiKey: <YOUR-API-KEY>,
-  accessToken: <USER-ACCESS-TOKEN>,
+  apiKey: "<YOUR-API-KEY>",
+  accessToken: "<USER-ACCESS-TOKEN>",
   theme: {
     launcher: "extended"
   },
@@ -72,7 +72,14 @@ MediquoWidget.init({
 ```ts
 // Typescript
 type Theme = {
-  text?: { title: string; launcher: string };
+  text?: {
+    title: string;
+    launcher: string;
+    // Texts for the widget without session
+    welcome_title: string;
+    welcome_text: string;
+    welcome_button: string;
+  };
 };
 ```
 
@@ -80,8 +87,8 @@ Example:
 
 ```js
 MediquoWidget.init({
-  apiKey: <YOUR-API-KEY>,
-  accessToken: <USER-ACCESS-TOKEN>,
+  apiKey: "<YOUR-API-KEY>",
+  accessToken: "<USER-ACCESS-TOKEN>",
   theme: {
     text: {
       title: "Custom title",
@@ -114,8 +121,8 @@ Example:
 
 ```js
 MediquoWidget.init({
-  apiKey: <YOUR-API-KEY>,
-  accessToken: <USER-ACCESS-TOKEN>,
+  apiKey: "<YOUR-API-KEY>",
+  accessToken: "<USER-ACCESS-TOKEN>",
   theme: {
     colors: {
       primary: "#1C93DE",
