@@ -3,11 +3,11 @@ id: introduction
 title: Introduction
 ---
 
-In this page you will find how to integrate our widget to your website quickly and easily.
+On this page you will find how to integrate our widget to your website quickly and easily.
 
 ## Integration
 
-In order to integrate the widget you will have to add the following scripts to your page.
+In order to integrate the widget you will have to add the following script to your page.
 
 ```html
 <script
@@ -16,115 +16,11 @@ In order to integrate the widget you will have to add the following scripts to y
 ></script>
 ```
 
-You will also have to initialize our widget with your Api Key. If you want to initialize it with the session of a patient you will have to provide its [access token](/docs/sdk/widget/authentication). If the access token is not provided, the widget will display a form to create temporary user and the session will expire on the following initialization.
+You will also have to initialize our widget with your Api Key. There are two options show the widget. 
 
-### Example: Widget with patient session
+If your users have a login on your website, you can show the widget with a different session for each user. With this setup your users will be able to recover their conversations in all the platforms. In case you don't have a user session, the widget can start a temporary session. In this case, the user will be able to access the widget with a temporary session.
 
-This example below will initialize the widget with your patient user.
+The setup is different for each method, depending on your use case you can follow the instructions:
 
-```html
-<script>
-  window.onload = () => MediquoWidget.init({
-    apiKey: <YOUR-API-KEY>,
-    accessToken: <USER-ACCESS-TOKEN>,
-  });
-</script>
-```
-
-### Example: Widget without session
-
-This example below will initialize the widget without any session and will display a form to the end user to register a temporal access to chat with the professionals.
-
-```html
-<script>
-  window.onload = () => MediquoWidget.init({
-    apiKey: <YOUR-API-KEY>,
-  });
-</script>
-```
-
-## Localization
-
-Currently supported languages are `es`, `en` and `pt`. By default it will be set to `en`. You can define the locale during initialization.
-
-```js
-MediquoWidget.init({
-  apiKey: "<YOUR-API-KEY>",
-  accessToken: "<USER-ACCESS-TOKEN>",
-  theme: {
-    locale: "es",
-  },
-});
-```
-
-## MediquoWidget
-
-API Reference for the MediquoWidget library.
-
-### Method `init(config)`
-
-Initialize the MediquoWidget with your configuration.
-
-```js
-MediquoWidget.init({
-  apiKey: "<YOUR-API-KEY>",
-  accessToken: "<USER-ACCESS-TOKEN>",
-  theme: {
-    text: {
-      title: "My Title"
-    },
-    colors: {
-      primary: "#4A1EA7
-    }
-  }
-});
-```
-
-#### Config
-
-- `apiKey`: Required. The API Key of your organization. [How to get an API Key](/docs/introduction#step-1-apply-and-receive-approval-for-your-organization)
-
-- `accessToken`: Access Token issued by mediQuo server to authenticate your patient. Check more on how to
-  [authorize patients](/docs/sdk/widget/authentication). If you want to skip this option completely, you can omit this value and a registration form will be displayed in order to create a temporal user.
-
-- `theme` Optional. Default: {}
-  Use this option to customize the widget to match your organization colors. You can find more about widget [customization](/docs/sdk/widget/customization).
-
-### Method `open()`
-
-Open the MediquoWidget programatically from anywhere.
-
-```js
-MediquoWidget.open();
-```
-
-### Method `close()`
-
-Close the MediquoWidget programatically from anywhere.
-
-```js
-MediquoWidget.close();
-```
-
-## Example
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title></title>
-  </head>
-  <body>
-    <script
-      type="text/javascript"
-      src="https://widget.mediquo.com/js/1.0.0/mediquo.js"
-    ></script>
-    <script>
-      window.onload = () => MediquoWidget.init({
-        apiKey: <YOUR-API-KEY>,
-        accessToken: <USER-ACCESS-TOKEN>,
-      });
-    </script>
-  </body>
-</html>
-```
+* You have a user with a login, configure [the permament session integration](withsession/integration).
+* You want to show the widget to any person that is browsing your website. You can use the [temporal session setup](withoutsession/integration).

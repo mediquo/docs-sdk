@@ -3,7 +3,10 @@ id: customization
 title: Customization
 ---
 
-You can customize the look an feel of your widget integration through the `theme` option on the widget initialization.
+You can customize the look an feel and the language of your widget integration.
+
+## Look and feel
+The look an feel can be configured through the `theme` option on the widget initialization.
 
 ```ts
 // Typescript
@@ -27,7 +30,7 @@ type Theme = {
 };
 ```
 
-## Position
+### Position
 
 ```ts
 // Typescript
@@ -47,7 +50,7 @@ MediquoWidget.init({
   },
 ```
 
-## Launcher
+### Launcher
 
 ```ts
 // Typescript
@@ -67,7 +70,7 @@ MediquoWidget.init({
   },
 ```
 
-## Text
+### Text
 
 ```ts
 // Typescript
@@ -97,7 +100,7 @@ MediquoWidget.init({
   },
 ```
 
-## Colors
+### Colors
 
 ```ts
 // Typescript
@@ -137,4 +140,19 @@ MediquoWidget.init({
       alertBackground: "#F4FAFD",
     },
   },
+```
+
+
+## Localization
+
+You can define the locale during initialization. Currently supported languages are `es`, `en` and `pt`. By default it will be set to `en`.
+
+```js
+MediquoWidget.init({
+  apiKey: "<YOUR-API-KEY>",
+  accessToken: "<USER-ACCESS-TOKEN>",
+  theme: {
+    locale: "es",
+  },
+});
 ```

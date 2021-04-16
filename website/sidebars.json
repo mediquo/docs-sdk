@@ -24,7 +24,23 @@
     ],
     "Widget": [
       "sdk/widget/introduction",
-      "sdk/widget/authentication",
+      {
+        "type": "subcategory",
+        "label": "Permament session",
+        "ids": [
+          "sdk/widget/withsession/integration",
+          "sdk/widget/withsession/authentication"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "id": "sdk/widget/events",
+        "label": "Temporal session",
+        "ids": [
+          "sdk/widget/withoutsession/integration"
+        ]
+      },
+      "sdk/widget/methods",
       "sdk/widget/customization",
       "sdk/widget/events"
     ]
