@@ -55,6 +55,7 @@ MediquoWidget.init({
 ```ts
 // Typescript
 type Theme = {
+  // Base shows only a button, extended a button with a text
   launcher?: "base" | "extended";
 };
 ```
@@ -76,9 +77,17 @@ MediquoWidget.init({
 // Typescript
 type Theme = {
   text?: {
-    title: string;
+    // Text of the launcher button
     launcher: string;
-    // Texts for the widget without session
+
+    // Title of the widget (visible in the header)
+    title: string;
+
+    // Messages inside the room with a professional
+    medical_consent_disclaimer: string;
+    offline_professional_disclaimer: string;
+
+    // Texts for the welcome page of the widget without session
     welcome_title: string;
     welcome_text: string;
     welcome_button: string;
