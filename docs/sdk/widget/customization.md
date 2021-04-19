@@ -3,7 +3,10 @@ id: customization
 title: Customization
 ---
 
-You can customize the look an feel of your widget integration through the `theme` option on the widget initialization.
+You can customize the look an feel, the language of your widget integration and the legal document links.
+
+## Look and feel
+The look an feel can be configured through the `theme` option on the widget initialization.
 
 ```ts
 // Typescript
@@ -27,7 +30,7 @@ type Theme = {
 };
 ```
 
-## Position
+### Position
 
 ```ts
 // Typescript
@@ -47,11 +50,12 @@ MediquoWidget.init({
   },
 ```
 
-## Launcher
+### Launcher
 
 ```ts
 // Typescript
 type Theme = {
+  // Base shows only a button, extended a button with a text
   launcher?: "base" | "extended";
 };
 ```
@@ -67,15 +71,23 @@ MediquoWidget.init({
   },
 ```
 
-## Text
+### Text
 
 ```ts
 // Typescript
 type Theme = {
   text?: {
-    title: string;
+    // Text of the launcher button
     launcher: string;
-    // Texts for the widget without session
+
+    // Title of the widget (visible in the header)
+    title: string;
+
+    // Messages inside the room with a professional
+    medical_consent_disclaimer: string;
+    offline_professional_disclaimer: string;
+
+    // Texts for the welcome page of the widget without session
     welcome_title: string;
     welcome_text: string;
     welcome_button: string;
@@ -97,7 +109,7 @@ MediquoWidget.init({
   },
 ```
 
-## Colors
+### Colors
 
 ```ts
 // Typescript
@@ -137,4 +149,34 @@ MediquoWidget.init({
       alertBackground: "#F4FAFD",
     },
   },
+```
+
+
+## Localization
+
+You can define the locale during initialization. Currently supported languages are `es`, `en` and `pt`. By default it will be set to `en`.
+
+```js
+MediquoWidget.init({
+  apiKey: "<YOUR-API-KEY>",
+  accessToken: "<USER-ACCESS-TOKEN>",
+  theme: {
+    locale: "es",
+  },
+});
+```
+
+
+## Legal documents
+
+In the registration form of the widget without session there are two checkboxes for the "Terms and Conditions" and the "Privacy Policy". You can set your own link to your documents using these options:
+
+```js
+MediquoWidget.init({
+  apiKey: "<YOUR-API-KEY>",
+  theme: {
+    terms_link: "YOUR-T&C-URL",
+    privacy_link: "YOUR-PRIVACY-URL",
+  },
+});
 ```
