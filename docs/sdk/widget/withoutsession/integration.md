@@ -7,7 +7,7 @@ On this page you will find how to integrate our widget for website that doesn't 
 
 ### Widget without session
 
-The widget without session will display a form to the end user to register a temporal access to chat with the professionals. This access will have a temporal duration that the user can finish doing a logout.
+The widget without session displays a form to the end user to register a temporal access to chat with the professionals. This access is limited for a span of time and then it will expire, future sessions will not keep the information and conversations of the previous ones. At any point the user can terminate his session by signin out.
 
 The init method should contain at least these parameters. It cannot contain an access token, setting an access tokent would show a [Widget with patient session](../withsession/integration).
 

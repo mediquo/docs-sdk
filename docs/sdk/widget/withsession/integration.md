@@ -5,7 +5,7 @@ title: Integration
 
 On this page you will find how to integrate our widget on a website that has a login system. 
 
-This widget will allow the user the option to contact with the doctors and be able to recover the conversation in the future. The user will be able to see all the conversations in the other SDK platforms (Android and iOS).
+This widget allows the user the option to contact with the doctors and be able to recover the conversation in the future. The user will be able to see all the conversations in the other SDK platforms (Android and iOS).
 
 ### Widget with patient session
 
