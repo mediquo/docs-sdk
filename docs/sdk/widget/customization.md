@@ -3,7 +3,7 @@ id: customization
 title: Customization
 ---
 
-You can customize the look an feel and the language of your widget integration.
+You can customize the look an feel, the language of your widget integration and the legal document links.
 
 ## Look and feel
 The look an feel can be configured through the `theme` option on the widget initialization.
@@ -162,6 +162,21 @@ MediquoWidget.init({
   accessToken: "<USER-ACCESS-TOKEN>",
   theme: {
     locale: "es",
+  },
+});
+```
+
+
+## Legal documents
+
+In the registration form of the widget without session there are two checkboxes for the "Terms and Conditions" and the "Privacy Policy". You can set your own link to your documents using these options:
+
+```js
+MediquoWidget.init({
+  apiKey: "<YOUR-API-KEY>",
+  theme: {
+    terms_link: "YOUR-T&C-URL",
+    privacy_link: "YOUR-PRIVACY-URL",
   },
 });
 ```
