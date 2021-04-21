@@ -67,8 +67,7 @@ const siteConfig = {
     indexName: "mediquo",
   },
 
-  gaTrackingId: "G-9725WFZ6Z1",
-  gaGtag: true,
+  scrollToTop: true,
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
