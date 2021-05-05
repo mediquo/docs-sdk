@@ -6,13 +6,14 @@ title: Customization
 You can customize the look an feel, the language of your widget integration and the legal document links.
 
 ## Look and feel
+
 The look an feel can be configured through the `theme` option on the widget initialization.
 
 ```ts
 // Typescript
 type Theme = {
   position?: "left" | "right";
-  launcher?: "base" | "extended";
+  launcher?: "base" | "extended" | "hidden";
   locale?: "es" | "en" | "pt";
   text?: { title: string; launcher: string };
   colors?: {
@@ -55,8 +56,8 @@ MediquoWidget.init({
 ```ts
 // Typescript
 type Theme = {
-  // Base shows only a button, extended a button with a text
-  launcher?: "base" | "extended";
+  // Base shows only a button, extended a button with a text and hidden does not show the launcher.
+  launcher?: "base" | "extended" | "hidden";
 };
 ```
 
@@ -151,7 +152,6 @@ MediquoWidget.init({
   },
 ```
 
-
 ## Localization
 
 You can define the locale during initialization. Currently supported languages are `es`, `en` and `pt`. By default it will be set to `en`.
@@ -165,7 +165,6 @@ MediquoWidget.init({
   },
 });
 ```
-
 
 ## Legal documents
 
