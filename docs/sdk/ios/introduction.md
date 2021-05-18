@@ -7,7 +7,7 @@ sidebar_label: Installation
 ## Integration Example
 
 You have a repository available on Bitbucket with a
-[sample project](https://bitbucket.org/dllort-medipremium/mediquo-sdk-example-ios/src/master/)
+[sample project](https://bitbucket.org/engineeringmediquo/mediquo-sdk-example-ios/src/master/)
 which contains an example of how to integrate our SDK.
 
 ## Prerequisites
