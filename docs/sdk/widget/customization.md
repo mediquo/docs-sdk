@@ -72,6 +72,26 @@ MediquoWidget.init({
   },
 ```
 
+### Registration
+
+```ts
+// Typescript
+type Registration = { exclude: Array<"gender" | "birthdate"> };
+```
+
+Example:
+
+```js
+MediquoWidget.init({
+  apiKey: "<YOUR-API-KEY>",
+  accessToken: "<USER-ACCESS-TOKEN>",
+  theme: {
+    registration: {
+      exclude: ["gender", "birthdate"] // This will exclude gender and birthdate fields from temporal patient registration form.
+    }
+  },
+```
+
 ### Text
 
 ```ts
