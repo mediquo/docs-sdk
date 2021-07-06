@@ -32,7 +32,7 @@ MediquoWidget.init({
   [authorize patients](/docs/sdk/widget/authentication). If you want to skip this option completely, you can omit this value and a registration form will be displayed in order to create a temporal user.
 
 - `show` Optional. Default: 'always'.
-  Use this option to customize the visibility of the widget. Options available are `always`, `withSessionActive` and `onlyIfAvailable`.
+  Use this option to customize the visibility of the widget. Options available are `always`, `withActiveSession` and `onlyIfAvailable`.
 - `theme` Optional. Default: {}
   Use this option to customize the widget to match your organization colors. You can find more about widget [customization](/docs/sdk/widget/customization).
 
