@@ -74,7 +74,7 @@ Status: 200 OK
 GET /v1/activation-codes
 ```
 
-Use this endpoint to retrieve activation codes.
+Use this endpoint to retrieve activation codes. Can be filtered with query params for tag.
 
 ### Endpoint URL
 
@@ -88,9 +88,11 @@ Use this endpoint to retrieve activation codes.
 
 Learn more about [rate limits](/docs/overview#rate-limiting).
 
-### Request parameters
+### Query parameters
 
-No parameters
+| Name | Type   | Description                                                   |
+| ---- | ------ | ------------------------------------------------------------- |
+| tag  | string | The value that identifies your activation code in your system |
 
 ### Response fields
 
