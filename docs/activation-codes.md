@@ -5,8 +5,6 @@ title: Activation Codes
 
 Contains the information about Activation Codes in the mediQuo ecosystem.
 
-## Activation Code object
-
 ### Authentication and rate limits
 
 | Authentication                                | Rate limits             |
