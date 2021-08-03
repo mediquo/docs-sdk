@@ -7,6 +7,14 @@ Contains the information about Activation Codes in the mediQuo ecosystem.
 
 ## Activation Code object
 
+### Authentication and rate limits
+
+| Authentication                                | Rate limits             |
+| --------------------------------------------- | ----------------------- |
+| [HTTP Headers](/docs/overview#authentication) | 600 requests per minute |
+
+Learn more about [rate limits](/docs/overview#rate-limiting).
+
 ### Attributes
 
 | Name       | Type                  | Description                                                   |
@@ -25,14 +33,6 @@ POST /v1/activation-codes
 ### Endpoint URL
 
 `https://sdk.mediquo.com/v1/activation-codes`
-
-### Authentication and rate limits
-
-| Authentication                                | Rate limits             |
-| --------------------------------------------- | ----------------------- |
-| [HTTP Headers](/docs/overview#authentication) | 600 requests per minute |
-
-Learn more about [rate limits](/docs/overview#rate-limiting).
 
 ### Request parameters
 
@@ -74,19 +74,11 @@ Status: 200 OK
 GET /v1/activation-codes
 ```
 
-Use this endpoint to retrieve activation codes. Can be filtered with query params for tag.
+Use this endpoint to retrieve activation codes. Can be filtered with query params for the given tag.
 
 ### Endpoint URL
 
 `https://sdk.mediquo.com/v1/activation-codes`
-
-### Authentication and rate limits
-
-| Authentication                                | Rate limits             |
-| --------------------------------------------- | ----------------------- |
-| [HTTP Headers](/docs/overview#authentication) | 600 requests per minute |
-
-Learn more about [rate limits](/docs/overview#rate-limiting).
 
 ### Query parameters
 
@@ -96,12 +88,11 @@ Learn more about [rate limits](/docs/overview#rate-limiting).
 
 ### Response fields
 
-| Name       | Type    | Description                                                   |
-| ---------- | ------- | ------------------------------------------------------------- |
-| code       | string  | The activation code                                           |
-| tag        | string  | The value that identifies your activation code in your system |
-| active     | boolean | If the activation code is active or not                       |
-| expires_at | string  | The date when the activation code will be unavailable         |
+| Name   | Type    | Description                                                   |
+| ------ | ------- | ------------------------------------------------------------- |
+| code   | string  | The activation code                                           |
+| tag    | string  | The value that identifies your activation code in your system |
+| active | boolean | If the activation code is active or not                       |
 
 ### Default response
 
@@ -113,8 +104,7 @@ Status: 200 OK
 {
   "code": "MYTESTCODE123",
   "tag": "2020123ABC",
-  "active": true,
-  "expires_at": "2000-01-01 10:00:00"
+  "active": true
 }
 ```
 
@@ -129,14 +119,6 @@ Use this endpoint to reactivate an activation code
 ### Endpoint URL
 
 `https://sdk.mediquo.com/v1/activation-codes/<id>/activate`
-
-### Authentication and rate limits
-
-| Authentication                                | Rate limits             |
-| --------------------------------------------- | ----------------------- |
-| [HTTP Headers](/docs/overview#authentication) | 600 requests per minute |
-
-Learn more about [rate limits](/docs/overview#rate-limiting).
 
 ### Request parameters
 
@@ -173,14 +155,6 @@ Use this endpoint to deactivate an activation code.
 ### Endpoint URL
 
 `https://sdk.mediquo.com/v1/activation-codes/<code>/deactivate`
-
-### Authentication and rate limits
-
-| Authentication                                | Rate limits             |
-| --------------------------------------------- | ----------------------- |
-| [HTTP Headers](/docs/overview#authentication) | 600 requests per minute |
-
-Learn more about [rate limits](/docs/overview#rate-limiting).
 
 ### Request parameters
 
