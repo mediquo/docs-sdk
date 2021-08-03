@@ -28,7 +28,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven { url 'https://tokbox.bintray.com/maven' }
+        mavenCentral()
         maven { url "https://mediquo.jfrog.io/artifactory/android-sdk" }
         maven { url "https://mediquo.jfrog.io/artifactory/videocall-android" }
     }
@@ -37,13 +37,15 @@ allprojects {
 
 **Edit your build.gradle app level:**
 
-Include mediQuo SDK lib as a dependency
+Include mediQuo SDK lib as a dependency:
 
 ```json
-implementation 'com.mediquo:mediquo-sdk:+'
+implementation 'com.mediquo:mediquo-sdk:1.0.98'
 ```
 
-Make sure the app's build.gradle file contains the following code snippet within android section
+This is our latest stable version, you can confirm with us if there is a newer version that you can use.
+
+Make sure the app's build.gradle file contains the following code snippet within android section:
 
 ```json
 compileOptions {
