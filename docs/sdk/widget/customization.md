@@ -14,19 +14,34 @@ The look an feel can be configured through the `theme` option on the widget init
 type Theme = {
   position?: "left" | "right";
   launcher?: "base" | "extended" | "hidden";
+  registration?: {
+    exclude: Array<"gender" | "birthdate">;
+  };
   locale?: "es" | "en" | "pt";
-  text?: { title: string; launcher: string };
+  terms_link?: string;
+  privacy_link?: string;
+  text?: {
+    title?: string;
+    launcher?: string;
+    welcome_title?: string;
+    welcome_text?: string;
+    welcome_button?: string;
+    medical_consent_disclaimer?: string;
+    offline_professional_disclaimer?: string;
+    terms?: string;
+    privacy?: string;
+  };
   colors?: {
-    primary: string;
-    primaryContrast: string;
-    secondary: string;
-    accent: string;
-    messageTextOutgoing: string;
-    messageTextIncoming: string;
-    bubbleBackgroundOutgoing: string;
-    bubbleBackgroundIncoming: string;
-    alertText: string;
-    alertBackground: string;
+    primary?: string;
+    primaryContrast?: string;
+    secondary?: string;
+    accent?: string;
+    messageTextOutgoing?: string;
+    messageTextIncoming?: string;
+    bubbleBackgroundOutgoing?: string;
+    bubbleBackgroundIncoming?: string;
+    alertText?: string;
+    alertBackground?: string;
   };
 };
 ```
@@ -76,7 +91,9 @@ MediquoWidget.init({
 
 ```ts
 // Typescript
-type Registration = { exclude: Array<"gender" | "birthdate"> };
+type Registration = {
+  exclude: Array<"gender" | "birthdate">;
+};
 ```
 
 Example:
@@ -98,19 +115,23 @@ MediquoWidget.init({
 type Theme = {
   text?: {
     // Text of the launcher button
-    launcher: string;
+    launcher?: string;
 
     // Title of the widget (visible in the header)
-    title: string;
+    title?: string;
 
     // Messages inside the room with a professional
-    medical_consent_disclaimer: string;
-    offline_professional_disclaimer: string;
+    medical_consent_disclaimer?: string;
+    offline_professional_disclaimer?: string;
 
     // Texts for the welcome page of the widget without session
-    welcome_title: string;
-    welcome_text: string;
-    welcome_button: string;
+    welcome_title?: string;
+    welcome_text?: string;
+    welcome_button?: string;
+
+    // Texts for terms label and privacy label on register form (HTML is accepted)
+    terms?: string;
+    privacy?: string;
   };
 };
 ```
@@ -125,6 +146,7 @@ MediquoWidget.init({
     text: {
       title: "Custom title",
       launcher: "Custom launcher"
+      privacy: "Custom privacy conditions <a href='https://customurl.com/privacy' target='_blank' rel='noopener noreferer'>Custom privacy</a>",
     }
   },
 ```
