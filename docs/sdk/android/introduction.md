@@ -128,3 +128,15 @@ class MediQuoSDKExampleMessagingService : FirebaseMessagingService() {
 ``` 
 
 
+### Obfuscation
+If you have the obfuscation enabled in your **build.gradle** file (`minifyEnabled true`) you need to add the next lines to your **proguard-rules** file:
+
+```
+-keep class com.opentok.** { *; }
+-keep class org.webrtc.** { *; }
+-keep class com.mediquo.ophiuchus.videocall.** { *; }
+-keep class org.otwebrtc.** { *; }
+-dontwarn com.opentok.**
+-dontwarn org.webrtc.**
+-dontwarn com.mediquo.ophiuchus.videocall.**
+```
