@@ -87,11 +87,12 @@ Use this endpoint to retrieve activation codes. Can be filtered with query param
 
 ### Response fields
 
-| Name   | Type    | Description                                                   |
-| ------ | ------- | ------------------------------------------------------------- |
-| code   | string  | The activation code                                           |
-| tag    | string  | The value that identifies your activation code in your system |
-| active | boolean | If the activation code is active or not                       |
+| Name       | Type    | Description                                                   |
+| ---------- | ------- | ------------------------------------------------------------- |
+| code       | string  | The activation code                                           |
+| tag        | string  | The value that identifies your activation code in your system |
+| active     | boolean | If the activation code is active or not                       |
+| created_at | string  | The creation date of the activation code                      |
 
 ### Default response
 
