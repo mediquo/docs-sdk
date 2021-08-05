@@ -80,10 +80,11 @@ Use this endpoint to retrieve activation codes. Can be filtered with query param
 
 ### Query parameters
 
-| Name | Type   | Description                                                   |
-| ---- | ------ | ------------------------------------------------------------- |
-| code | string | The activation code                                           |
-| tag  | string | The value that identifies your activation code in your system |
+| Name | Type    | Description                                                   |
+| ---- | ------- | ------------------------------------------------------------- |
+| code | string  | The activation code                                           |
+| tag  | string  | The value that identifies your activation code in your system |
+| page | integer | Pagination page                                               |
 
 ### Response fields
 
