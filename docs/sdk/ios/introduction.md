@@ -23,7 +23,7 @@ Add Cocoapods and mediQuo repositories, and install **MediQuo-Base** pod:
 
 ```swift
 source 'https://cdn.cocoapods.org'
-source 'https://bitbucket.org/dllort-medipremium/specs-ios.git'
+source 'https://bitbucket.org/engineeringmediquo/specs-ios.git'
 
 platform :ios, '11.0'
 
@@ -39,7 +39,7 @@ For instantiate _MediQuo_Base_ pod, you must to import it before in each class.
 
 ```swift
 import MediQuo_Base
- ```
+```
 
 ### Initialization
 
@@ -61,9 +61,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ### Authentication
 
-To authenticate a patient, provide a valid _CLIENT_CODE_ previously created with [Patients API](http://developer.mediquo.com/docs/introduction/). 
+To authenticate a patient, provide a valid _CLIENT_CODE_ previously created with [Patients API](http://developer.mediquo.com/docs/introduction/).
 Make sure not to use any other library method before you receive a successful response in the listener.
-
 
 ```swift
 MediQuo.authenticate(clientCode: CLIENT_CODE) { [weak self] status in
@@ -72,13 +71,13 @@ MediQuo.authenticate(clientCode: CLIENT_CODE) { [weak self] status in
     }
     // Congratulations, you've been authenticated successfully!!
 }
- ```
+```
 
 ### Push notifications handling
 
 In order to enable push notifications for chat and video call you must provide mediQuo a valid [Firebase Private Key](https://firebase.google.com/docs/cloud-messaging/auth-server#provide-credentials-manually)
 and register your push tokens in the SDK.
-The SDK will only process its own messages so you can send it all incoming pushes if you can't filter them properly. 
+The SDK will only process its own messages so you can send it all incoming pushes if you can't filter them properly.
 
 ```swift
 MediQuo.registerFirebase(token: fcmToken) { result in
@@ -88,6 +87,4 @@ MediQuo.registerFirebase(token: fcmToken) { result in
         CoreLog.firebase.error("Can't register Firebase registration token")
     }
 }
- ```
-
-
+```
