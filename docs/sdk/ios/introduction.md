@@ -22,14 +22,14 @@ which contains an example of how to integrate our SDK.
 Add Cocoapods and mediQuo repositories, and install **MediQuo-Base** pod:
 
 ```swift
-source 'https://cdn.cocoapods.org'
+source 'https://github.com/CocoaPods/Specs.git'
 source 'https://bitbucket.org/engineeringmediquo/specs-ios.git'
 
 platform :ios, '11.0'
 
 target 'mediquo-sdk-example-ios' do
   use_frameworks!
-  pod 'MediQuo-Base'
+  pod 'MediQuo-Base', '~> 0.0.45'
 end
 ```
 
