@@ -40,7 +40,7 @@ allprojects {
 Include mediQuo SDK lib as a dependency:
 
 ```json
-implementation 'com.mediquo:mediquo-sdk:1.0.98'
+implementation 'com.mediquo:mediquo-sdk:1.1.0-rc'
 ```
 
 This is our latest stable version, you can confirm with us if there is a newer version that you can use.
