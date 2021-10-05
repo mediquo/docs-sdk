@@ -180,3 +180,41 @@ Status: 200 OK
   "message": "Success"
 }
 ```
+## Send Activation Code
+
+```
+PUT /v1/activation-codes/<id>/deactivate
+```
+
+Use this endpoint to deactivate an activation code.
+
+### Endpoint URL
+
+`https://sdk.mediquo.com/v1/activation-codes/<code>/send`
+
+### Request parameters
+
+| Name | Type   | Description     |
+| ---- | ------ | --------------- |
+| name | string | The patient name |
+| prefix | string **(required if phone is set)** | The prefix of the patient |
+| phone | string **(required if prefix is set)** | The patient's phone |
+| email | string **(optional)** | The patient's email|
+| language | string **(optional)** | The language of the message (only for email). Accepted languages 'es', 'en', 'pt , 'de'. Default: spanish|
+
+### Response fields
+
+| Name    | Type   | Description      |
+| ------- | ------ | ---------------- |
+| message | string | Response message |
+
+### Default response
+
+```json
+Status: 200 OK
+```
+```json
+{
+  "message": "Success"
+}
+```
