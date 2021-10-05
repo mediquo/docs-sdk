@@ -196,11 +196,11 @@ Use this endpoint to deactivate an activation code.
 
 | Name | Type   | Description     |
 | ---- | ------ | --------------- |
-| name | string | The patient name |
-| prefix | string **(required if phone is set)** | The prefix of the patient |
-| phone | string **(required if prefix is set)** | The patient's phone |
-| email | string **(optional)** | The patient's email|
-| language | string **(optional)** | The language of the message (only for email). Accepted languages 'es', 'en', 'pt , 'de'. Default: spanish|
+| name | string | Patient name |
+| prefix | string **(required if phone is set)** | Patient prefix (`+34`) |
+| phone | string **(required if prefix is set)** | Patient phone |
+| email | string **(optional)** | Patient email |
+| language | string **(optional)** | Language of the message (only for email). Accepted languages 'es', 'en', 'pt , 'de'. Default: spanish|
 
 ### Response fields
 
