@@ -200,7 +200,7 @@ Use this endpoint to deactivate an activation code.
 | prefix | string **(required if phone is set)** | Patient prefix (`+34`) |
 | phone | string **(required if prefix is set)** | Patient phone |
 | email | string **(optional)** | Patient email |
-| language | string **(optional)** | Language of the message (only for email). Accepted languages 'es', 'en', 'pt , 'de'. Default: spanish|
+| language | string **(optional)** | Language of message (only for email). Accepted languages 'es', 'en', 'pt , 'de'. Default: 'es' |
 
 ### Response fields
 
