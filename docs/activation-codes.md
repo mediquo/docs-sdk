@@ -183,10 +183,12 @@ Status: 200 OK
 ## Send Activation Code
 
 ```
-PUT /v1/activation-codes/<id>/deactivate
+PUT /v1/activation-codes/<id>/send
 ```
 
-Use this endpoint to deactivate an activation code.
+Use this endpoint to send a notification to the user with the generated activation code. This will send an email and/or an SMS depending of the information you provided in the request.
+
+> This endpoint by default is disabled. To be able to use it, you should request access to your mediQuo account manager
 
 ### Endpoint URL
 
