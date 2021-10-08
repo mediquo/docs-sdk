@@ -38,7 +38,7 @@ MediquoWidget.init({
 
 ## Method `open()`
 
-Open the MediquoWidget programatically from anywhere.
+Open the MediquoWidget programmatically from anywhere.
 
 ```js
 MediquoWidget.open();
@@ -46,8 +46,16 @@ MediquoWidget.open();
 
 ## Method `close()`
 
-Close the MediquoWidget programatically from anywhere.
+Close the MediquoWidget programmatically from anywhere.
 
 ```js
 MediquoWidget.close();
+```
+
+## Method `logout()`
+
+Logout the user programmatically from anywhere. It destroys the session and invalidates the access token. To be able to show again the widget to the user another access token should be requested.
+
+```js
+MediquoWidget.logout();
 ```
