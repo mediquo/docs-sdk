@@ -1,6 +1,6 @@
 ---
-id: activation-codes
-title: Activation Codes
+id: prescriptions
+title: Prescriptions
 ---
 
 Contains the information about prescriptions in the mediQuo ecosystem.
