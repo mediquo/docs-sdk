@@ -29,7 +29,7 @@ platform :ios, '11.0'
 
 target 'mediquo-sdk-example-ios' do
   use_frameworks!
-  pod 'MediQuo-Base', '~> 0.0.45'
+  pod 'MediQuo-Base', '~> 0.0.47'
 end
 ```
 
