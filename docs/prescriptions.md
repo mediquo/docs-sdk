@@ -48,7 +48,20 @@ Status: 200 OK
 
 ```json
 {
-  "message": "Success"
+  "data": {
+    "patient": {
+      "first_name": "John",
+      "last_name": "Doe",
+      "gender": "male",
+      "birth_date": "1990-01-01"
+    },
+    "active_substances": [
+      "Paracetamol",
+      "Amoxicilina",
+      "Loratadina"
+    ],
+    "download_url": "https://sdk.mediquo.com/api/v1/prescriptions/8da0198f-33fa-4dbf-8f50-bbefe6fe15c/download"
+  }
 }
 ```
 
@@ -63,10 +76,9 @@ Use this endpoint to download the prescription file in PDF format.
 
 `https://sdk.mediquo.com/api/v1/prescriptions/{code}/download`
 
-### Request parameters
+### Response
 
-No parameters
-
-### Response fields
-
-### Default response
+```json
+Status: 200 OK
+Content type: application/pdf
+```
