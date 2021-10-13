@@ -16,7 +16,7 @@ Learn more about [rate limits](/docs/overview#rate-limiting).
 ## Get prescription
 
 ```
-POST /api/v1/prescriptions/{code}
+GET /api/v1/prescriptions/{code}
 ```
 Use this endpoint to retrieve the prescription information by its code.
 
@@ -68,7 +68,7 @@ Status: 200 OK
 ## Download prescription PDF
 
 ```
-POST /api/v1/prescriptions/{code}/download
+GET /api/v1/prescriptions/{code}/download
 ```
 Use this endpoint to download the prescription file in PDF format.
 
