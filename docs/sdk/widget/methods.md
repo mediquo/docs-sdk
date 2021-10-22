@@ -44,6 +44,14 @@ Open the MediquoWidget programmatically from anywhere.
 MediquoWidget.open();
 ```
 
+## Method `getPendingConsultations()`
+
+Get number of pending consultations.
+
+```js
+MediquoWidget.getPendingConsultations();
+```
+
 ## Method `close()`
 
 Close the MediquoWidget programmatically from anywhere.

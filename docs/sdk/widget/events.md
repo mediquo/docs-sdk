@@ -28,7 +28,7 @@ In this example, we are listening to the event command `professionalIsUnavailabl
 
 In case that a professional is not available for the patient the widget will not allow to navigate to its room to chat and a small lock icon will appear on the cell. However in case that the patient tries to, an event to notify this will be fired. You can then handle what to show to the patient.
 
-#### Payload
+#### Detail
 
 | Value             | Description                                                    |
 | ----------------- | -------------------------------------------------------------- |
@@ -38,3 +38,13 @@ In case that a professional is not available for the patient the widget will not
 | status            | The status of the professional: online or offline              |
 | collegiate_number | The professional collegiate number                             |
 | is_available      | Boolean that indicates if the professional is available or not |
+
+### `consultations`
+
+When number of pending consultations has changed an event with this number will be fired. You can then handle what to show to the patient.
+
+#### Payload
+
+| Value                | Description                     |
+| -------------------- | ------------------------------- |
+| pendingConsultations | Number of pending consultations |
