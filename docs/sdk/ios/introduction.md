@@ -88,3 +88,15 @@ MediQuo.registerFirebase(token: fcmToken) { result in
     }
 }
 ```
+
+In order to deactivate push notifications, there are unregister service available.
+
+```swift
+MediQuo.unregisterFirebase { result in
+    if result {
+        CoreLog.firebase.info("Firebase registration token successfully unregistered")
+    } else {
+        CoreLog.firebase.error("Can't unregister Firebase registration token")
+    }
+}
+```
