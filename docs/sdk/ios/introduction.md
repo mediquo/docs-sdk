@@ -29,7 +29,7 @@ platform :ios, '11.0'
 
 target 'mediquo-sdk-example-ios' do
   use_frameworks!
-  pod 'MediQuo-Base', '~> 1.0.3'
+  pod 'MediQuo-Base', '~> 1.0.4'
 end
 ```
 
@@ -89,14 +89,16 @@ MediQuo.registerFirebase(token: fcmToken) { result in
 }
 ```
 
-In order to deactivate push notifications, there are unregister service available.
+### Logout
+
+In order to delete credentials and force logout, there are the deauthenticate method, who expose a closure witch returns true if the deathentication was finished successfully and false if not.
 
 ```swift
-MediQuo.unregisterFirebase { result in
+MediQuo.deauthenticate { result in
     if result {
-        CoreLog.firebase.info("Firebase registration token successfully unregistered")
+        CoreLog.firebase.info("Deauthentication service was finished successfully")
     } else {
-        CoreLog.firebase.error("Can't unregister Firebase registration token")
+        CoreLog.firebase.error("Deauthentication service couldn't finished successfully")
     }
 }
 ```
