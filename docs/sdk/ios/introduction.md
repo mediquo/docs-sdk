@@ -91,7 +91,7 @@ MediQuo.registerFirebase(token: fcmToken) { result in
 
 ### Logout
 
-In order to delete credentials and force logout, there are the deauthenticate method, who expose a closure witch returns true if the deathentication was finished successfully and false if not.
+In order to delete the credentials and force a logout there is the deauthenticate method. It expose a closure witch returns true if the deathentication was finished successfully and false if not.
 
 ```swift
 MediQuo.deauthenticate { result in
