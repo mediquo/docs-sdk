@@ -40,7 +40,7 @@ allprojects {
 Include mediQuo SDK lib as a dependency:
 
 ```json
-implementation 'com.mediquo:mediquo-sdk:1.1.1'
+implementation 'com.mediquo:mediquo-sdk:1.1.2'
 ```
 
 This is our latest stable version, you can confirm with us if there is a newer version that you can use.
@@ -99,6 +99,27 @@ private val mediQuoAuthenticateListener = object : MediquoAuthenticateListener {
 
 private fun authenticateMediQuoSDK() {
     MediquoSDK.authenticate(CLIENT_CODE, mediQuoAuthenticateListener)
+}
+ ```
+
+ ### Logout
+
+In order to delete the credentials and force a logout there is the deauthenticate method. You can, or not, pass a listener to offer the result obtained.
+
+
+```kotlin
+private val mediquoDeAuthenticateListener = object : MediquoDeAuthenticateListener {
+    override fun onSuccess() {
+        /* Your logout has been successful */
+    }
+
+    override fun onFailure(message: String?) {
+        /* Your logout has failed */
+    }
+}
+
+private fun authenticateMediQuoSDK() {
+    MediquoSDK.deAuthenticate(mediquoDeAuthenticateListener)
 }
  ```
 
