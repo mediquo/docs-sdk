@@ -29,7 +29,7 @@ platform :ios, '11.0'
 
 target 'mediquo-sdk-example-ios' do
   use_frameworks!
-  pod 'MediQuo-Base', '~> 0.0.47'
+  pod 'MediQuo-Base', '~> 1.0.4'
 end
 ```
 
@@ -85,6 +85,20 @@ MediQuo.registerFirebase(token: fcmToken) { result in
         CoreLog.firebase.info("Firebase registration token: %@", fcmToken)
     } else {
         CoreLog.firebase.error("Can't register Firebase registration token")
+    }
+}
+```
+
+### Logout
+
+In order to delete credentials and force logout, there are the deauthenticate method, who expose a closure witch returns true if the deathentication was finished successfully and false if not.
+
+```swift
+MediQuo.deauthenticate { result in
+    if result {
+        CoreLog.firebase.info("Deauthentication service was finished successfully")
+    } else {
+        CoreLog.firebase.error("Deauthentication service couldn't finished successfully")
     }
 }
 ```
