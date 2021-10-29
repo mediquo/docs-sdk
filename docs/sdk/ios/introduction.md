@@ -26,10 +26,11 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'https://bitbucket.org/engineeringmediquo/specs-ios.git'
 
 platform :ios, '11.0'
+install! 'cocoapods', :disable_input_output_paths => true
 
 target 'mediquo-sdk-example-ios' do
   use_frameworks!
-  pod 'MediQuo-Base', '~> 1.0.4'
+  pod 'MediQuo-Base', '~> 1.0.5'
 end
 ```
 
