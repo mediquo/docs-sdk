@@ -119,7 +119,7 @@ Use this endpoint to reactivate an activation code
 
 ### Endpoint URL
 
-`https://sdk.mediquo.com/v1/activation-codes/<id>/activate`
+`https://sdk.mediquo.com/v1/activation-codes/<code>/activate`
 
 ### Request parameters
 
@@ -148,7 +148,7 @@ Status: 200 OK
 ## Deactivate Activation Code
 
 ```
-PUT /v1/activation-codes/<id>/deactivate
+PUT /v1/activation-codes/<code>/deactivate
 ```
 
 Use this endpoint to deactivate an activation code.
@@ -183,7 +183,7 @@ Status: 200 OK
 ## Send Activation Code
 
 ```
-PUT /v1/activation-codes/<id>/send
+PUT /v1/activation-codes/<code>/send
 ```
 
 Use this endpoint to send a notification to the user with the generated activation code. This will send an email and/or an SMS depending of the information you provided in the request.
