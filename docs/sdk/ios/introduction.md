@@ -30,7 +30,7 @@ install! 'cocoapods', :disable_input_output_paths => true
 
 target 'mediquo-sdk-example-ios' do
   use_frameworks!
-  pod 'MediQuo-Base', '~> 1.0.6'
+  pod 'MediQuo-Base', '~> 1.0.7'
 end
 ```
 
