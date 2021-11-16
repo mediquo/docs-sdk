@@ -89,7 +89,7 @@ MediQuo.registerFirebase(token: fcmToken) { result in
 }
 ```
 
-The SDK will only process its own messages so you can send it all incoming pushes if you can't filter them properly.
+The received push notifications should be forwarded to the SDK using this method. You can filter the pushes and send only the mediQuo ones or you can send all the received pushes, the SDK will only process its own messages.
 
 ```swift
 func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any],
@@ -105,7 +105,8 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     }
 }
 ```
-There are two possibilities to manage what can do you do when you receive a push notifications, either delegate the flow responsability to SDK, like will show a scene like chat room.
+
+There are two options to manage the behaviour once a push notification is received. You can delegate the whole responsibility to the SDK. In this case the SDK will prompt the chat room for the user.
 
 ```swift
 extension AppDelegate: UNUserNotificationCenterDelegate {
@@ -116,7 +117,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
 }
 ```
 
-Or the SDK return back the ViewController to let us do with it anything you want.
+Or you can manage the behaviour using the `didReceiveRemoteNotificationWithViewController` method. In this case the SDK will return the chat room ViewController so you can place it in your navigation.
 
 ```swift
 extension AppDelegate: UNUserNotificationCenterDelegate {
