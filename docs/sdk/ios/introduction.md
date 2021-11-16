@@ -30,7 +30,7 @@ install! 'cocoapods', :disable_input_output_paths => true
 
 target 'mediquo-sdk-example-ios' do
   use_frameworks!
-  pod 'MediQuo-Base', '~> 1.0.7'
+  pod 'MediQuo-Base', '~> 1.0.10'
 end
 ```
 
@@ -78,7 +78,6 @@ MediQuo.authenticate(clientCode: CLIENT_CODE) { [weak self] status in
 
 In order to enable push notifications for chat and video call you must provide mediQuo a valid [Firebase Private Key](https://firebase.google.com/docs/cloud-messaging/auth-server#provide-credentials-manually)
 and register your push tokens in the SDK.
-The SDK will only process its own messages so you can send it all incoming pushes if you can't filter them properly.
 
 ```swift
 MediQuo.registerFirebase(token: fcmToken) { result in
@@ -86,6 +85,46 @@ MediQuo.registerFirebase(token: fcmToken) { result in
         CoreLog.firebase.info("Firebase registration token: %@", fcmToken)
     } else {
         CoreLog.firebase.error("Can't register Firebase registration token")
+    }
+}
+```
+
+The SDK will only process its own messages so you can send it all incoming pushes if you can't filter them properly.
+
+```swift
+func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any],
+                 fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+    MediQuo.didReceiveRemoteNotification(userInfo: userInfo, completion: completionHandler)
+}
+
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification,
+                                withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        let userInfo = notification.request.content.userInfo
+        MediQuo.willPresentRemoteNotification(userInfo: userInfo, completion: completionHandler)
+    }
+}
+```
+There are two possibilities to manage what can do you do when you receive a push notifications, either delegate the flow responsability to SDK, like will show a scene like chat room.
+
+```swift
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        let userInfo = response.notification.request.content.userInfo
+        MediQuo.didReceiveRemoteNotification(userInfo: userInfo, completion: completionHandler)
+    }
+}
+```
+
+Or the SDK return back the ViewController to let us do with it anything you want.
+
+```swift
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        let userInfo = response.notification.request.content.userInfo
+        MediQuo.didReceiveRemoteNotificationWithViewController(userInfo: userInfo) { viewController in
+            // Your code here
+        }
     }
 }
 ```
