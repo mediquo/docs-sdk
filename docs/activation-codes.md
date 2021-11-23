@@ -20,7 +20,7 @@ Learn more about [rate limits](/docs/overview#rate-limiting).
 | code       | string                    | The activation code                                             |
 | tag        | string **(optional)**     | The value that identifies your activation code in your system   |
 | active     | boolean                   | If the activation code is active or not                         |
-| duration   | string                    | The type of duration. `forever` it last forever, `limited` last the number of months set in the `duration_in_months` parameter. |
+| duration   | string **(optional)**     | The type of duration. `forever` it last forever (default value). `limited` last the number of months set in the `duration_in_months` parameter. |
 | duration_in_months | int **(optional)**| The number of months that the subscription will last (with `duration = limited`) |
 | expires_at | string **(optional)**     | The date when the activation code will be unavailable (`Y-m-d`) |
 
@@ -40,7 +40,7 @@ POST /v1/activation-codes
 | ---------- | ------------------------- | --------------------------------------------------------------- |
 | code       | string                    | The code that the user will introduce                           |
 | tag        | string **(optional)**     | The value that identifies your activation code in your system   |
-| duration   | string                    | The type of duration. `forever` it last forever, `limited` last the number of months set in the `duration_in_months` parameter. |
+| duration   | string **(optional)**     | The type of duration. `forever` it last forever (default value). `limited` last the number of months set in the `duration_in_months` parameter. |
 | duration_in_months | int **(optional)**| The number of months that the subscription will last (with `duration = limited`) |
 | expires_at | string **(optional)**     | The date when the activation code will be unavailable (`Y-m-d`) |
 
