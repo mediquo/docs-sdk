@@ -15,12 +15,14 @@ Learn more about [rate limits](/docs/overview#rate-limiting).
 
 ### Attributes
 
-| Name       | Type                  | Description                                                   |
-| ---------- | --------------------- | ------------------------------------------------------------- |
-| code       | string                | The activation code                                           |
-| tag        | string **(optional)** | The value that identifies your activation code in your system |
-| active     | boolean               | If the activation code is active or not                       |
-| expires_at | string **(optional)** | The date when the activation code will be unavailable         |
+| Name       | Type                      | Description                                                     |
+| ---------- | ------------------------- | --------------------------------------------------------------- |
+| code       | string                    | The activation code                                             |
+| tag        | string **(optional)**     | The value that identifies your activation code in your system   |
+| active     | boolean                   | If the activation code is active or not                         |
+| duration   | string                    | The type of duration. `forever` it last forever, `limited` last the number of months set in the `duration_in_months` parameter. |
+| duration_in_months | int **(optional)**| The number of months that the subscription will last (with `duration = limited`) |
+| expires_at | string **(optional)**     | The date when the activation code will be unavailable (`Y-m-d`) |
 
 ## Create Activation Code
 
@@ -34,17 +36,22 @@ POST /v1/activation-codes
 
 ### Request parameters
 
-| Name | Type   | Description                                                   |
-| ---- | ------ | ------------------------------------------------------------- |
-| code | string | The code that the user will introduce                         |
-| tag  | string | The value that identifies your activation code in your system |
+| Name       | Type                      | Description                                                     |
+| ---------- | ------------------------- | --------------------------------------------------------------- |
+| code       | string                    | The code that the user will introduce                           |
+| tag        | string **(optional)**     | The value that identifies your activation code in your system   |
+| duration   | string                    | The type of duration. `forever` it last forever, `limited` last the number of months set in the `duration_in_months` parameter. |
+| duration_in_months | int **(optional)**| The number of months that the subscription will last (with `duration = limited`) |
+| expires_at | string **(optional)**     | The date when the activation code will be unavailable (`Y-m-d`) |
 
 #### Example request
 
 ```json
 {
   "code": "MYTESTCODE123",
-  "tag": "2020123ABC"
+  "tag": "2020123ABC",
+  "duration": "limited",
+  "duration_in_months": 3
 }
 ```
 
