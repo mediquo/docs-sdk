@@ -36,8 +36,10 @@ type Theme = {
     primaryContrast?: string;
     secondary?: string;
     accent?: string;
+    messageTextSystem?: string;
     messageTextOutgoing?: string;
     messageTextIncoming?: string;
+    bubbleBackgroundSystem?: string;
     bubbleBackgroundOutgoing?: string;
     bubbleBackgroundIncoming?: string;
     alertText?: string;
@@ -161,8 +163,10 @@ type Theme = {
     primaryContrast: string;
     secondary: string;
     accent: string;
+    messageTextSystem: string;
     messageTextOutgoing: string;
     messageTextIncoming: string;
+    bubbleBackgroundSystem: string;
     bubbleBackgroundOutgoing: string;
     bubbleBackgroundIncoming: string;
     alertText: string;
