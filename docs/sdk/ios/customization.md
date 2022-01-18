@@ -30,6 +30,9 @@ NOTE: If you don't setup this, will be establish a default customization.
 | messageTextIncomingColor | Text color of a foreign message|
 | bubbleBackgroundIncomingColor | Background color of a foreign message |
 | professionalsListDelegate | Delegate implementation for provide additional functionalities to [Professional List](https://developer.mediquo.com/docs/sdk/ios/professionalList/#delegate) |
+| bookFont | Book UIFont instance |
+| mediumFont | Medium UIFont instance |
+| boldFont | Bold UIFont instance |
 
 ## Example
 ```swift
@@ -47,6 +50,9 @@ static var style: MediQuoStyleType {
     style.messageTextIncomingColor = UIColor(hex: "#4D4E52FF") 
     style.bubbleBackgroundIncomingColor = .lightGray
     style.professionalsListDelegate = ListDelegate()
+    style.bookFont = UIFont(name: "Devil Breeze Book", size: 16)
+    style.mediumFont = UIFont(name: "Devil Breeze Medium", size: 16)
+    style.boldFont = UIFont(name: "Devil Breeze Bold", size: 16)
     return style
 }
 ```
