@@ -30,9 +30,12 @@ install! 'cocoapods', :disable_input_output_paths => true
 
 target 'mediquo-sdk-example-ios' do
   use_frameworks!
-  pod 'MediQuo-Base', '~> 1.13.0'
+  pod 'MediQuo-Base', '~> [LAST-VERSION]'
 end
 ```
+
+You can see which is the last version in the [changelog section](/docs/sdk/ios/changelog) of the documentation.
+
 
 ### Pod import
 
@@ -62,7 +65,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ### Authentication
 
-To authenticate a patient, provide a valid _CLIENT_CODE_ previously created with [Patients API](http://developer.mediquo.com/docs/introduction/).
+To authenticate a patient, provide a valid _CLIENT_CODE_ previously created with [Patients API](/docs/api/introduction/).
 Make sure not to use any other library method before you receive a successful response in the listener.
 
 ```swift
