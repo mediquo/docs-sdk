@@ -40,10 +40,10 @@ allprojects {
 Include mediQuo SDK lib as a dependency:
 
 ```json
-implementation 'com.mediquo:mediquo-sdk:1.2.1'
+implementation 'com.mediquo:mediquo-sdk:[LAST-VERSION]'
 ```
 
-This is our latest stable version, you can confirm with us if there is a newer version that you can use.
+You can see which is the last version in the [changelog section](/docs/sdk/android/changelog) of the documentation.
 
 Make sure the app's build.gradle file contains the following code snippet within android section:
 
@@ -82,7 +82,7 @@ class App : Application() {
 
 ### Authentication
 
-To authenticate a patient, provide a valid _CLIENT_CODE_ previously created with [Patients API](http://developer.mediquo.com/docs/introduction/). 
+To authenticate a patient, provide a valid _CLIENT_CODE_ previously created with [Patients API](/docs/api/introduction/). 
 Make sure not to use any other library method before you receive a successful response in the listener.
 
 

@@ -29,11 +29,11 @@ As these keys and tokens do not expire unless regenerated, we suggest creating e
 
 ### Step 3: Synchronize your patients using the mediQuo API
 
-To authenticate your users in the SDK, you must first register them on our platform and send us their basic data (the minimum necessary for proper medical assistance) using the [mediQuo API](https://developer.mediquo.com/docs/overview/).
+To authenticate your users in the SDK, you must first register them on our platform and send us their basic data (the minimum necessary for proper medical assistance) using the [mediQuo API](/docs/api/overview/).
 
 ### Step 4: Integrate your SDK within you app or web
 
 At this point you will be able to integrate properly the SDK within your apps following the steps described in the
-[Android SDK documentation](http://developer.mediquo.com/docs/sdk/android/introduction/)
-, [iOS SDK documentation](http://developer.mediquo.com/docs/sdk/ios/introduction/)
-or [Web SDK documentation](https://developer.mediquo.com/docs/sdk/widget/introduction/).
+[Android SDK documentation](/docs/sdk/android/introduction/)
+, [iOS SDK documentation](/docs/sdk/ios/introduction/)
+or [Web SDK documentation](/docs/sdk/widget/introduction/).

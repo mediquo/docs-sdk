@@ -4,25 +4,27 @@
       "introduction"
     ],
     "API Reference": [
-      "overview",
-      "activation-codes",
-      "patients",
-      "prescriptions",
-      "troubleshooting"
+      "api/overview",
+      "api/activation-codes",
+      "api/patients",
+      "api/prescriptions",
+      "api/troubleshooting"
     ],
     "Android SDK": [
       "sdk/android/introduction",
       "sdk/android/professionalList",
       "sdk/android/medicalhistory",
       "sdk/android/customization",
-      "sdk/android/others"
+      "sdk/android/others",
+      "sdk/android/changelog"
     ],
     "iOS SDK": [
       "sdk/ios/introduction",
       "sdk/ios/professionalList",
       "sdk/ios/medicalhistory",
       "sdk/ios/customization",
-      "sdk/ios/others"
+      "sdk/ios/others",
+      "sdk/ios/changelog"
     ],
     "Widget": [
       "sdk/widget/introduction",
