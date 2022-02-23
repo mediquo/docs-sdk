@@ -10,7 +10,7 @@ This page provides release information about the SDK available for download.
 
 | Version | Release date | Changes                                                           |
 | ------- | ------------ | ----------------------------------------------------------------- |
-| 1.13.2  | 09/02/2022   | Fixed problem that was preventing the call screen to dismiss on hang up.    |
+| 1.13.3  | 09/02/2022   | Fixed problem that was preventing the call screen to dismiss on hang up.    |
 | 1.13.0  | 20/01/2022   | Internal improvements on how the messages are marked as read.     |
 | 1.12.0  | 18/01/2022   | **\[Feature\]** Now you can customize the font that is used in the views. |
 | 1.10.0  | 07/01/2022   | Fix that solves a problem in pod install due to a security change of Bitbucket related to ssh access. |
