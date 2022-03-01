@@ -9,13 +9,6 @@ You can customize the look an feel, the language of your widget integration and 
 
 You can turn on or off different settings of the widget.
 
-```ts
-// Typescript
-type Options = {
-  showInitialMessage: boolean; // default false
-}
-```
-
 ### `showInitialMessage`
 
 Default: false.
@@ -28,9 +21,7 @@ Example:
 MediquoWidget.init({
   apiKey: "<YOUR-API-KEY>",
   accessToken: "<USER-ACCESS-TOKEN>",
-  options: {
-    showInitialMessage: true,
-  }
+  showInitialMessage: true,
 })
 ```
 ## Look and feel
