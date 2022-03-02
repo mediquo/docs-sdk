@@ -5,6 +5,26 @@ title: Customization
 
 You can customize the look an feel, the language of your widget integration and the legal document links.
 
+## Options
+
+You can turn on or off different settings of the widget.
+
+### `showInitialMessage`
+
+Default: false.
+
+On temporal users it opens an automatic message 2 seconds after the initialization.
+
+Example:
+
+```js
+MediquoWidget.init({
+  apiKey: "<YOUR-API-KEY>",
+  accessToken: "<USER-ACCESS-TOKEN>",
+  showInitialMessage: true,
+});
+```
+
 ## Look and feel
 
 The look an feel can be configured through the `theme` option on the widget initialization.
