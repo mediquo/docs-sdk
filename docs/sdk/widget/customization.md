@@ -13,7 +13,7 @@ You can turn on or off different settings of the widget.
 
 Default: false.
 
-On temporal users it opens an automatic message 2 seconds after the initialization. 
+On temporal users it opens an automatic message 2 seconds after the initialization.
 
 Example:
 
@@ -22,8 +22,9 @@ MediquoWidget.init({
   apiKey: "<YOUR-API-KEY>",
   accessToken: "<USER-ACCESS-TOKEN>",
   showInitialMessage: true,
-})
+});
 ```
+
 ## Look and feel
 
 The look an feel can be configured through the `theme` option on the widget initialization.
@@ -82,9 +83,6 @@ Example:
 MediquoWidget.init({
   apiKey: "<YOUR-API-KEY>",
   accessToken: "<USER-ACCESS-TOKEN>",
-  options: {
-    showInitialMessage: false,
-  },
   theme: {
     position: "left"
   },
