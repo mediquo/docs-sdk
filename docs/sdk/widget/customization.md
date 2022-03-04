@@ -42,9 +42,11 @@ type Theme = {
   text?: {
     title?: string;
     launcher?: string;
-    welcome_title?: string;
-    welcome_text?: string;
-    welcome_button?: string;
+    room_title?: string;
+    banner_text?: string;
+    banner_button?: string;
+    register_title?: string;
+    register_button?: string;
     medical_consent_disclaimer?: string;
     offline_professional_disclaimer?: string;
     terms?: string;
@@ -148,10 +150,14 @@ type Theme = {
     medical_consent_disclaimer?: string;
     offline_professional_disclaimer?: string;
 
-    // Texts for the welcome page of the widget without session
-    welcome_title?: string;
-    welcome_text?: string;
-    welcome_button?: string;
+    // Texts for the welcome room page of the widget without session
+    room_title?: string;
+    banner_text?: string;
+    banner_button?: string;
+
+    // Texts for the register page of the widget without session
+    register_title?: string;
+    register_button?: string;
 
     // Texts for terms label and privacy label on register form (HTML is accepted)
     terms?: string;
