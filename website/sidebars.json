@@ -1,13 +1,13 @@
 {
   "docs": {
-    "Overview": [
-      "introduction"
-    ],
+    "Overview": ["introduction"],
     "API Reference": [
       "api/overview",
       "api/activation-codes",
       "api/patients",
       "api/prescriptions",
+      "api/professionals",
+      "api/messages",
       "api/troubleshooting"
     ],
     "Android SDK": [
@@ -40,9 +40,7 @@
         "type": "subcategory",
         "id": "sdk/widget/events",
         "label": "Temporal session",
-        "ids": [
-          "sdk/widget/withoutsession/integration"
-        ]
+        "ids": ["sdk/widget/withoutsession/integration"]
       },
       "sdk/widget/methods",
       "sdk/widget/customization",
