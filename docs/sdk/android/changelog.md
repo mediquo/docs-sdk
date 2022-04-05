@@ -9,6 +9,7 @@ This page provides release information about the SDK available for download.
 
 | Version | Release date | Changes                                                                      |
 | ------- | ------------ | ---------------------------------------------------------------------------- |
+| 1.2.3   | 04/04/2022   | Removed OkHttp logging dependency. |
 | 1.2.2   | 18/03/2022   | **\[Important\]** Patients can send images from the gallery and attach files to the chat again. |
 | 1.2.1   | 12/01/2022   | **\[Important\]** Solved a problem in the video call in Android 11 or above that made the video be shown in black. |
 | 1.2.0   | 11/01/2022   | **\[Important\]** Now calls will be received also through the socked (before it was only received through a push). Please update as soon as possible |
