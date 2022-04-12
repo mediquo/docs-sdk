@@ -13,7 +13,7 @@ You can turn on or off different settings of the widget.
 
 Default: false.
 
-On temporal users it opens an automatic message 2 seconds after the initialization.
+On temporal users it opens an automatic message 2 seconds after the initialization. You can customize the text using the `initial_message` text field.
 
 Example:
 
@@ -50,6 +50,7 @@ type Theme = {
     offline_professional_disclaimer?: string;
     terms?: string;
     privacy?: string;
+    initial_message?: string;
   };
   colors?: {
     primary?: string;
@@ -154,6 +155,9 @@ type Theme = {
     // Texts for terms label and privacy label on register form (HTML is accepted)
     terms?: string;
     privacy?: string;
+
+    // Text for the initial message that is shown with the flag showInitialMessage
+    initial_message?: string;
   };
 };
 ```
