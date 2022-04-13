@@ -134,6 +134,7 @@ No parameters
 | email           | string | Patient email                                         |
 | plan            | string | Patient plan                                          |
 | phone           | string | Patient phone number                                  |
+| locale          | string | Patient locale (`de`,`en`,`es`,`pt`)                  |
 | created_at      | string | Patient created at date                               |
 | updated_at      | string | Last updated date                                     |
 | unsubscribed_at | string | Date when the patient was unsubscribed                |
@@ -154,6 +155,7 @@ Status: 200 OK
   "email": null,
   "plan": null,
   "phone": null,
+  "locale": "es",
   "created_at": "2000-01-01 10:00:00+2000",
   "updated_at": "2000-01-01 10:00:00+2000",
   "unsubscribed_at": "2000-01-01 10:00:00+2000"
