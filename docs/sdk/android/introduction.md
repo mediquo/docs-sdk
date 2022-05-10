@@ -40,10 +40,10 @@ allprojects {
 Include mediQuo SDK lib as a dependency:
 
 ```json
-implementation 'com.mediquo:mediquo-sdk:1.1.1'
+implementation 'com.mediquo:mediquo-sdk:[LAST-VERSION]'
 ```
 
-This is our latest stable version, you can confirm with us if there is a newer version that you can use.
+You can see which is the last version in the [changelog section](/docs/sdk/android/changelog) of the documentation.
 
 Make sure the app's build.gradle file contains the following code snippet within android section:
 
@@ -82,7 +82,7 @@ class App : Application() {
 
 ### Authentication
 
-To authenticate a patient, provide a valid _CLIENT_CODE_ previously created with [Patients API](http://developer.mediquo.com/docs/introduction/). 
+To authenticate a patient, provide a valid _CLIENT_CODE_ previously created with [Patients API](/docs/api/introduction/). 
 Make sure not to use any other library method before you receive a successful response in the listener.
 
 
@@ -99,6 +99,27 @@ private val mediQuoAuthenticateListener = object : MediquoAuthenticateListener {
 
 private fun authenticateMediQuoSDK() {
     MediquoSDK.authenticate(CLIENT_CODE, mediQuoAuthenticateListener)
+}
+ ```
+
+ ### Logout
+
+In order to delete the credentials and force a logout there is the deauthenticate method. You can, or not, pass a listener to offer the result obtained.
+
+
+```kotlin
+private val mediquoDeAuthenticateListener = object : MediquoDeAuthenticateListener {
+    override fun onSuccess() {
+        /* Your logout has been successful */
+    }
+
+    override fun onFailure(message: String?) {
+        /* Your logout has failed */
+    }
+}
+
+private fun authenticateMediQuoSDK() {
+    MediquoSDK.deAuthenticate(mediquoDeAuthenticateListener)
 }
  ```
 

@@ -1,27 +1,30 @@
 {
   "docs": {
-    "Overview": [
-      "introduction"
-    ],
+    "Overview": ["introduction"],
     "API Reference": [
-      "overview",
-      "activation-codes",
-      "patients",
-      "troubleshooting"
+      "api/overview",
+      "api/activation-codes",
+      "api/patients",
+      "api/prescriptions",
+      "api/professionals",
+      "api/messages",
+      "api/troubleshooting"
     ],
     "Android SDK": [
       "sdk/android/introduction",
       "sdk/android/professionalList",
       "sdk/android/medicalhistory",
       "sdk/android/customization",
-      "sdk/android/others"
+      "sdk/android/others",
+      "sdk/android/changelog"
     ],
     "iOS SDK": [
       "sdk/ios/introduction",
       "sdk/ios/professionalList",
       "sdk/ios/medicalhistory",
       "sdk/ios/customization",
-      "sdk/ios/others"
+      "sdk/ios/others",
+      "sdk/ios/changelog"
     ],
     "Widget": [
       "sdk/widget/introduction",
@@ -37,9 +40,7 @@
         "type": "subcategory",
         "id": "sdk/widget/events",
         "label": "Temporal session",
-        "ids": [
-          "sdk/widget/withoutsession/integration"
-        ]
+        "ids": ["sdk/widget/withoutsession/integration"]
       },
       "sdk/widget/methods",
       "sdk/widget/customization",

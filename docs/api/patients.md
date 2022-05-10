@@ -9,16 +9,17 @@ Contains the information about a Patient in the mediQuo ecosystem.
 
 ### Attributes
 
-| Name       | Type                  | Description                                           |
-| ---------- | --------------------- | ----------------------------------------------------- |
-| code       | string                | The value that identifies your patient in your system |
-| first_name | string                | Patient first name or full name                       |
-| last_name  | string **(optional)** | Patient last name                                     |
-| gender     | string                | Patient gender (`male` or `female`)                   |
-| birth_date | string                | Patient birth date (`Y-m-d`)                          |
-| email      | string **(optional)** | Patient email                                         |
-| plan       | string **(optional)** | Patient plan name                                     |
-| phone      | string **(optional)** | Patient phone number with prefix code                 |
+| Name       | Type                  | Allowed values         | Description                                           |
+| ---------- | --------------------- |----------------------- | ----------------------------------------------------- |
+| code       | string                |                        | The value that identifies your patient in your system |
+| first_name | string                |                        | Patient first name or full name                       |
+| last_name  | string **(optional)** |                        | Patient last name                                     |
+| gender     | string **(optional)**               | `male`,`female`        | Patient gender                   |
+| birth_date | string **(optional)**               |                        | Patient birth date (`Y-m-d`)                          |
+| email      | string **(optional)** |                        | Patient email |
+| plan       | string **(optional)** |                        | Patient plan name                                     |
+| phone      | string **(optional)** |                        | Patient phone number with prefix code       
+| locale     | string **(optional)** | `de`, `en`, `es`, `pt` | Patient locale. `es` by default |
 
 ## Create or update Patients
 
@@ -133,6 +134,7 @@ No parameters
 | email           | string | Patient email                                         |
 | plan            | string | Patient plan                                          |
 | phone           | string | Patient phone number                                  |
+| locale          | string | Patient locale (`de`,`en`,`es`,`pt`)                  |
 | created_at      | string | Patient created at date                               |
 | updated_at      | string | Last updated date                                     |
 | unsubscribed_at | string | Date when the patient was unsubscribed                |
@@ -153,6 +155,7 @@ Status: 200 OK
   "email": null,
   "plan": null,
   "phone": null,
+  "locale": "es",
   "created_at": "2000-01-01 10:00:00+2000",
   "updated_at": "2000-01-01 10:00:00+2000",
   "unsubscribed_at": "2000-01-01 10:00:00+2000"

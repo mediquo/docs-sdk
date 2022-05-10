@@ -37,7 +37,7 @@ We strongly recommend create a class, that implements _ProfessionalsListDelegate
 <br/>
 - **onProfessionalClick:** This callback is fired when press in any professional, for navigate to room
 <br/>
-> NOTE: _hasAccess_ indicates that the authenticated patient has access to the chats (has a _plan_ set via the [Patients API](http://developer.mediquo.com/docs/introduction/)).
+> NOTE: _hasAccess_ indicates that the authenticated patient has access to the chats (has a _plan_ set via the [Patients API](/docs/api/introduction/)).
 <br/>
 - **onUnreadMessage:** This callback is fired when the number of unread messages has changed
 

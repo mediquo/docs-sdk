@@ -5,6 +5,26 @@ title: Customization
 
 You can customize the look an feel, the language of your widget integration and the legal document links.
 
+## Options
+
+You can turn on or off different settings of the widget.
+
+### `showInitialMessage`
+
+Default: false.
+
+On temporal users it opens an automatic message 2 seconds after the initialization. You can customize the text using the `initial_message` text field.
+
+Example:
+
+```js
+MediquoWidget.init({
+  apiKey: "<YOUR-API-KEY>",
+  accessToken: "<USER-ACCESS-TOKEN>",
+  showInitialMessage: true,
+});
+```
+
 ## Look and feel
 
 The look an feel can be configured through the `theme` option on the widget initialization.
@@ -30,14 +50,17 @@ type Theme = {
     offline_professional_disclaimer?: string;
     terms?: string;
     privacy?: string;
+    initial_message?: string;
   };
   colors?: {
     primary?: string;
     primaryContrast?: string;
     secondary?: string;
     accent?: string;
+    messageTextSystem?: string;
     messageTextOutgoing?: string;
     messageTextIncoming?: string;
+    bubbleBackgroundSystem?: string;
     bubbleBackgroundOutgoing?: string;
     bubbleBackgroundIncoming?: string;
     alertText?: string;
@@ -132,6 +155,9 @@ type Theme = {
     // Texts for terms label and privacy label on register form (HTML is accepted)
     terms?: string;
     privacy?: string;
+
+    // Text for the initial message that is shown with the flag showInitialMessage
+    initial_message?: string;
   };
 };
 ```
@@ -161,8 +187,10 @@ type Theme = {
     primaryContrast: string;
     secondary: string;
     accent: string;
+    messageTextSystem: string;
     messageTextOutgoing: string;
     messageTextIncoming: string;
+    bubbleBackgroundSystem: string;
     bubbleBackgroundOutgoing: string;
     bubbleBackgroundIncoming: string;
     alertText: string;
@@ -183,8 +211,10 @@ MediquoWidget.init({
       primaryContrast: "#FFFFFF",
       secondary: "#3C50EC",
       accent: "#42CECE",
+      messageTextSystem: "#3C50EC",
       messageTextOutgoing: "#201552",
       messageTextIncoming: "#201552",
+      bubbleBackgroundSystem: "#ECEEFD",
       bubbleBackgroundOutgoing: "#ECEFF1",
       bubbleBackgroundIncoming: "#F4FAFD",
       alertText: "#201552",

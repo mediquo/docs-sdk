@@ -44,6 +44,14 @@ Open the MediquoWidget programmatically from anywhere.
 MediquoWidget.open();
 ```
 
+## Method `getPendingConsultations()`
+
+Get number of pending consultations.
+
+```js
+MediquoWidget.getPendingConsultations();
+```
+
 ## Method `close()`
 
 Close the MediquoWidget programmatically from anywhere.
@@ -59,3 +67,14 @@ Logout the user programmatically from anywhere. It destroys the session and inva
 ```js
 MediquoWidget.logout();
 ```
+
+## Method `destroy()`
+
+Remove the widget from your site completely. This method executes a logout and remove the widget elements from your DOM.
+
+If you want to show again the widget after using the destroy, you can call the init method again.
+
+```js
+MediquoWidget.destroy();
+```
+
