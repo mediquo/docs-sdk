@@ -25,11 +25,11 @@ Add Cocoapods and mediQuo repositories, and install **MediQuo-Base** pod:
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://bitbucket.org/engineeringmediquo/specs-ios.git'
 
-platform :ios, '11.0'
+platform :ios, '12.0'
 
 target 'mediquo-sdk-example-ios' do
   use_frameworks!
-  pod 'MediQuo-Base', '~> 0.0.47'
+  pod 'MediQuo-Base', '~> 1.13.6'
 end
 ```
 
