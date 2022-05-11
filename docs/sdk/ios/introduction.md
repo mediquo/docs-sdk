@@ -27,6 +27,8 @@ source 'https://bitbucket.org/engineeringmediquo/specs-ios.git'
 
 platform :ios, '12.0'
 
+install! 'cocoapods', :disable_input_output_paths => true
+
 target 'mediquo-sdk-example-ios' do
   use_frameworks!
   pod 'MediQuo-Base', '~> 1.13.6'
