@@ -54,6 +54,20 @@ compileOptions {
 }
 ```
 
+**Include file_paths.xml file for attachments:**
+
+Since Android 11 you must add a file named `file_paths.xml` in the `res/xml` directory of your app module for the file attachment to work properly.
+
+Inside this file, you have to add the following code:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="my_images" path="Android/data/[your.package.name]/files/Pictures" />
+    <external-path name="downloads" path="Android/data/[your.package.name]/files/Download" />
+</paths>
+```
+
 ### Initialization
 
 **Edit or add an application class:**
