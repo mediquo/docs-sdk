@@ -54,7 +54,9 @@ compileOptions {
 }
 ```
 
-Otherwise, for the file attachment to work properly, you must add a file named `file_paths.xml` in the `res/xml` directory of your app module.
+**Include file_paths.xml file for attachments:**
+
+Since Android 11 you must add a file named `file_paths.xml` in the `res/xml` directory of your app module for the file attachment to work properly.
 
 Inside this file, you have to add the following code:
 
