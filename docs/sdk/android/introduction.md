@@ -19,7 +19,7 @@ which contains an example of how to integrate our SDK.
 
 ## Configuration
 
-**Edit your build.gradle project level:**
+### Edit your build.gradle project level:
 
 Add mediQuo and Tokbox maven repositories:
 
@@ -35,7 +35,7 @@ allprojects {
 }
 ```
 
-**Edit your build.gradle app level:**
+### Edit your build.gradle app level:
 
 Include mediQuo SDK lib as a dependency:
 
@@ -54,11 +54,11 @@ compileOptions {
 }
 ```
 
-**Include file_paths.xml file for attachments:**
+### Include file_paths.xml file for attachments:
 
 Since Android 11 you must add a file named `file_paths.xml` in the `res/xml` directory of your app module for the file attachment to work properly.
 
-Inside this file, you have to add the following code:
+Inside this file, you have to add the following code (make sure to replace your.package.name with the real value):
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -68,9 +68,9 @@ Inside this file, you have to add the following code:
 </paths>
 ```
 
-### Initialization
+## Initialization
 
-**Edit or add an application class:**
+### Edit or add an application class:
 
 The library must be initialized inside Application.onCreate() using your _API_KEY_ provided by mediQuo.
 Make sure not to use any other library method before you receive a successful response in the listener. 
@@ -116,7 +116,7 @@ private fun authenticateMediQuoSDK() {
 }
  ```
 
- ### Logout
+## Logout
 
 In order to delete the credentials and force a logout there is the deauthenticate method. You can, or not, pass a listener to offer the result obtained.
 
@@ -137,7 +137,7 @@ private fun authenticateMediQuoSDK() {
 }
  ```
 
-### Push notifications handling
+## Push notifications handling
 
 In order to enable push notifications for chat and video call you must provide mediQuo a valid [Firebase Private Key](https://firebase.google.com/docs/cloud-messaging/auth-server#provide-credentials-manually)
 and register your push tokens in the SDK.
@@ -163,7 +163,7 @@ class MediQuoSDKExampleMessagingService : FirebaseMessagingService() {
 ``` 
 
 
-### Obfuscation
+## Obfuscation
 If you have the obfuscation enabled in your **build.gradle** file (`minifyEnabled true`) you need to add the next lines to your **proguard-rules** file:
 
 ```
