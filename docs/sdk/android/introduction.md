@@ -19,9 +19,9 @@ which contains an example of how to integrate our SDK.
 
 ## Configuration
 
-### Edit your build.gradle project level:
+### Add dependencies to project level build.gradle
 
-Add mediQuo and Tokbox maven repositories:
+Edit your build.gradle project level to add mediQuo and Tokbox maven repositories:
 
 ```json
 allprojects {
@@ -35,9 +35,9 @@ allprojects {
 }
 ```
 
-### Edit your build.gradle app level:
+### Add dependencies to app level build.gradle
 
-Include mediQuo SDK lib as a dependency:
+Edit your build.gradle app level to include mediQuo SDK lib as a dependency:
 
 ```json
 implementation 'com.mediquo:mediquo-sdk:[LAST-VERSION]'
@@ -54,7 +54,7 @@ compileOptions {
 }
 ```
 
-### Include file_paths.xml file for attachments:
+### Include file_paths.xml file
 
 Since Android 11 you must add a file named `file_paths.xml` in the `res/xml` directory of your app module for the file attachment to work properly.
 
@@ -68,9 +68,9 @@ Inside this file, you have to add the following code (make sure to replace your.
 </paths>
 ```
 
-## Initialization
+## Life cycle
 
-### Edit or add an application class:
+### Initialization
 
 The library must be initialized inside Application.onCreate() using your _API_KEY_ provided by mediQuo.
 Make sure not to use any other library method before you receive a successful response in the listener. 
@@ -116,7 +116,7 @@ private fun authenticateMediQuoSDK() {
 }
  ```
 
-## Logout
+### Logout
 
 In order to delete the credentials and force a logout there is the deauthenticate method. You can, or not, pass a listener to offer the result obtained.
 
