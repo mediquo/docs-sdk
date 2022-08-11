@@ -68,6 +68,20 @@ Inside this file, you have to add the following code (make sure to replace your.
 </paths>
 ```
 
+On the other hand, for its correct operation, we must refer to this file in `AndroidManifest.xml`, addind the following code:
+
+```
+ <provider
+    android:name="androidx.core.content.FileProvider"
+    android:authorities="[your.package.name]"
+    android:exported="false"
+    android:grantUriPermissions="true">
+    <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/file_paths" />
+</provider>
+```
+
 ## Life cycle
 
 ### Initialization
