@@ -81,6 +81,9 @@ On the other hand, for its correct operation, we must refer to this file in `And
         android:resource="@xml/file_paths" />
 </provider>
 ```
+
+## Life cycle
+
 ### Initialization
 
 **Edit or add an application class:**
