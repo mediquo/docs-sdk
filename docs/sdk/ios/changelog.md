@@ -10,6 +10,7 @@ This page provides release information about the SDK available for download.
 
 | Version | Release date | Changes                                                           |
 | ------- | ------------ | ----------------------------------------------------------------- |
+| 1.13.6  | 11/05/2022   | Fixed issue that caused the app to crash when using call in iPad.    |
 | 1.13.4  | 23/03/2022   | Fixed issue that caused the app to crash when rejecting an incoming call.    |
 | 1.13.3  | 09/02/2022   | Fixed problem that was preventing the call screen to dismiss on hang up.    |
 | 1.13.0  | 20/01/2022   | Internal improvements on how the messages are marked as read.     |

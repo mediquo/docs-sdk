@@ -22,5 +22,5 @@ If your users have a login on your website, you can show the widget with a diffe
 
 The setup is different for each method, depending on your use case you can follow the instructions:
 
-* You have a user with a login, configure [the permament session integration](withsession/integration).
-* You want to show the widget to any person that is browsing your website. You can use the [temporal session setup](withoutsession/integration).
+* You have a user with a login, configure [the permament session integration](/docs/sdk/widget/withsession/integration).
+* You want to show the widget to any person that is browsing your website. You can use the [temporal session setup](/docs/sdk/widget/withoutsession/integration).

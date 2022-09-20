@@ -9,7 +9,7 @@ This widget allows the user the option to contact with the doctors and be able t
 
 ### Widget with patient session
 
-This widget is initialized with the api key and a patient access token. The access token has to be generated through the [authentification api](authentication). Once you have the two parameters you can use the init method:
+This widget is initialized with the api key and a patient access token. The access token has to be generated through the [authentification api](/docs/sdk/widget/withsession/authentication). Once you have the two parameters you can use the init method:
 
 ```js
 MediquoWidget.init({
