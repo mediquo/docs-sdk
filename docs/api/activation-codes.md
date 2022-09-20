@@ -202,7 +202,7 @@ Use this endpoint to send a notification to the user with the generated activati
 
 > This endpoint by default is disabled. To be able to use it, you should request access to your mediQuo account manager
 
-The endpoint will succed if any of the provided channels for communication delivers the message, it will fail with error messages if both channels are unavailable and the message could not be sent.
+The endpoint will succeed if any of the provided channels for communication delivers the message, it will fail with error messages if both channels are unavailable and the message could not be sent.
 
 ### Endpoint URL
 
