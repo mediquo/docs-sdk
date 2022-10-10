@@ -89,7 +89,7 @@ On the other hand, for its correct operation, we must refer to this file in `And
 The library must be initialized inside Application.onCreate() using your _API_KEY_ provided by mediQuo.
 Make sure not to use any other library method before you receive a successful response in the listener. 
 
-```kotlinInten
+```kotlin
 class App : Application() {
     private val mediQuoInitListener = object : MediquoInitListener {
         override fun onFailure(message: String?) {
