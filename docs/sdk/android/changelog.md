@@ -9,6 +9,7 @@ This page provides release information about the SDK available for download.
 
 | Version | Release date | Changes                                                                      |
 | ------- | ------------ | ---------------------------------------------------------------------------- |
+| 1.4.0   | 23/02/2023   | Library update to support Android 12 and above. |
 | 1.3.0   | 10/10/2022   | Videocall improvements. |	
 | 1.2.6   | 26/05/2022   | Fixed problem with firebase token refresh after logout. |	
 | 1.2.4   | 25/04/2022   | **\[Important\]** Fixed problem with the SSL certificate. Please update as soon as possible |
