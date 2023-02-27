@@ -78,7 +78,7 @@ If you want to show again the widget after using the destroy, you can call the i
 MediquoWidget.destroy();
 ```
 
-## Method `open_room(professional_hash)`
+## Method `open_room(professional_id)`
 
 Open a chat room programmatically with a specific professional by providing the id.
 
