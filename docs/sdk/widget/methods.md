@@ -83,6 +83,6 @@ MediquoWidget.destroy();
 Open a chat room programmatically with a specific professional by providing its hash.
 
 ```js
-MediquoWidget.open_room("<PROFESSIONAL_USER_HASH>");
+MediquoWidget.open_room("<PROFESSIONAL_HASH>");
 ```
 
