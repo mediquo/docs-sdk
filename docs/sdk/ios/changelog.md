@@ -10,7 +10,7 @@ This page provides release information about the SDK available for download.
 
 | Version | Release date | Changes                                                                                                                                               |
 |---------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.15.0  | 01/03/2023   | Fixed medical history pages navigation. Added performance improvements in chat room.                                                                  |
+| 1.15.0  | 01/03/2023   | Fixed medical history pages navigation. Fixed app crash when an incoming call is entering.Added performance improvements in chat room.               |
 | 1.14.0  | 27/09/2022   | Updated Swift version to 5.7.                                                                                                                         |
 | 1.13.6  | 11/05/2022   | Fixed issue that caused the app to crash when using call in iPad.                                                                                     |
 | 1.13.4  | 23/03/2022   | Fixed issue that caused the app to crash when rejecting an incoming call.                                                                             |
