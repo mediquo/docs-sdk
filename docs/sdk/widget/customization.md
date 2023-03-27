@@ -69,6 +69,23 @@ type Theme = {
 };
 ```
 
+### `hideCloseButton`
+
+Default: false.
+
+You can hide the close widget button from the top navigation bar.
+
+Example:
+
+```js
+MediquoWidget.init({
+  apiKey: "<YOUR-API-KEY>",
+  accessToken: "<USER-ACCESS-TOKEN>",
+  hideCloseButton: true,
+});
+```
+
+
 ### Position
 
 ```ts
