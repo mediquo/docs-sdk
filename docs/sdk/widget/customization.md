@@ -225,7 +225,7 @@ MediquoWidget.init({
   },
 ```
 
-## Localization
+### Localization
 
 You can define the locale during initialization. Currently supported languages are `es`, `en` and `pt`. By default it will be set to `en`.
 
@@ -238,7 +238,7 @@ MediquoWidget.init({
   },
 });
 ```
-### `hideCloseButton`
+### hideCloseButton
 
 Default: false.
 
