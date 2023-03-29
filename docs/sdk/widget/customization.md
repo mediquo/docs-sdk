@@ -66,9 +66,10 @@ type Theme = {
     alertText?: string;
     alertBackground?: string;
   };
-  hideCloseButton?: boolean;
+  hideCloseButton?: "true" | "false";
 };
 ```
+
 
 ### Position
 
@@ -237,6 +238,30 @@ MediquoWidget.init({
   },
 });
 ```
+### `hideCloseButton`
+
+Default: false.
+
+```ts
+// Typescript
+type Theme = {
+  // You can hide the close widget button from the top navigation bar in full window mode for smaller screens.
+  hideCloseButton?: "true" | "false"
+};
+```
+
+Example:
+
+```js
+MediquoWidget.init({
+  apiKey: "<YOUR-API-KEY>",
+  accessToken: "<USER-ACCESS-TOKEN>",
+  theme: {
+  hideCloseButton: "true",
+  }
+});
+```
+
 
 ## Legal documents
 
