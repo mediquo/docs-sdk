@@ -99,13 +99,16 @@ Use this endpoint to retrieve activation codes. Can be filtered with query param
 
 ### Response fields
 
-| Name       | Type    | Description                                                   |
-| ---------- | ------- | ------------------------------------------------------------- |
-| code       | string  | The activation code                                           |
-| plan_name  | string  | The activation code plan name                                 |
-| tag        | string  | The value that identifies your activation code in your system |
-| active     | boolean | If the activation code is active or not                       |
-| created_at | string  | The creation date of the activation code                      |
+| Name                       | Type    | Nullable | Description                                                  |
+|----------------------------|---------|----------|--------------------------------------------------------------|
+| code                       | string  | No       | The activation code                                          |
+| plan_name                  | string  | Yes      | The activation code plan name                                |
+| tag                        | string  | Yes      | The value that identifies your activation code in your system |
+| active                     | boolean | No       | If the activation code is active or not                      |
+| emails.last_email          | string  | Yes      | The email account where the activation code was sent         |
+| messages.last_phone_number | string  | Yes      | The phone number where the activation code was sent          |
+| messages.last_phone_prefix | string  | Yes      | Previous phone prefix                                        |
+| created_at                 | string  | No       | The creation date of the activation code                     |
 
 ### Default response
 
@@ -116,8 +119,16 @@ Status: 200 OK
 ```json
 {
   "code": "MYTESTCODE123",
+  "plan_name": "premium",
   "tag": "2020123ABC",
-  "active": true
+  "active": true,
+  "messages": {
+    "last_phone_number": "766000000",
+    "last_phone_prefix": "34"
+  },
+  "emails": {
+    "last_email": "foo@bar.com"
+  }
 }
 ```
 
