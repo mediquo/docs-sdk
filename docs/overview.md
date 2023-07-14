@@ -8,11 +8,7 @@ mediQuo API allows developers to interact with the following services:
 - [SDK integration service.](api/patients.md)
 
 ## Requests and responses
-The mediQuo API uses HTTP requests with JSON arguments and JSON responses. The API base URL is:
-
-```
-https://sdk.mediquo.com/v1
-```
+The mediQuo API uses HTTP requests with JSON arguments and JSON responses. The API base URL is `https://sdk.mediquo.com/v1`
 
 In requests, **blank fields** are included as null instead of being omitted.
 
@@ -38,7 +34,7 @@ Authentication to the API is performed via HTTP headers and the following header
 
 All API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will also fail.
 
-```
+```bash
 curl https://sdk.mediquo.com/v1/patients \
   -H "X-API-Key: <Your API Key>"
   -H "X-Secret-Key: <Your Secret Key>"
@@ -70,7 +66,7 @@ Some 4xx errors that could be handled programmatically (e.g., a parameter is req
 
 ### Example error response
 
-```json
+```
 Status: 404 Not found
 ```
 

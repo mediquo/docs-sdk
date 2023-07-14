@@ -4,10 +4,10 @@
       "introduction",
       "overview"
     ],
-    "Activation codes API reference": [
+    "Activation codes API": [
       "api/activation-codes"
     ],
-    "SDK API Reference": [
+    "SDK API": [
       "api/patients",
       "api/prescriptions",
       "api/professionals",
