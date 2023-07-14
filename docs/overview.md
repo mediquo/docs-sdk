@@ -1,16 +1,26 @@
 ---
 id: overview
-title: Overview
+title: Api reference
 ---
 
-All API access is over HTTPS, and accessed from https://sdk.mediquo.com/v1. All data is sent and received as JSON.
+mediQuo API allows developers to interact with the following services: 
+- [Activation codes service.](api/activation-codes.md)
+- [SDK integration service.](api/patients.md)
 
-Blank fields are included as null instead of being omitted.
-
-All timestamps return in ISO 8601 format:
+## Requests and responses
+The mediQuo API uses HTTP requests with JSON arguments and JSON responses. The API base URL is:
 
 ```
-YYYY-MM-DDTHH:MM:SSZ
+https://sdk.mediquo.com/v1
+```
+
+In requests, **blank fields** are included as null instead of being omitted.
+
+## Date format
+
+All dates in the API use UTC and are strings in the ISO 8601 format:
+```
+2023-07-14T15:12:27+00:00
 ```
 
 ## Authentication
