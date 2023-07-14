@@ -1,9 +1,13 @@
 {
   "docs": {
-    "Overview": ["introduction"],
-    "API Reference": [
-      "api/overview",
-      "api/activation-codes",
+    "Overview": [
+      "introduction",
+      "overview"
+    ],
+    "Activation codes API reference": [
+      "api/activation-codes"
+    ],
+    "SDK API Reference": [
       "api/patients",
       "api/prescriptions",
       "api/professionals",

@@ -156,9 +156,9 @@ Status: 200 OK
   "plan": null,
   "phone": null,
   "locale": "es",
-  "created_at": "2000-01-01 10:00:00+2000",
-  "updated_at": "2000-01-01 10:00:00+2000",
-  "unsubscribed_at": "2000-01-01 10:00:00+2000"
+  "created_at": "2000-01-01 10:00:00+0000",
+  "updated_at": "2000-01-01 10:00:00+0000",
+  "unsubscribed_at": "2000-01-01 10:00:00+0000"
 }
 ```
 

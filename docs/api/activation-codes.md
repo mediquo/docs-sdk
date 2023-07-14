@@ -91,11 +91,13 @@ Use this endpoint to retrieve activation codes. Can be filtered with query param
 
 ### Query parameters
 
-| Name | Type    | Description                                                   |
-| ---- | ------- | ------------------------------------------------------------- |
-| code | string  | The activation code                                           |
-| tag  | string  | The value that identifies your activation code in your system |
-| page | integer | Pagination page                                               |
+| Name          | Type     | Description                                                                                     |
+|---------------|----------|-------------------------------------------------------------------------------------------------|
+| code          | string   | The activation code                                                                             |
+| tag           | string   | The value that identifies your activation code in your system                                   |
+| created_at_gt | datetime | It will return activation codes created after the date (ISO8601 format: YYYY-MM-DDTHH:MM:SSZ).  |
+| created_at_lt | datetime | It will return activation codes created before the date (ISO8601 format: YYYY-MM-DDTHH:MM:SSZ). |
+| page          | integer  | Result page                                                                                     |
 
 ### Response fields
 
@@ -108,7 +110,7 @@ Use this endpoint to retrieve activation codes. Can be filtered with query param
 | emails.last_email          | string  | Yes      | The email account where the activation code was sent         |
 | messages.last_phone_number | string  | Yes      | The phone number where the activation code was sent          |
 | messages.last_phone_prefix | string  | Yes      | Previous phone prefix                                        |
-| created_at                 | string  | No       | The creation date of the activation code                     |
+| created_at                 | datetime  | No       | The creation date of the activation code                     |
 
 ### Default response
 
