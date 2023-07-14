@@ -4,8 +4,8 @@ title: Api reference
 ---
 
 mediQuo API allows developers to interact with the following services: 
-- [Activation codes service](api/activation-codes.md)
-- [SDK integration service](api/patients.md)
+- [Activation codes service](/docs/api/activation-codes.md)
+- [SDK integration service](/docs/api/patients.md)
 
 ## Requests and responses
 The mediQuo API uses HTTP requests with JSON arguments and JSON responses. The API base URL is `https://sdk.mediquo.com/v1`
@@ -16,7 +16,7 @@ In requests, **blank fields** are included as null instead of being omitted.
 
 All dates in the API use UTC and are strings in the ISO 8601 format:
 ```
-2023-07-14T15:12:27+00:00
+2023-07-14T15:12:27Z
 ```
 
 ## Authentication
