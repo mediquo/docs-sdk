@@ -4,8 +4,8 @@ title: Api reference
 ---
 
 mediQuo API allows developers to interact with the following services: 
-- [Activation codes service.](api/activation-codes.md)
-- [SDK integration service.](api/patients.md)
+- [Activation codes service](api/activation-codes.md)
+- [SDK integration service](api/patients.md)
 
 ## Requests and responses
 The mediQuo API uses HTTP requests with JSON arguments and JSON responses. The API base URL is `https://sdk.mediquo.com/v1`
