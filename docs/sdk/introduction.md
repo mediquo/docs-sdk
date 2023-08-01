@@ -21,7 +21,7 @@ This documentation describes the steps to integrate this functionalities into a 
 
 Before integrate the SDK, you must first [apply for an organization account](https://www.mediquo.com/en/companies/) and have your use case validated. Once validated, you will be provided with a set of credentials that will allow you to initialize the SDK.
 
-### Step 2: Synchronize your patients using the mediQuo API
+### Step 2: Synchronize your patients using the SDK API
 
 To authenticate your users in the SDK, you must first register them on our platform and send us their basic data (the minimum necessary for proper medical assistance) using the [mediQuo API](/docs/api/introduction/).
 

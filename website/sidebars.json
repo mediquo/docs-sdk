@@ -42,7 +42,6 @@
       },
       {
         "type": "subcategory",
-        "id": "sdk/widget/events",
         "label": "Temporal session",
         "ids": ["sdk/widget/withoutsession/integration"]
       },

@@ -1,6 +1,6 @@
 ---
 id: introduction
-title: mediQuo SDK Android
+title: mediQuo Android SDK
 sidebar_label: Installation
 ---
 

@@ -27,9 +27,9 @@ You will be provided with a set of credentials, an API key and a secret key.
 Those will be used to make requests in behalf of your organization.
 As these keys and tokens do not expire unless regenerated, we suggest creating environment variables, or using a secure password manager to store them safely.
 
-### Step 3: Synchronize your patients using the mediQuo API
+### Step 3: Synchronize your patients using the SDK API
 
-To authenticate your users in the SDK, you must first register them on our platform and send us their basic data (the minimum necessary for proper medical assistance) using the [mediQuo API](/overview.md).
+To authenticate your users in the SDK, you must first register them on our platform and send us their basic data (the minimum necessary for proper medical assistance) using the [SDK API](/docs/api/patients).
 
 ### Step 4: Integrate your SDK within you app or web
 

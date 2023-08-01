@@ -1,6 +1,6 @@
 ---
 id: introduction
-title: mediQuo SDK iOS
+title: mediQuo iOS SDK
 sidebar_label: Installation
 ---
 
