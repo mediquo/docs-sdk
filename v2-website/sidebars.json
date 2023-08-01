@@ -1,0 +1,54 @@
+{
+  "docs": {
+    "Overview": [
+      "introduction",
+      "overview"
+    ],
+    "mediQuo API": [
+      "api/activation-codes"
+    ],
+    "SDK API": [
+      "api/patients",
+      "api/prescriptions",
+      "api/professionals",
+      "api/messages",
+      "api/troubleshooting"
+    ],
+    "Android SDK": [
+      "sdk/android/introduction",
+      "sdk/android/professionalList",
+      "sdk/android/medicalhistory",
+      "sdk/android/customization",
+      "sdk/android/others",
+      "sdk/android/changelog"
+    ],
+    "iOS SDK": [
+      "sdk/ios/introduction",
+      "sdk/ios/professionalList",
+      "sdk/ios/medicalhistory",
+      "sdk/ios/customization",
+      "sdk/ios/others",
+      "sdk/ios/changelog"
+    ],
+    "Widget": [
+      "sdk/widget/introduction",
+      {
+        "type": "subcategory",
+        "label": "Permament session",
+        "ids": [
+          "sdk/widget/withsession/integration",
+          "sdk/widget/withsession/authentication"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "id": "sdk/widget/events",
+        "label": "Temporal session",
+        "ids": ["sdk/widget/withoutsession/integration"]
+      },
+      "sdk/widget/methods",
+      "sdk/widget/customization",
+      "sdk/widget/events"
+    ]
+  }
+}
