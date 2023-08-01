@@ -49,6 +49,11 @@
       "sdk/widget/methods",
       "sdk/widget/customization",
       "sdk/widget/events"
-    ]
+    ],
+    "test": {
+      "test": [
+        "introduction"
+      ]
+    }
   }
 }
