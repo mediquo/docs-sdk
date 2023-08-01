@@ -91,26 +91,27 @@ Use this endpoint to retrieve activation codes. Can be filtered with query param
 
 ### Query parameters
 
-| Name          | Type     | Description                                                                                     |
-|---------------|----------|-------------------------------------------------------------------------------------------------|
-| code          | string   | The activation code                                                                             |
-| tag           | string   | The value that identifies your activation code in your system                                   |
-| created_at_gt | datetime | It will return activation codes created after the date (ISO8601 format: YYYY-MM-DDTHH:MM:SSZ).  |
-| created_at_lt | datetime | It will return activation codes created before the date (ISO8601 format: YYYY-MM-DDTHH:MM:SSZ). |
-| page          | integer  | Result page                                                                                     |
+| Name          | Type     | Allowed values     | Description                                                                                    |
+|---------------|----------|--------------------|------------------------------------------------------------------------------------------------|
+| code          | string   |                    | The activation code                                                                            |
+| tag           | string   |                    | The value that identifies your activation code in your system                                  |
+| status        | string   | `active`,`expired` | Activation code status                                                                         |
+| created_at_gt | datetime |                    | It will return activation codes created after the date (ISO8601 format: YYYY-MM-DDTHH:MM:SSZ)  |
+| created_at_lt | datetime |                    | It will return activation codes created before the date (ISO8601 format: YYYY-MM-DDTHH:MM:SSZ) |
+| page          | integer  |                    | Result page                                                                                    |
 
 ### Response fields
 
-| Name                       | Type    | Nullable | Description                                                  |
-|----------------------------|---------|----------|--------------------------------------------------------------|
-| code                       | string  | No       | The activation code                                          |
-| plan_name                  | string  | Yes      | The activation code plan name                                |
-| tag                        | string  | Yes      | The value that identifies your activation code in your system |
-| active                     | boolean | No       | If the activation code is active or not                      |
-| emails.last_email          | string  | Yes      | The email account where the activation code was sent         |
-| messages.last_phone_number | string  | Yes      | The phone number where the activation code was sent          |
-| messages.last_phone_prefix | string  | Yes      | Previous phone prefix                                        |
-| created_at                 | datetime  | No       | The creation date of the activation code                     |
+| Name                       | Type     | Nullable | Description                                                  |
+|----------------------------|----------|----------|--------------------------------------------------------------|
+| code                       | string   | No       | The activation code                                          |
+| plan_name                  | string   | Yes      | The activation code plan name                                |
+| tag                        | string   | Yes      | The value that identifies your activation code in your system |
+| active                     | boolean  | No       | If the activation code is active or not                      |
+| emails.last_email          | string   | Yes      | The email account where the activation code was sent         |
+| messages.last_phone_number | string   | Yes      | The phone number where the activation code was sent          |
+| messages.last_phone_prefix | string   | Yes      | Previous phone prefix                                        |
+| created_at                 | datetime | No       | The creation date of the activation code                     |
 
 ### Default response
 

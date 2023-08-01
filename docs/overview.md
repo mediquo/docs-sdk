@@ -3,12 +3,12 @@ id: overview
 title: Api reference
 ---
 
-mediQuo API allows developers to interact with the following services: 
-- [Activation codes service](/docs/api/activation-codes.md)
+Our APIs allow developers to interact with the following services: 
+- [mediQuo activation codes service](/docs/api/activation-codes.md)
 - [SDK integration service](/docs/api/patients.md)
 
 ## Requests and responses
-The mediQuo API uses HTTP requests with JSON arguments and JSON responses. The API base URL is `https://sdk.mediquo.com/v1`
+The API uses HTTP requests with JSON arguments and JSON responses. The API base URL is `https://sdk.mediquo.com/v1`
 
 In requests, **blank fields** are included as null instead of being omitted.
 
@@ -21,7 +21,7 @@ All dates in the API use UTC and are strings in the ISO 8601 format:
 
 ## Authentication
 
-The mediQuo API uses API keys to authenticate requests. This credentials will be provided by mediQuo once your organization is validated in our platform.
+The API uses keys to authenticate requests. This credentials will be provided by mediQuo once your organization is validated in our platform.
 
 Your API keys carry many privileges, so be sure to keep them secure! Do not share your secret API keys in publicly accessible areas such as GitHub, client-side code, and so forth.
 
