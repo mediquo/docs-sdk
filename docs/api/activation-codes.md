@@ -115,6 +115,7 @@ Use this endpoint to retrieve activation codes. Can be filtered with query param
 | messages.last_phone_prefix | string   | Yes      | Previous phone prefix                                         |
 | created_at                 | datetime | No       | The creation date of the activation code                      |
 | meta                       | string   | Yes      | Free text field                                               |
+| redemptions                | array    | No       | Patients who have redeemed the code                           |
 
 ### Default response
 
@@ -132,6 +133,10 @@ Status: 200 OK
     "last_phone_number": "766000000",
     "last_phone_prefix": "34"
   },
+  "redemptions": [
+    {"first_name": "first_name1", "last_name": "last_name1"},
+    {"first_name": "first_name2", "last_name": "last_name2"}
+  ],
   "emails": {
     "last_email": "foo@bar.com"
   },
