@@ -9,7 +9,7 @@ You can customize the look an feel, the language of your widget integration and 
 
 You can turn on or off different settings of the widget.
 
-### `showInitialMessage`
+### `showInitialMessage`
 
 Default: false.
 
@@ -22,6 +22,22 @@ MediquoWidget.init({
   apiKey: "<YOUR-API-KEY>",
   accessToken: "<USER-ACCESS-TOKEN>",
   showInitialMessage: true,
+});
+```
+
+### `isMobileView`
+
+Default: false.
+
+You can customize the size of the window container to open full screen by setting it to `true`, otherwise it will be responsive.
+
+Example:
+
+```js
+MediquoWidget.init({
+  apiKey: "<YOUR-API-KEY>",
+  accessToken: "<USER-ACCESS-TOKEN>",
+  isMobileView: true,
 });
 ```
 
