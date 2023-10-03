@@ -24,6 +24,21 @@ MediquoWidget.init({
   showInitialMessage: true,
 });
 ```
+### `showPracticeCountry`
+
+Default: false.
+
+Display the work practice country of each professional directly on the widget interface. This feature provides transparency about the healthcare provider based on their practice location.
+
+Example:
+
+```js
+MediquoWidget.init({
+  apiKey: "<YOUR-API-KEY>",
+  accessToken: "<USER-ACCESS-TOKEN>",
+  showPracticeCountry: true,
+});
+```
 
 ### `isMobileView`
 
