@@ -10,16 +10,17 @@ Contains the information about a Patient in the mediQuo ecosystem.
 ### Attributes
 
 | Name       | Type                  | Allowed values         | Description                                           |
-| ---------- | --------------------- |----------------------- | ----------------------------------------------------- |
+|------------| --------------------- |----------------------- |-------------------------------------------------------|
 | code       | string                |                        | The value that identifies your patient in your system |
 | first_name | string                |                        | Patient first name or full name                       |
 | last_name  | string **(optional)** |                        | Patient last name                                     |
-| gender     | string **(optional)**               | `male`,`female`        | Patient gender                   |
+| gender     | string **(optional)**               | `male`,`female`        | Patient gender                                        |
 | birth_date | string **(optional)**               |                        | Patient birth date (`Y-m-d`)                          |
-| email      | string **(optional)** |                        | Patient email |
+| tax_id     | string **(optional)**               |                        | Patient tax id number                                 |
+| email      | string **(optional)** |                        | Patient email                                         |
 | plan       | string **(optional)** |                        | Patient plan name                                     |
-| phone      | string **(optional)** |                        | Patient phone number with prefix code       
-| locale     | string **(optional)** | `de`, `en`, `es`, `pt` | Patient locale. `es` by default |
+| phone      | string **(optional)** |                        | Patient phone number with prefix code                 
+| locale     | string **(optional)** | `de`, `en`, `es`, `pt` | Patient locale. `es` by default                       |
 
 ## Create or update Patients
 
@@ -67,6 +68,7 @@ Learn more about [rate limits](/docs/overview#rate-limiting).
       "gender": "male",
       "plan": "premium",
       "birth_date": "1980-01-01",
+      "tax_id": "123456789",
       "email": "john@doe.com",
       "phone": "+1 123345678"
     },
@@ -125,12 +127,13 @@ No parameters
 ### Response fields
 
 | Name            | Type   | Description                                           |
-| --------------- | ------ | ----------------------------------------------------- |
+|-----------------| ------ |-------------------------------------------------------|
 | code            | string | The value that identifies your patient in your system |
 | first_name      | string | Patient first name or full name                       |
 | last_name       | string | Patient last name                                     |
 | gender          | string | Patient gender (`male` or `female`)                   |
 | birth_date      | string | Patient birth date (`Y-m-d`)                          |
+| tax_id          | string | Patient tax id number                                 |
 | email           | string | Patient email                                         |
 | plan            | string | Patient plan                                          |
 | phone           | string | Patient phone number                                  |
@@ -152,6 +155,7 @@ Status: 200 OK
   "last_name": "Doe",
   "gender": "female",
   "birth_date": "2000-01-01",
+  "tax_id": null,
   "email": null,
   "plan": null,
   "phone": null,
