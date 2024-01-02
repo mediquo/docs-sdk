@@ -7,13 +7,13 @@ MediQuo SDK API is able to notify real-time data as soon as a specific event occ
 
 # Authentication
 
-MediQuo SDK API will add the `x-webhook-signature` header as a custom HTTP header in order to provide a signature for the HTTP request payload. The value attached to the header will be specified by the MediQuo support team.
+MediQuo SDK API will add the `x-webhook-signature` header as a custom HTTP header in order to provide a reliable signature for the HTTP request. The value attached to the header will be specified by the MediQuo support team.
 
 | Header              | Type   |
 |---------------------|--------|
 | x-webhook-signature | string |
 
-Inform to the MediQuo support team if you have other additional security methods to be configured in the HTTP request (oauth, user/password, ...).
+Inform to the MediQuo support team if you have other additional security methods to be configured in the HTTP request (Oauth, user/password, ...).
 
 # Events
 
