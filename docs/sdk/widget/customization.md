@@ -56,6 +56,22 @@ MediquoWidget.init({
 });
 ```
 
+### `mute`
+
+Default: false.
+
+You can mute the notification sounds of incoming messages by setting it to `true`.
+
+Example:
+
+```js
+MediquoWidget.init({
+  apiKey: "<YOUR-API-KEY>",
+  accessToken: "<USER-ACCESS-TOKEN>",
+  mute: true,
+});
+```
+
 ## Look and feel
 
 The look an feel can be configured through the `theme` option on the widget initialization.
