@@ -29,11 +29,11 @@ The events sent by the webhook will have the next payload structure.
 
 This event is triggered when a professional sends a new report to a patient with the type `patient_report_sent`. The payload includes the next information:
 
-| Key          | Type   | Values | Description                                                                       |
-|--------------|--------|--------|-----------------------------------------------------------------------------------|
-| type         | string | `soap` | Report type                                                                       |
-| content      | object |        | Content of the report. The structure will depend on the report type.                     |
-| patient.code | string |        | Patient code (Check out the [API patient specification](/docs/api/sdk/patients/)) |
+| Key          | Type   | Values | Description                                                                      |
+|--------------|--------|--------|----------------------------------------------------------------------------------|
+| type         | string | `soap` | Report type                                                                      |
+| content      | object |        | Content of the report. The structure will depend on the report type.                    |
+| patient.code | string |        | Patient code (Check out the [API patient specification](/docs/api/sdk/patients)) |
 
 ### Example
 
