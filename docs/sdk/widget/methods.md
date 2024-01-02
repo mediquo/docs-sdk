@@ -86,3 +86,10 @@ Open a chat room programmatically with a specific professional by providing the 
 MediquoWidget.open_room("<PROFESSIONAL_ID>");
 ```
 
+## Method `open_list()`
+
+Open chat list inbox programmatically from anywhere.
+
+```js
+MediquoWidget.open_list();
+```
