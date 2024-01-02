@@ -12,6 +12,7 @@
       "api/prescriptions",
       "api/professionals",
       "api/messages",
+      "api/sdk/webhooks",
       "api/troubleshooting"
     ],
     "Android SDK": [
