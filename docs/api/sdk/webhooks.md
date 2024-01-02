@@ -1,5 +1,5 @@
 ---
-id: sdk-webhooks
+id: webhooks
 title: Webhooks
 ---
 
