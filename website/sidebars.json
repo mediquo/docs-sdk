@@ -12,6 +12,7 @@
       "api/prescriptions",
       "api/professionals",
       "api/messages",
+      "api/appointments",
       "api/sdk/webhooks",
       "api/troubleshooting"
     ],
