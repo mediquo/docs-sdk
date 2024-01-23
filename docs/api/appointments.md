@@ -98,7 +98,7 @@ The appointment URL will be renewed.
 
 ### Endpoint URL
 
-`https://sdk.mediquo.com/v1/appointments`
+`https://sdk.mediquo.com/v1/appointments/{appointment_code}`
 
 ### Authentication and rate limits
 
@@ -156,3 +156,32 @@ Status: 200 OK
   }
 }
 ```
+
+## Cancel appointment
+
+```
+DELETE /v1/appointments/{appointment_code}
+```
+
+Use this endpoint to cancel your appointments into our platform.
+
+### Endpoint URL
+
+`https://sdk.mediquo.com/v1/appointments/{appointment_code}`
+
+### Authentication and rate limits
+
+| Authentication                                | Rate limits             |
+| --------------------------------------------- | ----------------------- |
+| [HTTP Headers](/docs/overview#authentication) | 600 requests per minute |
+
+Learn more about [rate limits](/docs/overview#rate-limiting).
+
+### Response
+
+| Code | Type                  | Description                                                                   |
+|------|-----------------------|-------------------------------------------------------------------------------|
+| 200  | string                | Everything worked as expected.                                                |
+| 400  | string                | There was an error processing the request. Check the message in the response. |
+| 403  | Forbidden             | The provided keys does not give permissions.                                  |
+| 500  | Internal server error | An unexpected error occurred in server.                                        |
