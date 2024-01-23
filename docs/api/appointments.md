@@ -53,7 +53,76 @@ Learn more about [rate limits](/docs/overview#rate-limiting).
 }
 ```
 
+### Response
 
+| Code | Type                  | Description                                                                   |
+|------|-----------------------|-------------------------------------------------------------------------------|
+| 200  | string                | Everything worked as expected.                                                |
+| 400  | string                | There was an error processing the request. Check the message in the response. |
+| 403  | Forbidden             | The provided keys does not give permissions.                                  |
+| 422  | Unprocessable Content | The request was not well-formed.                                              |
+| 500  | Internal server error | An unexpected error occurred in server.                                        |
+
+#### Example Response
+
+| Name             | Type   | Description           |
+|------------------| ------ |-----------------------|
+| appointment.code | string | The appointment code. |
+| appointment.url  | string | The appointment URL.  |
+
+
+```json
+Status: 200 OK
+```
+
+```json
+{
+  "data": {
+    "appointment": {
+      "code": "your_appointment_code",
+      "url": "appointment_url"
+    }
+  }
+}
+```
+
+## Update appointment
+
+```
+PUT /v1/appointments/{appointment_code}
+```
+
+Use this endpoint update your appointments into our platform.
+
+The appointment URL will be renewed.
+
+### Endpoint URL
+
+`https://sdk.mediquo.com/v1/appointments`
+
+### Authentication and rate limits
+
+| Authentication                                | Rate limits             |
+| --------------------------------------------- | ----------------------- |
+| [HTTP Headers](/docs/overview#authentication) | 600 requests per minute |
+
+Learn more about [rate limits](/docs/overview#rate-limiting).
+
+### Request parameters
+
+| Name                  | Type   | Description                                    |
+|-----------------------|--------|------------------------------------------------|
+| appointment.starts_at | string | The appointment start date in ISO 8601 format. |
+
+#### Example request
+
+```json
+{
+  "appointment": {
+    "starts_at": "2024-01-23T15:12:27Z"
+  }
+}
+```
 
 ### Response
 
