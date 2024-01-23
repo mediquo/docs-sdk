@@ -1,6 +1,6 @@
 ---
-id: patients
-title: Patients
+id: appointments
+title: Appointments
 ---
 
 Contains the information about an appointment in the mediQuo ecosystem.
