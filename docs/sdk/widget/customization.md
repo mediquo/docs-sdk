@@ -21,7 +21,7 @@ Example:
 MediquoWidget.init({
   apiKey: "<YOUR-API-KEY>",
   accessToken: "<USER-ACCESS-TOKEN>",
-  showInitialMessage: true,
+  showInitialMessage?: true,
 });
 ```
 ### `showPracticeCountry`
@@ -36,7 +36,7 @@ Example:
 MediquoWidget.init({
   apiKey: "<YOUR-API-KEY>",
   accessToken: "<USER-ACCESS-TOKEN>",
-  showPracticeCountry: true,
+  showPracticeCountry?: true,
 });
 ```
 
@@ -52,7 +52,7 @@ Example:
 MediquoWidget.init({
   apiKey: "<YOUR-API-KEY>",
   accessToken: "<USER-ACCESS-TOKEN>",
-  isMobileView: true,
+  isMobileView?: true,
 });
 ```
 
@@ -68,7 +68,23 @@ Example:
 MediquoWidget.init({
   apiKey: "<YOUR-API-KEY>",
   accessToken: "<USER-ACCESS-TOKEN>",
-  mute: true,
+  mute?: true,
+});
+```
+
+### `adapter`
+
+Default: "web".
+
+If you are integrating the widget in a hybrid mobile app framework, you can adapt some functionalities by setting any of these values.
+
+Example:
+
+```js
+MediquoWidget.init({
+  apiKey: "<YOUR-API-KEY>",
+  accessToken: "<USER-ACCESS-TOKEN>",
+  adapter?: "web" | "cordova",
 });
 ```
 
