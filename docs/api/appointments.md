@@ -29,12 +29,13 @@ Learn more about [rate limits](/docs/overview#rate-limiting).
 
 ### Request parameters
 
-| Name                  | Type   | Description                                    |
-|-----------------------|--------|------------------------------------------------|
-| appointment.code      | string | The appointment code.                          |
-| appointment.starts_at | string | The appointment start date in ISO 8601 format. |
-| patient.code          | string | The code of patient.                           |
-| professional.hash     | string | The MediQuo professional code.                 |
+| Name                  | Type               | Description                                                                     |
+|-----------------------|--------------------|---------------------------------------------------------------------------------|
+| appointment.code      | string             | The appointment code.                                                           |
+| appointment.starts_at | string             | The appointment start date in ISO 8601 format.                                  |
+| appointment.duration  | int **(optional)** | The appointment duration in seconds. The value by default is `900` (15 minutes) |
+| patient.code          | string             | The code of patient.                                                            |
+| professional.hash     | string             | The MediQuo professional code.                                                  |
 
 #### Example request
 
@@ -42,7 +43,8 @@ Learn more about [rate limits](/docs/overview#rate-limiting).
 {
   "appointment": {
     "code": "your_appointment_code",
-    "starts_at": "2024-01-23T15:12:27Z"
+    "starts_at": "2024-01-23T15:12:27Z",
+    "duration": 900
   },
   "patient": {
     "code": "your_patient_code"
