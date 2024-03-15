@@ -31,7 +31,7 @@ This event is triggered when a professional finishes a patient consultation with
 
 | Key                     | Type                          | Values | Description                                   |
 |-------------------------|-------------------------------|--------|-----------------------------------------------|
-| consultation            | [Consultation](#Consultation) |        | Consultation basic data.                      |
+| consultation            | [Consultation](#consultation) |        | Consultation basic data.                      |
 | reports                 | object                        |        | Reports created during the consultation       |
 | patient                 | object                        |        | Consultation patient information              |
 | patient.allergies       | array                         |        | Allergies in the patient's medical history    |
