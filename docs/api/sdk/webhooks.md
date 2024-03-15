@@ -29,17 +29,16 @@ The events sent by the webhook will have the next payload structure.
 
 This event is triggered when a professional finishes a patient consultation with the type `patient_consultation_finished`. The payload includes the next information:
 
-| Key                     | Type   | Values | Description                                   |
-|-------------------------|--------|--------|-----------------------------------------------|
-| consultation            | object |        | Consultation basic data.                      |
-| consultation.speciality | object |        | Consultation professional speciality.         |
-| reports                 | object |        | Reports created during the consultation       |
-| patient                 | object |        | Consultation patient information              |
-| patient.allergies       | array  |        | Allergies in the patient's medical history    |
-| patient.diseases        | array  |        | Diseases in the patient's medical history     |
-| patient.medications     | array  |        | Medications in the patient's medical history  |
-| professional            | object |        | Consultation professional information         |
-| prescriptions           | array  |        | Prescriptions created during the consultation |
+| Key                     | Type                          | Values | Description                                   |
+|-------------------------|-------------------------------|--------|-----------------------------------------------|
+| consultation            | [Consultation](#Consultation) |        | Consultation basic data.                      |
+| reports                 | object                        |        | Reports created during the consultation       |
+| patient                 | object                        |        | Consultation patient information              |
+| patient.allergies       | array                         |        | Allergies in the patient's medical history    |
+| patient.diseases        | array                         |        | Diseases in the patient's medical history     |
+| patient.medications     | array                         |        | Medications in the patient's medical history  |
+| professional            | object                        |        | Consultation professional information         |
+| prescriptions           | array                         |        | Prescriptions created during the consultation |
 
 ### Example
 
@@ -50,6 +49,7 @@ This event is triggered when a professional finishes a patient consultation with
   "payload": {
     "consultation": {
       "id": "id_consultation",
+      "type": "appointment",
       "start_date": "2024-01-01T00:00:00",
       "end_date": "2024-01-01T01:00:00",
       "speciality": {
@@ -177,3 +177,15 @@ This event is triggered when a professional sends a new report to a patient with
   }
 }
 ```
+
+## Models
+
+### Consultation
+
+| Key        | Type     | Values              | Description                                |
+|------------|----------|---------------------|--------------------------------------------|
+| id         | string   |                     | Consultation unique identifier.            |
+| type       | string   | [appointment, chat] | Consultation type.                         |
+| start_date | datetime |                     | Consultation start date in ISO8610 format. |
+| end_date   | datetime |                     | Consultation end date in ISO8610 format.   |
+| speciality | object   |                     | Consultation professional speciality.      |
