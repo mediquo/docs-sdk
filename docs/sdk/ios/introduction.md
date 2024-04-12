@@ -4,6 +4,10 @@ title: mediQuo iOS SDK
 sidebar_label: Installation
 ---
 
+# Important!
+
+The v1 version of the iOS SDK is **deprecated**, we highly recommend you to update to the latest version. Read the [changelog](/docs/sdk/ios/changelog) for more information.
+
 ## Integration Example
 
 You have a repository available on Bitbucket with a

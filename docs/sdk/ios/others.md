@@ -3,6 +3,11 @@ id: others
 title: Other funcionalities
 sidebar_label: Other funcionalities
 ---
+# Important!
+
+The v1 version of the iOS SDK is **deprecated**, we highly recommend you to update to the latest version. Read the [changelog](/docs/sdk/ios/changelog) for more information.
+
+## Other funcionalities
 
 This describes the other funcionalities of the sdk.
 

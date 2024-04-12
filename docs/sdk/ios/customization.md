@@ -4,6 +4,12 @@ title: Customization
 sidebar_label: Customization
 ---
 
+# Important!
+
+The v1 version of the iOS SDK is **deprecated**, we highly recommend you to update to the latest version. Read the [changelog](/docs/sdk/ios/changelog) for more information.
+
+## Customization
+
 The following colors can be customized, throught the _MediQuoStyleType_ implementation, in your app.
 
 For setup this customization, you may to send this implementation in [Installation](https://developer.mediquo.com/docs/sdk/ios/introduction/#initialization) process.
