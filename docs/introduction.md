@@ -35,5 +35,5 @@ To authenticate your users in the SDK, you must first register them on our platf
 
 At this point you will be able to integrate properly the SDK within your apps following the steps described in the
 [Android SDK documentation](/docs/sdk/android/introduction/)
-, [iOS SDK documentation](/docs/sdk/ios/introduction/)
+, [iOS SDK documentation](/docs/sdk/ios/v10/introduction/)
 or [Web SDK documentation](/docs/sdk/widget/introduction/).
