@@ -8,7 +8,7 @@ This page provides release information about the SDK available for download.
 
 ## v10
 
-v10 is a complete rewrite of the previous version with a lot of improvements. This version includes a lot of **breaking changes**, so we recommend you to read carefully the new [documentation](/docs/sdk/ios/v10/introduction)
+v10 is a complete rewrite of the previous version with a lot of improvements. This version includes a lot of **breaking changes**, so we recommend you to read carefully the new [documentation](https://github.com/mediquo/mediquo-ios-sdk)
 
 | Version | Release date | Changes     |
 |---------|--------------|-------------|
