@@ -33,8 +33,7 @@
       "sdk/ios/professionalList",
       "sdk/ios/medicalhistory",
       "sdk/ios/customization",
-      "sdk/ios/others",
-      "sdk/ios/changelog"
+      "sdk/ios/others"
     ],
     "Widget": [
       "sdk/widget/introduction",
