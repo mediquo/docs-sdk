@@ -4,6 +4,12 @@ title: Professional List
 sidebar_label: Professional List
 ---
 
+# Important!
+
+The v1 version of the iOS SDK is **deprecated**, we highly recommend you to update to the latest version. Read the [changelog](/docs/sdk/ios/changelog) for more information.
+
+## Professional List
+
 The only view you must integrate inside you app is the professional list. Consists in a _UIViewController_ that shows a list of all professionals available for the current authenticated user and allows access to chats and professional profiles.
 
 <kbd>

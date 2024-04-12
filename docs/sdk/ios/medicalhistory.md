@@ -4,6 +4,12 @@ title: Medical history
 sidebar_label: Medical history
 ---
 
+# Important!
+
+The v1 version of the iOS SDK is **deprecated**, we highly recommend you to update to the latest version. Read the [changelog](/docs/sdk/ios/changelog) for more information.
+
+## Medical history
+
 Medical history includes all information shared between professionals and patients: Allergies, Illnesses, Medications, Reports, and Prescriptions.
 
 ## Open specific sections

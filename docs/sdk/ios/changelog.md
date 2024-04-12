@@ -6,6 +6,16 @@ sidebar_label: Changelog
 
 This page provides release information about the SDK available for download.
 
+## v10
+
+v10 is a complete rewrite of the previous version with a lot of improvements. This version includes a lot of **breaking changes**, so we recommend you to read carefully the new [documentation](/docs/sdk/ios/v10/changelog)
+
+| Version | Release date | Changes     |
+|---------|--------------|-------------|
+| 10.0.5  | 04/04/2024   | Minor fixes |
+| 10.0.4  | 27/02/2024   |             |
+
+## v1 (deprecated)
 
 
 | Version | Release date | Changes                                                                                                                                               |
