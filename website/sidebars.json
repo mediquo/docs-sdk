@@ -24,6 +24,10 @@
       "sdk/android/others",
       "sdk/android/changelog"
     ],
+    "iOS SDK v10": [
+      "sdk/ios/v10/introduction",
+      "sdk/ios/changelog",
+    ],
     "iOS SDK": [
       "sdk/ios/introduction",
       "sdk/ios/professionalList",
