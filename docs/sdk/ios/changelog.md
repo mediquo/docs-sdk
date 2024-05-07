@@ -10,10 +10,11 @@ This page provides release information about the SDK available for download.
 
 v10 is a complete rewrite of the previous version with a lot of improvements. This version includes a lot of **breaking changes**, so we recommend you to read carefully the new [documentation](https://github.com/mediquo/mediquo-ios-sdk)
 
-| Version | Release date | Changes               |
-|---------|--------------|-----------------------|
-| 10.0.5  | 04/04/2024   | Internal improvements |
-| 10.0.4  | 27/02/2024   |                       |
+| Version | Release date | Changes                       |
+|---------|--------------|-------------------------------|
+| 10.1.0  | 23/04/2024   | Added the voice note feature. |
+| 10.0.5  | 04/04/2024   | Internal improvements.        |
+| 10.0.4  | 27/02/2024   |                               |
 
 ## v1 (deprecated)
 
