@@ -98,7 +98,7 @@ type Theme = {
   position?: "left" | "right";
   launcher?: "base" | "extended" | "hidden";
   registration?: {
-    exclude: Array<"gender" | "birthdate">;
+    exclude: Array<"gender" | "birthdate"| "tax_id">;
   };
   locale?: "es" | "en" | "pt";
   terms_link?: string;
@@ -180,7 +180,7 @@ MediquoWidget.init({
 ```ts
 // Typescript
 type Registration = {
-  exclude: Array<"gender" | "birthdate">;
+  exclude: Array<"gender" | "birthdate" | "tax_id">;
 };
 ```
 
@@ -191,7 +191,7 @@ MediquoWidget.init({
   apiKey: "<YOUR-API-KEY>",
   theme: {
     registration: {
-      exclude: ["gender", "birthdate"] // This will exclude gender and birthdate fields from temporal patient registration form.
+      exclude: ["gender", "birthdate", "tax_id"] // This will exclude gender and birthdate fields from temporal patient registration form.
     }
   },
 ```
