@@ -16,6 +16,7 @@ which contains an example of how to integrate our SDK.
 - _compileOptions_ set to Java 8.
 - The AndroidX versions of the Jetpack support libraries.
 - Firebase Cloud Messaging added in the project ([Firebase Cloud Messaging documentation](https://firebase.google.com/docs/cloud-messaging/android/client)).
+- Compose must be configured on your project. For instructions, follow this [link](https://developer.android.com/develop/ui/compose/setup#setup-compose).
 
 ## Configuration
 
