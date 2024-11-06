@@ -9,18 +9,19 @@ Contains the information about a Patient in the mediQuo ecosystem.
 
 ### Attributes
 
-| Name       | Type                  | Allowed values         | Description                                           |
-|------------| --------------------- |----------------------- |-------------------------------------------------------|
+| Name       | Type                  | Allowed values         | Description                                          |
+|------------|-----------------------|------------------------|------------------------------------------------------|
 | code       | string                |                        | The value that identifies your patient in your system |
-| first_name | string                |                        | Patient first name or full name                       |
-| last_name  | string **(optional)** |                        | Patient last name                                     |
-| gender     | string **(optional)**               | `male`,`female`        | Patient gender                                        |
-| birth_date | string **(optional)**               |                        | Patient birth date (`Y-m-d`)                          |
-| tax_id     | string **(optional)**               |                        | Patient tax id number                                 |
-| email      | string **(optional)** |                        | Patient email                                         |
-| plan       | string **(optional)** |                        | Patient plan name                                     |
-| phone      | string **(optional)** |                        | Patient phone number with prefix code                 
-| locale     | string **(optional)** | `de`, `en`, `es`, `pt` | Patient locale. `es` by default                       |
+| first_name | string                |                        | Patient first name or full name                      |
+| last_name  | string **(optional)** |                        | Patient last name                                    |
+| gender     | string **(optional)** | `male`,`female`        | Patient gender                                       |
+| birth_date | string **(optional)** |                        | Patient birth date (`Y-m-d`)                         |
+| tax_id     | string **(optional)** |                        | Patient tax id number                                |
+| email      | string **(optional)** |                        | Patient email                                        |
+| plan       | string **(optional)** |                        | Patient plan name                                    |
+| phone      | string **(optional)** |                        | Patient phone number with prefix code                
+| locale     | string **(optional)** | `de`, `en`, `es`, `pt` | Patient locale. `es` by default                      |
+| meta       | array  **(optional)** |                        | Metadata to add some information                     |
 
 ## Create or update Patients
 
