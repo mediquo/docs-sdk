@@ -71,7 +71,10 @@ Learn more about [rate limits](/docs/overview#rate-limiting).
       "birth_date": "1980-01-01",
       "tax_id": "123456789",
       "email": "john@doe.com",
-      "phone": "+1 123345678"
+      "phone": "+1 123345678",
+      "meta": {
+        "card_id": "1234"
+      }
     },
     {
       "code": "jane-unique-id",
