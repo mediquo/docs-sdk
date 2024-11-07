@@ -131,7 +131,7 @@ No parameters
 ### Response fields
 
 | Name            | Type   | Description                                           |
-|-----------------| ------ |-------------------------------------------------------|
+|-----------------|--------|-------------------------------------------------------|
 | code            | string | The value that identifies your patient in your system |
 | first_name      | string | Patient first name or full name                       |
 | last_name       | string | Patient last name                                     |
@@ -145,6 +145,7 @@ No parameters
 | created_at      | string | Patient created at date                               |
 | updated_at      | string | Last updated date                                     |
 | unsubscribed_at | string | Date when the patient was unsubscribed                |
+| meta            | array  | Metadata to add some information                      |
 
 ### Default response
 
@@ -166,7 +167,10 @@ Status: 200 OK
   "locale": "es",
   "created_at": "2000-01-01 10:00:00+0000",
   "updated_at": "2000-01-01 10:00:00+0000",
-  "unsubscribed_at": "2000-01-01 10:00:00+0000"
+  "unsubscribed_at": "2000-01-01 10:00:00+0000",
+  "meta": {
+    "card_id": "1234"
+  }
 }
 ```
 
