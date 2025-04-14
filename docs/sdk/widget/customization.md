@@ -99,6 +99,7 @@ type Theme = {
   launcher?: "base" | "extended" | "hidden";
   registration?: {
     exclude: Array<"gender" | "birthdate"| "tax_id">;
+    include: Array<"postal_code">
   };
   locale?: "es" | "en" | "pt";
   terms_link?: string;
