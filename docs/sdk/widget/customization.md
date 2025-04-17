@@ -182,6 +182,7 @@ MediquoWidget.init({
 // Typescript
 type Registration = {
   exclude: Array<"gender" | "birthdate" | "tax_id">;
+  include: Array<"postal_code">
 };
 ```
 
@@ -193,6 +194,7 @@ MediquoWidget.init({
   theme: {
     registration: {
       exclude: ["gender", "birthdate", "tax_id"] // This will exclude gender and birthdate fields from temporal patient registration form.
+      include: ["postal_code"] // This will include postal code field from temporal patient registration form.
     }
   },
 ```
