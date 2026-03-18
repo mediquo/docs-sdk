@@ -178,6 +178,34 @@ This event is triggered when a professional sends a new report to a patient with
 }
 ```
 
+## Message sent
+
+This event is triggered when a professional sends a new message to a patient with the type `patient_message_sent`. The payload includes the next information:
+
+| Key                  | Type                          | Values | Description                                                                        |
+|----------------------|-------------------------------|--------|------------------------------------------------------------------------------------|
+| professional         | [Professional](#professional) |        | Professional who sent the message.                                              |
+| patient.code         | string                        |        | Patient code (Check out the [API patient specification](/docs/api/patients)).  |
+
+### Example
+
+```json
+{
+  "type": "patient_message_received",
+  "occurred_on": 1704063600,
+  "payload": {
+    "professional": {
+      "id": "hash",
+      "name": "professional name",
+      "avatar": "https://image.url/"
+    },
+    "patient": {
+      "code": "patient_code"
+    }
+  }
+}
+```
+
 ## Models
 
 ### Consultation
@@ -189,3 +217,11 @@ This event is triggered when a professional sends a new report to a patient with
 | start_date | datetime |                     | Consultation start date in ISO8610 format. |
 | end_date   | datetime |                     | Consultation end date in ISO8610 format.   |
 | speciality | object   |                     | Consultation professional speciality.      |
+
+### Professional
+
+| Key    | Type   | Values | Description                       |
+|--------|--------|--------|-----------------------------------|
+| id     | string |        | Professional unique identifier.   |
+| name   | string |        | Professional full name.           |
+| avatar | string |        | Professional avatar URL.          |
