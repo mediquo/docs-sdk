@@ -84,7 +84,7 @@ Example:
 MediquoWidget.init({
   apiKey: "<YOUR-API-KEY>",
   accessToken: "<USER-ACCESS-TOKEN>",
-  adapter?: "web" | "cordova",
+  adapter?: "web" | "cordova" | "native" | "flutter",
 });
 ```
 
